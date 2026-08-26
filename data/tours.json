@@ -1,0 +1,43 @@
+{
+ "tours": [
+  {
+   "id":"montmartre","dia":"mie2","h":"17:15","min":150,
+   "titulo":"Free tour por Montmartre",
+   "salida":"place-blanche","final":"sacre-coeur",
+   "paradas":["deux-moulins","casa-van-gogh","bateau-lavoir","moulin-galette","place-dalida","maison-rose","lapin-agile"],
+   "aviso":"Mientras dure el tour, la app no reproduce audio. Solo aparece una tarjeta corta al pasar por cada punto, para que la marquéis como vista o pendiente.",
+   "repesca":{
+    "ventana":"Al terminar, en el Sacré-Cœur, con la tarde entera por delante y sin nada cerrando.",
+    "minutos":90,
+    "candidatos":["maison-rose","lapin-agile","place-dalida"],
+    "nota":"La ladera norte queda a dos minutos del final del tour y a partir de las ocho y media no hay nadie: rue Saint-Vincent, la viña de 1933 y el cementerio de Saint-Vincent."
+   }
+  },
+  {
+   "id":"paris","dia":"jue3","h":"10:30","min":165,
+   "titulo":"Free tour por París",
+   "salida":"hotel-de-ville","final":"louvre-explanada",
+   "paradas":["notre-dame","sainte-chapelle","conciergerie","pont-neuf","pont-des-arts","louvre-explanada","tuileries","arc-carrousel"],
+   "aviso":"Notre-Dame y la Conciergerie ya las habréis visto por dentro por la mañana; en el tour se ven por fuera. La Sainte-Chapelle solo se ve por fuera, no entra en el programa.",
+   "repesca":{
+    "ventana":"Termina junto al Louvre hacia las 13:15 y el barco sale a las 14:30 desde el Vert-Galant, con la comida en medio. La repesca real son veinte minutos.",
+    "minutos":20,
+    "candidatos":["pont-des-arts","arc-carrousel","tuileries"],
+    "nota":"Si el tour termina puntual, la Galerie Vivienne y la Colbert quedan a cinco minutos al norte. Si va con retraso, se pasan al viernes por la mañana, que está libre."
+   }
+  },
+  {
+   "id":"marais","dia":"vie4","h":"11:00","min":120,
+   "titulo":"Free tour por Le Marais y la Bastilla",
+   "salida":"saint-paul","final":"bastille",
+   "paradas":["memorial-shoah","rue-des-rosiers","hotel-de-sens","village-saint-paul","hotel-de-sully","place-des-vosges"],
+   "aviso":"Este es el tour con más sitios que merecen una segunda pasada, y es también el que mejor se repesca, porque la tarde vuelve por la misma zona.",
+   "repesca":{
+    "ventana":"Termina en la Bastilla hacia las 13:00 y la comida es en la rue des Rosiers, diez minutos andando de vuelta por el mismo barrio.",
+    "minutos":40,
+    "candidatos":["hotel-de-sens","village-saint-paul","hotel-de-sully"],
+    "nota":"La Place des Vosges y el patio del Hôtel de Sully ya están en el plan de la tarde con tiempo propio, así que en el tour no hace falta insistir. El Hôtel de Sens y el Village Saint-Paul quedan de camino entre la Bastilla y la rue des Rosiers."
+   }
+  }
+ ]
+}

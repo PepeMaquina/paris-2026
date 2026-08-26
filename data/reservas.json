@@ -1,0 +1,20 @@
+{
+ "reservas": [
+  {"id":"notre-dame","tit":"Franja gratuita de Notre-Dame, jueves 8:00","estado":"pendiente","limite":"2026-09-02T00:30:00",
+   "nota":"Se libera solo dos o tres días antes en resa.notredamedeparis.fr, y las plazas salen hacia medianoche hora de París. Lo tendréis que hacer ya estando allí, la noche del martes al miércoles. Sin reserva se entra igual por la cola de la izquierda y a las ocho apenas hay nadie.","urgencia":1},
+  {"id":"comme-au-vietnam","tit":"Mesa de cuatro en Comme au Vietnam, viernes a las 21:00","estado":"pendiente","limite":"2026-09-02T20:00:00",
+   "nota":"195 avenue de Choisy, cenas de 19:00 a 22:30. Se llena. Pedid las 21:00 y no las 20:30: con el tour del Marais a las 11:00 la tarde se corre una hora.","urgencia":2},
+  {"id":"torre-eiffel","tit":"Torre Eiffel por escaleras, martes","estado":"comprobar","limite":"2026-09-01T19:00:00",
+   "nota":"Hasta el 29 de septiembre de 2026 la entrada de escaleras no exige reserva previa y la cola casi siempre tiene sitio. Aun así, comprad en línea si podéis. 14,80 € adultos y tarifa joven de 12 a 24 años.","urgencia":3},
+  {"id":"versalles","tit":"Pasaporte de Versalles, miércoles a las 9:00","estado":"comprobar","limite":"2026-09-02T09:00:00",
+   "nota":"Entrada única: 32 € adultos y 12 € jóvenes. Incluye palacio, jardines con Jardines Musicales y el dominio de Trianon, que no vais a usar.","urgencia":3},
+  {"id":"conciergerie","tit":"Conciergerie, jueves a las 9:30","estado":"comprobar","limite":"2026-09-03T09:30:00",
+   "nota":"Reserva de franja en la web del Centre des monuments nationaux. Entre 13 y 15 €, gratis para los dos chicos.","urgencia":3},
+  {"id":"orsay","tit":"Orsay, jueves a las 18:30","estado":"comprobar","limite":"2026-09-03T18:30:00",
+   "nota":"Ya lo tenéis. Comprobad que constan dos entradas de pago y dos gratuitas, no cuatro de pago: desde marzo de 2026 el museo exige franja horaria también a los gratuitos.","urgencia":3},
+  {"id":"free-tours","tit":"Los tres free tours, confirmados","estado":"hecho","limite":null,
+   "nota":"Montmartre el miércoles a las 17:15, París el jueves a las 10:30 y Marais el viernes a las 11:00. Mirad de todos modos el punto de encuentro en el bono, que Civitatis avisa de que puede variar. Lo habitual son entre 5 y 10 € por persona y tour.","urgencia":4},
+  {"id":"navigo","tit":"Navigo semanal","estado":"pendiente","limite":"2026-09-01T15:00:00",
+   "nota":"Vuestras Navigo Easy no admiten el forfait semanal. Lo más limpio es cargarlo en el móvil con la app Île-de-France Mobilités, 32,40 € por persona, todas las zonas, que es la que interesa por Versalles. La alternativa es comprar cuatro Navigo Découverte a 5 € en la taquilla de Montparnasse con foto de carnet pegada, así que llevad las fotos hechas de casa.","urgencia":2}
+ ]
+}

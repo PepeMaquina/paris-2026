@@ -1,0 +1,1038 @@
+[
+ {
+  "id": "hotel-sanso",
+  "nombre": "Hôtel Sanso",
+  "q": "15 Rue de Tolbiac, 75013 Paris, France",
+  "cat": "base",
+  "lat": 48.82935,
+  "lon": 2.374812,
+  "osm": "Sanso, 15, Rue de Tolbiac, Quartier de la Gare, Paris 13e Arrondissement, Paris, Île-de-Fr",
+  "tipo_osm": "hotel"
+ },
+ {
+  "id": "gare-montparnasse",
+  "nombre": "Gare Montparnasse",
+  "q": "Gare Montparnasse, Paris, France",
+  "cat": "transporte",
+  "lat": 48.840062,
+  "lon": 2.319109,
+  "osm": "Gare Montparnasse, Allée de la deuxième D.B., Quartier Necker, Paris 15e Arrondissement, P",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "citylocker-maine",
+  "nombre": "City-Locker rue du Maine",
+  "q": "7 Rue du Maine, 75014 Paris, France",
+  "cat": "servicio",
+  "lat": 48.84053,
+  "lon": 2.323028,
+  "osm": "Lac du Paradis, 7, Rue du Maine, Quartier du Montparnasse, Paris 14e Arrondissement, Paris",
+  "tipo_osm": "massage"
+ },
+ {
+  "id": "saint-germain-des-pres",
+  "nombre": "Saint-Germain-des-Prés",
+  "q": "Église Saint-Germain-des-Prés, Paris, France",
+  "cat": "iglesia",
+  "lat": 48.853968,
+  "lon": 2.334518,
+  "osm": "Église Saint-Germain des Prés, 3, Place Saint-Germain des Prés, Quartier de Saint-Germain-",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "deux-magots",
+  "nombre": "Les Deux Magots",
+  "q": "Les Deux Magots, Place Saint-Germain-des-Prés, Paris, France",
+  "cat": "fachada",
+  "lat": 48.854069,
+  "lon": 2.333063,
+  "osm": "Les Deux Magots, 6, Place Saint-Germain des Prés, Quartier de Saint-Germain-des-Prés, Pari",
+  "tipo_osm": "cafe"
+ },
+ {
+  "id": "cafe-de-flore",
+  "nombre": "Café de Flore",
+  "q": "Café de Flore, 172 Boulevard Saint-Germain, Paris, France",
+  "cat": "fachada",
+  "lat": 48.854144,
+  "lon": 2.332631,
+  "osm": "Café de Flore, Rue Saint-Benoît, Quartier de Saint-Germain-des-Prés, Paris 6e Arrondisseme",
+  "tipo_osm": "",
+  "q_usada": "Café de Flore, Paris"
+ },
+ {
+  "id": "bon-marche",
+  "nombre": "Le Bon Marché",
+  "q": "Le Bon Marché, 24 Rue de Sèvres, 75007 Paris, France",
+  "cat": "edificio",
+  "lat": 48.851183,
+  "lon": 2.324394,
+  "osm": "Le Bon Marché, Rue du Bac, Quartier Saint-Thomas-d'Aquin, Paris 7e Arrondissement, Paris, ",
+  "tipo_osm": "",
+  "q_usada": "Le Bon Marché, Paris"
+ },
+ {
+  "id": "grande-epicerie",
+  "nombre": "La Grande Épicerie de Paris",
+  "q": "38 Rue de Sèvres, 75007 Paris, France",
+  "cat": "tienda",
+  "lat": 48.849972,
+  "lon": 2.323297,
+  "osm": "38, Rue de Sèvres, Quartier Saint-Thomas-d'Aquin, Paris 7e Arrondissement, Paris, Île-de-F",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "tour-eiffel",
+  "nombre": "Torre Eiffel",
+  "q": "Tour Eiffel, Paris, France",
+  "cat": "monumento",
+  "lat": 48.85826,
+  "lon": 2.294501,
+  "osm": "Tour Eiffel, 5, Avenue Anatole France, Quartier du Gros-Caillou, Paris 7e Arrondissement, ",
+  "tipo_osm": "tower"
+ },
+ {
+  "id": "champ-de-mars",
+  "nombre": "Champ de Mars",
+  "q": "Champ de Mars, Paris, France",
+  "cat": "parque",
+  "lat": 48.856145,
+  "lon": 2.29782,
+  "osm": "Champ de Mars, Paris, Île-de-France, France métropolitaine, France",
+  "tipo_osm": "park"
+ },
+ {
+  "id": "trocadero",
+  "nombre": "Trocadéro",
+  "q": "Place du Trocadéro et du 11 Novembre, Paris, France",
+  "cat": "mirador",
+  "lat": 48.86284,
+  "lon": 2.287142,
+  "osm": "Place du Trocadéro et du 11 Novembre, Quartier de la Muette, Paris 16e Arrondissement, Par",
+  "tipo_osm": "square"
+ },
+ {
+  "id": "pont-iena",
+  "nombre": "Pont d'Iéna",
+  "q": "Pont d'Iéna, Paris, France",
+  "cat": "puente",
+  "lat": 48.859833,
+  "lon": 2.292035,
+  "osm": "Pont d'Iéna, Port de la Bourdonnais, Quartier du Gros-Caillou, Paris 7e Arrondissement, Pa",
+  "tipo_osm": "bridge"
+ },
+ {
+  "id": "pont-bir-hakeim",
+  "nombre": "Pont de Bir-Hakeim",
+  "q": "Pont de Bir-Hakeim, Paris, France",
+  "cat": "puente",
+  "lat": 48.855725,
+  "lon": 2.287548,
+  "osm": "Pont de Bir-Hakeim, Place des Martyrs Juifs du Vélodrome, Le Quartier Dupleix, Paris 15e A",
+  "tipo_osm": "bridge"
+ },
+ {
+  "id": "rue-saint-dominique",
+  "nombre": "Rue Saint-Dominique",
+  "q": "Rue Saint-Dominique, 75007 Paris, France",
+  "cat": "calle",
+  "lat": 48.85831,
+  "lon": 2.301954,
+  "osm": "Rue Saint-Dominique, Quartier du Gros-Caillou, Paris 7e Arrondissement, Paris, Île-de-Fran",
+  "tipo_osm": "residential"
+ },
+ {
+  "id": "rue-cler",
+  "nombre": "Rue Cler",
+  "q": "Rue Cler, 75007 Paris, France",
+  "cat": "calle",
+  "lat": 48.856584,
+  "lon": 2.306509,
+  "osm": "Rue Cler, Quartier du Gros-Caillou, Paris 7e Arrondissement, Paris, Île-de-France, France ",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "rer-champ-de-mars",
+  "nombre": "RER Champ de Mars-Tour Eiffel",
+  "q": "Gare du Champ de Mars - Tour Eiffel, Paris, France",
+  "cat": "transporte",
+  "lat": 48.856708,
+  "lon": 2.289756,
+  "osm": "Champ de Mars - Tour Eiffel, Promenade d'Australie, Quartier de Grenelle, Paris 15e Arrond",
+  "tipo_osm": "",
+  "q_usada": "Champ de Mars - Tour Eiffel, Paris"
+ },
+ {
+  "id": "rer-bfm",
+  "nombre": "Bibliothèque François Mitterrand",
+  "q": "Gare de Bibliothèque François Mitterrand, Paris, France",
+  "cat": "transporte",
+  "lat": 48.830006,
+  "lon": 2.376847,
+  "osm": "Bibliothèque François Mitterrand (metro 14 y RER C)",
+  "tipo_osm": ""
+ },
+ {
+  "id": "versailles-rer",
+  "nombre": "Versailles Château Rive Gauche",
+  "q": "Gare de Versailles-Château - Rive Gauche, Versailles, France",
+  "cat": "transporte",
+  "lat": 48.800297,
+  "lon": 2.128916,
+  "osm": "Gare de Versailles Château Rive Gauche, 5, Avenue du Général de Gaulle, Chantiers, Versail",
+  "tipo_osm": "train_station"
+ },
+ {
+  "id": "versalles-palacio",
+  "nombre": "Palacio de Versalles",
+  "q": "Château de Versailles, Versailles, France",
+  "cat": "monumento",
+  "lat": 48.804425,
+  "lon": 2.120285,
+  "osm": "Château de Versailles, Rue Pierre de Nolhac, Saint-Louis, Versailles, Yvelines, Île-de-Fra",
+  "tipo_osm": "fire_detection_system"
+ },
+ {
+  "id": "versalles-jardines",
+  "nombre": "Jardines de Versalles",
+  "q": "Jardins du Château de Versailles, Versailles, France",
+  "cat": "jardin",
+  "lat": 48.805094,
+  "lon": 2.119216,
+  "osm": "Parterre d'Eau, Notre-Dame, Versailles, Yvelines, Île-de-France, France métropolitaine, 78",
+  "tipo_osm": "garden",
+  "q_usada": "Parterre d'Eau, Versailles"
+ },
+ {
+  "id": "versalles-gran-canal",
+  "nombre": "Gran Canal de Versalles",
+  "q": "Grand Canal, Château de Versailles, Versailles, France",
+  "cat": "jardin",
+  "lat": 48.809658,
+  "lon": 2.101035,
+  "osm": "Grand Canal, Notre-Dame, Versailles, Yvelines, Île-de-France, France métropolitaine, 78000",
+  "tipo_osm": "",
+  "q_usada": "Grand Canal, Versailles"
+ },
+ {
+  "id": "versalles-bains-apollon",
+  "nombre": "Bosquete de los Baños de Apolo",
+  "q": "Bosquet des Bains d'Apollon, Versailles, France",
+  "cat": "jardin",
+  "lat": 48.806538,
+  "lon": 2.118552,
+  "osm": "Bosquet des Bains d'Apollon, Notre-Dame, Versailles, Yvelines, Île-de-France, France métro",
+  "tipo_osm": "locality"
+ },
+ {
+  "id": "versalles-salle-de-bal",
+  "nombre": "Bosquete de la Sala de Baile",
+  "q": "Bosquet de la Salle de Bal, Versailles, France",
+  "cat": "jardin",
+  "lat": 48.804331,
+  "lon": 2.116766,
+  "osm": "Bosquet des Rocailles, Notre-Dame, Versailles, Yvelines, Île-de-France, France métropolita",
+  "tipo_osm": "locality"
+ },
+ {
+  "id": "versalles-colonnade",
+  "nombre": "Bosquete de la Columnata",
+  "q": "Bosquet de la Colonnade, Versailles, France",
+  "cat": "jardin",
+  "lat": 48.806168,
+  "lon": 2.111777,
+  "osm": "Bosquet de la Colonnade, Notre-Dame, Versailles, Yvelines, Île-de-France, France métropoli",
+  "tipo_osm": "locality"
+ },
+ {
+  "id": "invalides-metro",
+  "nombre": "Invalides (metro y RER)",
+  "q": "Gare des Invalides, Paris, France",
+  "cat": "transporte",
+  "lat": 48.862585,
+  "lon": 2.314727,
+  "osm": "Gare des Invalides, Quai d'Orsay, Quartier des Invalides, Paris 7e Arrondissement, Paris, ",
+  "tipo_osm": "taxi"
+ },
+ {
+  "id": "place-de-clichy",
+  "nombre": "Place de Clichy",
+  "q": "Place de Clichy, Paris, France",
+  "cat": "transporte",
+  "lat": 48.883478,
+  "lon": 2.32729,
+  "osm": "Place de Clichy, Quartier des Batignolles, Paris 17e Arrondissement, Paris, Île-de-France,",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "moulin-rouge",
+  "nombre": "Moulin Rouge",
+  "q": "Moulin Rouge, Boulevard de Clichy, Paris, France",
+  "cat": "fachada",
+  "lat": 48.884109,
+  "lon": 2.332356,
+  "osm": "Moulin Rouge, 82, Boulevard de Clichy, Quartier des Grandes-Carrières, Paris 18e Arrondiss",
+  "tipo_osm": "theatre"
+ },
+ {
+  "id": "place-blanche",
+  "nombre": "Place Blanche",
+  "q": "Place Blanche, Paris, France",
+  "cat": "encuentro",
+  "lat": 48.883723,
+  "lon": 2.332696,
+  "osm": "Place Blanche, Quartier Saint-Georges, Paris 9e Arrondissement, Paris, Île-de-France, Fran",
+  "tipo_osm": "primary"
+ },
+ {
+  "id": "bouillon-pigalle",
+  "nombre": "Bouillon Pigalle",
+  "q": "22 Boulevard de Clichy, 75018 Paris, France",
+  "cat": "comida",
+  "lat": 48.882619,
+  "lon": 2.337414,
+  "osm": "Bouillon Pigalle, 22, Boulevard de Clichy, Quartier des Grandes-Carrières, Paris 18e Arron",
+  "tipo_osm": "restaurant"
+ },
+ {
+  "id": "la-fourmi",
+  "nombre": "La Fourmi",
+  "q": "74 Rue des Martyrs, 75018 Paris, France",
+  "cat": "comida",
+  "lat": 48.882546,
+  "lon": 2.339735,
+  "osm": "74, Rue des Martyrs, Quartier de Clignancourt, Paris 18e Arrondissement, Paris, Île-de-Fra",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "mian",
+  "nombre": "Mian",
+  "q": "15 Rue Notre-Dame-de-Lorette, 75009 Paris, France",
+  "cat": "comida",
+  "lat": 48.877711,
+  "lon": 2.338132,
+  "osm": "15, Rue Notre-Dame-de-Lorette, Nouvelle Athènes, Paris 9e Arrondissement, Paris, Île-de-Fr",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "deux-moulins",
+  "nombre": "Café des Deux Moulins",
+  "q": "15 Rue Lepic, 75018 Paris, France",
+  "cat": "fachada",
+  "lat": 48.884899,
+  "lon": 2.333703,
+  "osm": "15, Rue Lepic, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de-Fra",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "casa-van-gogh",
+  "nombre": "Casa de Van Gogh",
+  "q": "54 Rue Lepic, 75018 Paris, France",
+  "cat": "fachada",
+  "lat": 48.886505,
+  "lon": 2.333942,
+  "osm": "54, Rue Lepic, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de-Fra",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "bateau-lavoir",
+  "nombre": "Bateau-Lavoir",
+  "q": "Bateau-Lavoir, Place Émile-Goudeau, Paris, France",
+  "cat": "fachada",
+  "lat": 48.886019,
+  "lon": 2.337638,
+  "osm": "Le bateau-Lavoir, Place Émile Goudeau, Quartier des Grandes-Carrières, Paris 18e Arrondiss",
+  "tipo_osm": "artwork"
+ },
+ {
+  "id": "moulin-galette",
+  "nombre": "Moulin de la Galette",
+  "q": "Moulin de la Galette, Rue Lepic, Paris, France",
+  "cat": "fachada",
+  "lat": 48.887651,
+  "lon": 2.336297,
+  "osm": "Moulin de la Galette, Rue Lepic, Quartier des Grandes-Carrières, Paris 18e Arrondissement,",
+  "tipo_osm": "attraction"
+ },
+ {
+  "id": "place-dalida",
+  "nombre": "Place Dalida",
+  "q": "Place Dalida, Paris, France",
+  "cat": "plaza",
+  "lat": 48.888507,
+  "lon": 2.33814,
+  "osm": "Place Dalida, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de-Fran",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "maison-rose",
+  "nombre": "La Maison Rose",
+  "q": "2 Rue de l'Abreuvoir, 75018 Paris, France",
+  "cat": "fachada",
+  "lat": 48.887974,
+  "lon": 2.339609,
+  "osm": "2, Rue de l'Abreuvoir, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Îl",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "lapin-agile",
+  "nombre": "Au Lapin Agile",
+  "q": "22 Rue des Saules, 75018 Paris, France",
+  "cat": "fachada",
+  "lat": 48.888731,
+  "lon": 2.339975,
+  "osm": "22, Rue des Saules, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-d",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "sacre-coeur",
+  "nombre": "Sacré-Cœur",
+  "q": "Basilique du Sacré-Cœur, Paris, France",
+  "cat": "iglesia",
+  "lat": 48.886806,
+  "lon": 2.343015,
+  "osm": "Basilique du Sacré-Cœur, Rue du Chevalier de la Barre, Quartier de Clignancourt, Paris 18e",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "rue-saint-vincent",
+  "nombre": "Rue Saint-Vincent",
+  "q": "Rue Saint-Vincent, 75018 Paris, France",
+  "cat": "calle",
+  "lat": 48.888719,
+  "lon": 2.338924,
+  "osm": "Rue Saint-Vincent, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "vigne-montmartre",
+  "nombre": "Viña de Montmartre",
+  "q": "Clos Montmartre, Rue des Saules, Paris, France",
+  "cat": "rincon",
+  "lat": 48.888186,
+  "lon": 2.339834,
+  "osm": "Clos Montmartre, Rue des Saules, Quartier de Clignancourt, Paris 18e Arrondissement, Paris",
+  "tipo_osm": "board"
+ },
+ {
+  "id": "cimetiere-saint-vincent",
+  "nombre": "Cementerio de Saint-Vincent",
+  "q": "Cimetière Saint-Vincent, Paris, France",
+  "cat": "rincon",
+  "lat": 48.889047,
+  "lon": 2.339296,
+  "osm": "Cimetière Saint-Vincent, Paris 18e Arrondissement, Paris, Île-de-France, France métropolit",
+  "tipo_osm": "cemetery"
+ },
+ {
+  "id": "place-du-tertre",
+  "nombre": "Place du Tertre",
+  "q": "Place du Tertre, Paris, France",
+  "cat": "plaza",
+  "lat": 48.886527,
+  "lon": 2.340804,
+  "osm": "Place du Tertre, Quartier de Clignancourt, Paris 18e Arrondissement, Paris, Île-de-France,",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "relais-gascon",
+  "nombre": "Le Relais Gascon",
+  "q": "6 Rue des Abbesses, 75018 Paris, France",
+  "cat": "comida",
+  "lat": 48.884004,
+  "lon": 2.339171,
+  "osm": "Le Relais Gascon, 6, Rue des Abbesses, Quartier de Clignancourt, Paris 18e Arrondissement,",
+  "tipo_osm": "restaurant"
+ },
+ {
+  "id": "chez-marie",
+  "nombre": "Chez Marie",
+  "q": "22 Rue Lepic, 75018 Paris, France",
+  "cat": "comida",
+  "lat": 48.885014,
+  "lon": 2.334052,
+  "osm": "22, Rue Lepic, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de-Fra",
+  "tipo_osm": "house",
+  "confirmado": "Dirección confirmada por el usuario el 25/08/2026"
+ },
+ {
+  "id": "adelaide",
+  "nombre": "Adélaïde",
+  "q": "24 Rue des Abbesses, 75018 Paris, France",
+  "cat": "comida",
+  "lat": 48.884849,
+  "lon": 2.3378,
+  "osm": "24, Rue des Abbesses, Quartier de Clignancourt, Paris 18e Arrondissement, Paris, Île-de-Fr",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "metro-abbesses",
+  "nombre": "Abbesses",
+  "q": "Abbesses, Paris, France",
+  "cat": "transporte",
+  "lat": 48.884804,
+  "lon": 2.338642,
+  "osm": "Abbesses, Place des Abbesses, Quartier de Clignancourt, Paris 18e Arrondissement, Paris, Î",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-lamarck",
+  "nombre": "Lamarck-Caulaincourt",
+  "q": "Lamarck - Caulaincourt, Paris, France",
+  "cat": "transporte",
+  "lat": 48.889756,
+  "lon": 2.338768,
+  "osm": "Lamarck - Caulaincourt, Rue Pierre Dac, Quartier des Grandes-Carrières, Paris 18e Arrondis",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "notre-dame",
+  "nombre": "Notre-Dame de París",
+  "q": "Cathédrale Notre-Dame de Paris, France",
+  "cat": "iglesia",
+  "lat": 48.852937,
+  "lon": 2.35005,
+  "osm": "Cathédrale Notre-Dame de Paris, 6, Parvis Notre-Dame - Place Jean-Paul II, Quartier Les Îl",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "marche-aux-fleurs",
+  "nombre": "Marché aux Fleurs",
+  "q": "Marché aux Fleurs Reine Elizabeth II, Place Louis-Lépine, Paris, France",
+  "cat": "mercado",
+  "lat": 48.855464,
+  "lon": 2.34766,
+  "osm": "Marché aux fleurs Reine-Elizabeth-II, Rue de la Cité, Quartier Les Îles, Paris 4e Arrondis",
+  "tipo_osm": "",
+  "q_usada": "Marché aux fleurs Reine Elizabeth II, Paris"
+ },
+ {
+  "id": "conciergerie",
+  "nombre": "La Conciergerie",
+  "q": "Conciergerie, 2 Boulevard du Palais, Paris, France",
+  "cat": "monumento",
+  "lat": 48.855949,
+  "lon": 2.346026,
+  "osm": "Conciergerie, 2, Boulevard du Palais, Saint-Germain-l'Auxerrois, Paris 1er Arrondissement,",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "sainte-chapelle",
+  "nombre": "Sainte-Chapelle",
+  "q": "Sainte-Chapelle, Paris, France",
+  "cat": "fachada",
+  "lat": 48.855393,
+  "lon": 2.344994,
+  "osm": "Sainte-Chapelle, 8, Boulevard du Palais, Saint-Germain-l'Auxerrois, Paris 1er Arrondisseme",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "hotel-de-ville",
+  "nombre": "Hôtel de Ville",
+  "q": "Hôtel de Ville, Paris, France",
+  "cat": "encuentro",
+  "lat": 48.856426,
+  "lon": 2.352528,
+  "osm": "Hôtel de Ville, Place de l'Hôtel de Ville, Quartier Saint-Merri, Paris 4e Arrondissement, ",
+  "tipo_osm": "public"
+ },
+ {
+  "id": "pont-neuf",
+  "nombre": "Pont Neuf",
+  "q": "Pont Neuf, Paris, France",
+  "cat": "puente",
+  "lat": 48.857803,
+  "lon": 2.34192,
+  "osm": "Pont Neuf, Saint-Germain-l'Auxerrois, Paris 1er Arrondissement, Paris, Île-de-France, Fran",
+  "tipo_osm": "bridge"
+ },
+ {
+  "id": "pont-des-arts",
+  "nombre": "Pont des Arts",
+  "q": "Pont des Arts, Paris, France",
+  "cat": "puente",
+  "lat": 48.858407,
+  "lon": 2.337548,
+  "osm": "Pont des Arts, Quartier de la Monnaie, Paris 6e Arrondissement, Paris, Île-de-France, Fran",
+  "tipo_osm": "bridge"
+ },
+ {
+  "id": "louvre-explanada",
+  "nombre": "Explanada del Louvre",
+  "q": "Cour Napoléon, Musée du Louvre, Paris, France",
+  "cat": "monumento",
+  "lat": 48.860994,
+  "lon": 2.335843,
+  "osm": "Pyramide du Louvre, Place du Musée du Louvre, Saint-Germain-l'Auxerrois, Paris 1er Arrondi",
+  "tipo_osm": "",
+  "q_usada": "Pyramide du Louvre, Paris"
+ },
+ {
+  "id": "tuileries",
+  "nombre": "Jardín de las Tullerías",
+  "q": "Jardin des Tuileries, Paris, France",
+  "cat": "parque",
+  "lat": 48.863566,
+  "lon": 2.326955,
+  "osm": "Jardin des Tuileries, 113, Paris, Île-de-France, France métropolitaine, 75001, France",
+  "tipo_osm": "park"
+ },
+ {
+  "id": "arc-carrousel",
+  "nombre": "Arco del Carrusel",
+  "q": "Arc de Triomphe du Carrousel, Paris, France",
+  "cat": "monumento",
+  "lat": 48.861727,
+  "lon": 2.332909,
+  "osm": "Arc de Triomphe du Carrousel, Jardin du Carrousel, Saint-Germain-l'Auxerrois, Paris 1er Ar",
+  "tipo_osm": "monument"
+ },
+ {
+  "id": "rue-sainte-anne",
+  "nombre": "Rue Sainte-Anne",
+  "q": "Rue Sainte-Anne, 75001 Paris, France",
+  "cat": "comida",
+  "lat": 48.866378,
+  "lon": 2.33557,
+  "osm": "Rue Sainte-Anne, Quartier du Palais Royal, Paris 1er Arrondissement, Paris, Île-de-France,",
+  "tipo_osm": "residential"
+ },
+ {
+  "id": "galerie-vivienne",
+  "nombre": "Galerie Vivienne",
+  "q": "Galerie Vivienne, Paris, France",
+  "cat": "pasaje",
+  "lat": 48.866728,
+  "lon": 2.339757,
+  "osm": "Galerie Vivienne, Passage des Petits Pères, Vivienne, Paris 2e Arrondissement, Paris, Île-",
+  "tipo_osm": "mall"
+ },
+ {
+  "id": "galerie-colbert",
+  "nombre": "Galerie Colbert",
+  "q": "Galerie Colbert, Paris, France",
+  "cat": "pasaje",
+  "lat": 48.866777,
+  "lon": 2.339361,
+  "osm": "Galerie Colbert, Vivienne, Paris 2e Arrondissement, Paris, Île-de-France, France métropoli",
+  "tipo_osm": "footway"
+ },
+ {
+  "id": "bnf-richelieu",
+  "nombre": "BnF Richelieu (fachada)",
+  "q": "Bibliothèque nationale de France Richelieu, 58 Rue de Richelieu, Paris, France",
+  "cat": "fachada",
+  "lat": 48.867282,
+  "lon": 2.338164,
+  "osm": "Bibliothèque nationale de France, Richelieu, 58, Rue de Richelieu, Vivienne, Paris 2e Arro",
+  "tipo_osm": "library"
+ },
+ {
+  "id": "vert-galant",
+  "nombre": "Square du Vert-Galant",
+  "q": "Square du Vert-Galant, Paris, France",
+  "cat": "embarque",
+  "lat": 48.857407,
+  "lon": 2.340328,
+  "osm": "Square du Vert Galant, Paris 1er Arrondissement, Paris, Île-de-France, France métropolitai",
+  "tipo_osm": "park"
+ },
+ {
+  "id": "pantheon",
+  "nombre": "El Panteón",
+  "q": "Panthéon, Place du Panthéon, Paris, France",
+  "cat": "monumento",
+  "lat": 48.846195,
+  "lon": 2.346051,
+  "osm": "Panthéon, Place du Panthéon, Quartier de la Sorbonne, Paris 5e Arrondissement, Paris, Île-",
+  "tipo_osm": "attraction"
+ },
+ {
+  "id": "saint-etienne-du-mont",
+  "nombre": "Saint-Étienne-du-Mont",
+  "q": "Église Saint-Étienne-du-Mont, Paris, France",
+  "cat": "iglesia",
+  "lat": 48.84655,
+  "lon": 2.348017,
+  "osm": "Église Saint-Étienne-du-Mont, Rue de la Montagne Sainte-Geneviève, Quartier de la Sorbonne",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "contrescarpe",
+  "nombre": "Place de la Contrescarpe",
+  "q": "Place de la Contrescarpe, Paris, France",
+  "cat": "plaza",
+  "lat": 48.844372,
+  "lon": 2.349495,
+  "osm": "Place de la Contrescarpe, Quartier du Jardin des Plantes, Paris 5e Arrondissement, Paris, ",
+  "tipo_osm": "residential"
+ },
+ {
+  "id": "rue-mouffetard",
+  "nombre": "Rue Mouffetard",
+  "q": "Rue Mouffetard, 75005 Paris, France",
+  "cat": "calle",
+  "lat": 48.844078,
+  "lon": 2.349338,
+  "osm": "Rue Mouffetard, Quartier du Jardin des Plantes, Paris 5e Arrondissement, Paris, Île-de-Fra",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "ptit-grec",
+  "nombre": "Au P'tit Grec",
+  "q": "68 Rue Mouffetard, 75005 Paris, France",
+  "cat": "comida",
+  "lat": 48.842777,
+  "lon": 2.349621,
+  "osm": "68, Rue Mouffetard, Quartier du Val-de-Grâce, Paris 5e Arrondissement, Paris, Île-de-Franc",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "vieux-bistrot",
+  "nombre": "Le Vieux Bistrot",
+  "q": "54 Rue Mouffetard, 75005 Paris, France",
+  "cat": "comida",
+  "lat": 48.843267,
+  "lon": 2.349496,
+  "osm": "54, Rue Mouffetard, Quartier du Val-de-Grâce, Paris 5e Arrondissement, Paris, Île-de-Franc",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "la-crete",
+  "nombre": "La Crète",
+  "q": "85 Rue Mouffetard, 75005 Paris, France",
+  "cat": "comida",
+  "lat": 48.841824,
+  "lon": 2.349754,
+  "osm": "85, Rue Mouffetard, Quartier du Jardin des Plantes, Paris 5e Arrondissement, Paris, Île-de",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "orsay",
+  "nombre": "Museo de Orsay",
+  "q": "Musée d'Orsay, Paris, France",
+  "cat": "museo",
+  "lat": 48.859918,
+  "lon": 2.326585,
+  "osm": "Musée d'Orsay, 1, Rue de la Légion d'Honneur, Quartier Saint-Thomas-d'Aquin, Paris 7e Arro",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "cluny",
+  "nombre": "Museo de Cluny",
+  "q": "Musée de Cluny, Paris, France",
+  "cat": "museo",
+  "lat": 48.85065,
+  "lon": 2.343564,
+  "osm": "Musée de Cluny, 6, Place Paul Painlevé, Quartier de la Sorbonne, Paris 5e Arrondissement, ",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "saint-paul",
+  "nombre": "Saint-Paul (punto de encuentro)",
+  "q": "Église Saint-Paul-Saint-Louis, 99 Rue Saint-Antoine, Paris, France",
+  "cat": "encuentro",
+  "lat": 48.85461,
+  "lon": 2.361427,
+  "osm": "Église Saint-Paul-Saint-Louis, Passage Saint-Paul, Quartier Saint-Gervais, Paris 4e Arrond",
+  "tipo_osm": "",
+  "q_usada": "Église Saint-Paul-Saint-Louis, Paris"
+ },
+ {
+  "id": "memorial-shoah",
+  "nombre": "Memorial de la Shoah",
+  "q": "Mémorial de la Shoah, 17 Rue Geoffroy-l'Asnier, Paris, France",
+  "cat": "monumento",
+  "lat": 48.854884,
+  "lon": 2.356112,
+  "osm": "Mémorial de la Shoah, Rue Geoffroy l'Asnier, Quartier Saint-Gervais, Paris 4e Arrondisseme",
+  "tipo_osm": "",
+  "q_usada": "Mémorial de la Shoah, Paris"
+ },
+ {
+  "id": "rue-des-rosiers",
+  "nombre": "Rue des Rosiers",
+  "q": "Rue des Rosiers, 75004 Paris, France",
+  "cat": "calle",
+  "lat": 48.857789,
+  "lon": 2.358137,
+  "osm": "Rue des Rosiers, Quartier Saint-Gervais, Paris 4e Arrondissement, Paris, Île-de-France, Fr",
+  "tipo_osm": "attraction"
+ },
+ {
+  "id": "as-du-fallafel",
+  "nombre": "L'As du Fallafel",
+  "q": "34 Rue des Rosiers, 75004 Paris, France",
+  "cat": "comida",
+  "lat": 48.85741,
+  "lon": 2.359049,
+  "osm": "34, Rue des Rosiers, Quartier Saint-Gervais, Paris 4e Arrondissement, Paris, Île-de-France",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "hotel-de-sens",
+  "nombre": "Hôtel de Sens",
+  "q": "Hôtel de Sens, 1 Rue du Figuier, Paris, France",
+  "cat": "edificio",
+  "lat": 48.853374,
+  "lon": 2.358943,
+  "osm": "Bibliothèque Forney, Rue de l'Hôtel de Ville, Quartier Saint-Gervais, Paris 4e Arrondissem",
+  "tipo_osm": "",
+  "q_usada": "Bibliothèque Forney, Paris"
+ },
+ {
+  "id": "village-saint-paul",
+  "nombre": "Village Saint-Paul",
+  "q": "Village Saint-Paul, Rue Saint-Paul, Paris, France",
+  "cat": "rincon",
+  "lat": 48.852713,
+  "lon": 2.360881,
+  "osm": "Village Saint-Paul, Rue Saint-Paul, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris,",
+  "tipo_osm": "bicycle_rental"
+ },
+ {
+  "id": "hotel-de-sully",
+  "nombre": "Hôtel de Sully",
+  "q": "Hôtel de Sully, 62 Rue Saint-Antoine, Paris, France",
+  "cat": "edificio",
+  "lat": 48.854636,
+  "lon": 2.363688,
+  "osm": "Hôtel de Sully, Rue Saint-Antoine, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris, ",
+  "tipo_osm": "",
+  "q_usada": "Hôtel de Sully, Paris"
+ },
+ {
+  "id": "place-des-vosges",
+  "nombre": "Place des Vosges",
+  "q": "Place des Vosges, Paris, France",
+  "cat": "plaza",
+  "lat": 48.855631,
+  "lon": 2.365535,
+  "osm": "Place des Vosges, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris, Île-de-France, Fr",
+  "tipo_osm": "square"
+ },
+ {
+  "id": "bastille",
+  "nombre": "Plaza de la Bastilla",
+  "q": "Place de la Bastille, Paris, France",
+  "cat": "plaza",
+  "lat": 48.85262,
+  "lon": 2.368776,
+  "osm": "Place de la Bastille, Quartier de l'Arsenal, Paris 4e Arrondissement, Paris, Île-de-France",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "carnavalet",
+  "nombre": "Museo Carnavalet",
+  "q": "Musée Carnavalet, 23 Rue de Sévigné, Paris, France",
+  "cat": "museo",
+  "lat": 48.857323,
+  "lon": 2.362473,
+  "osm": "Musée Carnavalet, Rue Madame de Sévigné, Quartier des Archives, Paris 3e Arrondissement, P",
+  "tipo_osm": "",
+  "q_usada": "Musée Carnavalet, Paris"
+ },
+ {
+  "id": "metro-chemin-vert",
+  "nombre": "Chemin Vert",
+  "q": "Chemin Vert, Paris, France",
+  "cat": "transporte",
+  "lat": 48.857443,
+  "lon": 2.368141,
+  "osm": "Chemin Vert, Boulevard Beaumarchais, Quartier Saint-Ambroise, Paris 11e Arrondissement, Pa",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "la-madeleine",
+  "nombre": "La Madeleine",
+  "q": "Église de la Madeleine, Paris, France",
+  "cat": "iglesia",
+  "lat": 48.870134,
+  "lon": 2.324543,
+  "osm": "Église de la Madeleine, Place de la Madeleine, Quartier de la Madeleine, Paris 8e Arrondis",
+  "tipo_osm": "place_of_worship"
+ },
+ {
+  "id": "fauchon",
+  "nombre": "Fauchon",
+  "q": "Fauchon, Place de la Madeleine, Paris, France",
+  "cat": "tienda",
+  "lat": 48.870435,
+  "lon": 2.32375,
+  "osm": "Fauchon, Place de la Madeleine, Quartier de la Madeleine, Paris 8e Arrondissement, Paris, ",
+  "tipo_osm": "tea"
+ },
+ {
+  "id": "hediard",
+  "nombre": "Hédiard",
+  "q": "21 Place de la Madeleine, 75008 Paris, France",
+  "cat": "tienda",
+  "lat": 48.870996,
+  "lon": 2.324194,
+  "osm": "21, Place de la Madeleine, Quartier de la Madeleine, Paris 8e Arrondissement, Paris, Île-d",
+  "tipo_osm": "",
+  "q_usada": "21 Place de la Madeleine, Paris",
+  "confirmado": "Dirección confirmada por el usuario el 25/08/2026"
+ },
+ {
+  "id": "place-vendome",
+  "nombre": "Place Vendôme",
+  "q": "Place Vendôme, Paris, France",
+  "cat": "plaza",
+  "lat": 48.867463,
+  "lon": 2.329428,
+  "osm": "Place Vendôme, Quartier Vendôme, Paris 1er Arrondissement, Paris, Île-de-France, France mé",
+  "tipo_osm": "square"
+ },
+ {
+  "id": "ritz",
+  "nombre": "Hôtel Ritz",
+  "q": "Ritz Paris, 15 Place Vendôme, Paris, France",
+  "cat": "fachada",
+  "lat": 48.867969,
+  "lon": 2.328845,
+  "osm": "Le Ritz, Place Vendôme, Quartier Vendôme, Paris 1er Arrondissement, Paris, Île-de-France, ",
+  "tipo_osm": "",
+  "q_usada": "Ritz, Place Vendôme, Paris"
+ },
+ {
+  "id": "opera-garnier",
+  "nombre": "Ópera Garnier",
+  "q": "Palais Garnier, Paris, France",
+  "cat": "fachada",
+  "lat": 48.872095,
+  "lon": 2.332334,
+  "osm": "L'Opéra Restaurant, Place Jacques Rouché, Quartier de la Chaussée-d'Antin, Paris 9e Arrond",
+  "tipo_osm": "restaurant"
+ },
+ {
+  "id": "galeries-lafayette",
+  "nombre": "Galeries Lafayette Haussmann",
+  "q": "Galeries Lafayette Haussmann, 40 Boulevard Haussmann, Paris, France",
+  "cat": "mirador",
+  "lat": 48.873646,
+  "lon": 2.332127,
+  "osm": "Galeries Lafayette, 40, Boulevard Haussmann, Quartier de la Chaussée-d'Antin, Paris 9e Arr",
+  "tipo_osm": "department_store"
+ },
+ {
+  "id": "alchimiste",
+  "nombre": "L'Alchimiste",
+  "q": "9 Rue Nicolas Flamel, 75004 Paris, France",
+  "cat": "bar",
+  "lat": 48.859029,
+  "lon": 2.349576,
+  "osm": "9, Rue Nicolas Flamel, Quartier Saint-Merri, Paris 4e Arrondissement, Paris, Île-de-France",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "tour-saint-jacques",
+  "nombre": "Torre Saint-Jacques",
+  "q": "Tour Saint-Jacques, Paris, France",
+  "cat": "monumento",
+  "lat": 48.858003,
+  "lon": 2.348922,
+  "osm": "Tour Saint-Jacques, Allée Waslaw Nijinsky, Quartier Saint-Merri, Paris 4e Arrondissement, ",
+  "tipo_osm": "tower"
+ },
+ {
+  "id": "comme-au-vietnam",
+  "nombre": "Comme au Vietnam",
+  "q": "195 Avenue de Choisy, 75013 Paris, France",
+  "cat": "comida",
+  "lat": 48.829558,
+  "lon": 2.357058,
+  "osm": "195, Avenue de Choisy, Maison-Blanche, Paris 13e Arrondissement, Paris, Île-de-France, Fra",
+  "tipo_osm": "house"
+ },
+ {
+  "id": "invalides",
+  "nombre": "Hôtel national des Invalides",
+  "q": "Hôtel des Invalides, Paris, France",
+  "cat": "monumento",
+  "lat": 48.855954,
+  "lon": 2.313343,
+  "osm": "Hôtel des Invalides, 129, Rue de Grenelle, Quartier des Invalides, Paris 7e Arrondissement",
+  "tipo_osm": "historic_building"
+ },
+ {
+  "id": "invalides-entrada-grenelle",
+  "nombre": "Invalides, entrada de rue de Grenelle",
+  "q": "129 Rue de Grenelle, 75007 Paris, France",
+  "cat": "acceso",
+  "lat": 48.856459,
+  "lon": 2.313237,
+  "osm": "Musée des Plans-Reliefs, 129, Rue de Grenelle, Quartier des Invalides, Paris 7e Arrondisse",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "dome-invalides",
+  "nombre": "Domo de los Inválidos y tumba de Napoleón",
+  "q": "Dôme des Invalides, Paris, France",
+  "cat": "monumento",
+  "lat": 48.854442,
+  "lon": 2.312483,
+  "osm": "Cour du Dôme, Quartier des Invalides, Paris 7e Arrondissement, Paris, Île-de-France, Franc",
+  "tipo_osm": "pedestrian"
+ },
+ {
+  "id": "pont-alexandre-iii",
+  "nombre": "Pont Alexandre III",
+  "q": "Pont Alexandre III, Paris, France",
+  "cat": "puente",
+  "lat": 48.86347,
+  "lon": 2.313518,
+  "osm": "Pont Alexandre III, Quartier des Invalides, Paris 7e Arrondissement, Paris, Île-de-France,",
+  "tipo_osm": "bridge"
+ },
+ {
+  "id": "petit-palais",
+  "nombre": "Petit Palais",
+  "q": "Petit Palais, Avenue Winston Churchill, Paris, France",
+  "cat": "museo",
+  "lat": 48.866042,
+  "lon": 2.31535,
+  "osm": "Petit Palais, Musée des beaux-arts de la Ville de Paris, Avenue Winston Churchill, Quartie",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "grand-palais",
+  "nombre": "Grand Palais",
+  "q": "Grand Palais, Paris, France",
+  "cat": "fachada",
+  "lat": 48.866161,
+  "lon": 2.312223,
+  "osm": "Grand Palais, Avenue de Selves, Quartier des Champs-Élysées, Paris 8e Arrondissement, Pari",
+  "tipo_osm": "museum"
+ },
+ {
+  "id": "metro-champs-elysees",
+  "nombre": "Champs-Élysées-Clemenceau",
+  "q": "Champs-Élysées - Clemenceau, Paris, France",
+  "cat": "transporte",
+  "lat": 48.867491,
+  "lon": 2.31407,
+  "osm": "Champs-Élysées - Clemenceau, Promenade des Champs-Élysées, Quartier des Champs-Élysées, Pa",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "rue-du-depart",
+  "nombre": "Rue du Départ",
+  "q": "Rue du Départ, 75014 Paris, France",
+  "cat": "comida",
+  "lat": 48.842653,
+  "lon": 2.323589,
+  "osm": "Rue du Départ, Quartier du Montparnasse, Paris 14e Arrondissement, Paris, Île-de-France, F",
+  "tipo_osm": "secondary"
+ },
+ {
+  "id": "la-motte-picquet",
+  "nombre": "La Motte-Picquet-Grenelle",
+  "q": "La Motte-Picquet - Grenelle, Paris",
+  "cat": "transporte",
+  "lat": 48.849286,
+  "lon": 2.298263,
+  "osm": "Avenue de la Motte-Picquet, Quartier de Grenelle, Paris 15e Arrondissement, Paris, Île-de-",
+  "tipo_osm": "secondary"
+ }
+]

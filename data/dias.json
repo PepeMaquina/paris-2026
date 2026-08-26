@@ -1,0 +1,707 @@
+{
+ "viaje": {
+  "titulo": "París, del 1 al 5 de septiembre de 2026",
+  "personas": 4,
+  "base": "hotel-sanso",
+  "fuente": "paris_1-5_septiembre_2026 V12.docx",
+  "generado": "2026-08-25"
+ },
+ "dias": [
+  {
+   "id": "mar1",
+   "fecha": "2026-09-01",
+   "titulo": "La orilla izquierda y la Torre Eiffel al atardecer",
+   "km_a_pie": 5,
+   "items": [
+    {
+     "h": "14:30",
+     "min": 30,
+     "tipo": "transporte",
+     "lugar": "gare-montparnasse",
+     "tit": "Llegada a Montparnasse",
+     "nota": "Taquilla para los Navigo. Si compráis Découverte, llevad las fotos de carnet hechas de casa.",
+     "llegada": {
+      "modo": "tren",
+      "texto": "Llegada del tren"
+     }
+    },
+    {
+     "h": "15:00",
+     "min": 45,
+     "tipo": "transporte",
+     "lugar": "hotel-sanso",
+     "tit": "Al hotel, dejar maletas",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 4 hasta Châtelet y línea 14 hasta Bibliothèque François Mitterrand. Unos 25 minutos.",
+      "min": 25
+     }
+    },
+    {
+     "h": "16:30",
+     "min": 45,
+     "tipo": "visita",
+     "lugar": "saint-germain-des-pres",
+     "tit": "Saint-Germain-des-Prés",
+     "nota": "Abre de 10:00 a 20:00, gratis. La iglesia más antigua de París, con campanario románico del siglo XI. Dentro, la tumba de Descartes, incompleta: el cráneo está en el Musée de l'Homme.",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 14 hasta Châtelet y línea 4 hasta Saint-Germain-des-Prés.",
+      "min": 25
+     }
+    },
+    {
+     "h": "17:15",
+     "min": 15,
+     "tipo": "fachada",
+     "lugar": "deux-magots",
+     "tit": "Les Deux Magots y el Café de Flore",
+     "nota": "Se ven desde fuera. No hace falta pagar seis euros por un café."
+    },
+    {
+     "h": "17:30",
+     "min": 75,
+     "tipo": "visita",
+     "lugar": "bon-marche",
+     "tit": "Le Bon Marché",
+     "nota": "Abre hasta las 19:45. Primer gran almacén moderno del mundo, 1852, el de Au Bonheur des Dames de Zola. Las escaleras mecánicas cruzadas del atrio. Al lado, en el 38, la Grande Épicerie.",
+     "llegada": {
+      "modo": "pie",
+      "texto": "Diez minutos por la rue du Four y la rue de Sèvres.",
+      "min": 10
+     }
+    },
+    {
+     "h": "18:45",
+     "min": 25,
+     "tipo": "comida",
+     "lugar": "grande-epicerie",
+     "tit": "Merienda ligera",
+     "nota": "Por la rue du Bac o la rue de Sèvres. De pie y ligero: hoy se cena a las diez y cuarto."
+    },
+    {
+     "h": "19:20",
+     "min": 15,
+     "tipo": "visita",
+     "lugar": "tour-eiffel",
+     "tit": "Torre Eiffel, control de seguridad",
+     "nota": "Contad 15 o 20 minutos de control. Entrada de escaleras, 14,80 € adultos y tarifa joven de 12 a 24 años.",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 10 hasta La Motte-Picquet-Grenelle y quince minutos andando.",
+      "min": 30
+     }
+    },
+    {
+     "h": "19:35",
+     "min": 40,
+     "tipo": "visita",
+     "lugar": "tour-eiffel",
+     "tit": "Subida por las escaleras",
+     "nota": "674 escalones hasta la segunda planta, 115 metros. Entre 30 y 40 minutos con descansillos.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Empezar a subir a las 19:35 como muy tarde para estar arriba en la puesta de sol, hacia las 20:30."
+     }
+    },
+    {
+     "h": "20:15",
+     "min": 75,
+     "tipo": "visita",
+     "lugar": "tour-eiffel",
+     "tit": "Segunda planta y puesta de sol",
+     "nota": "La mejor perspectiva para fotografiar la propia estructura, que desde la cima se pierde. Arriba hace más frío y viento: chaqueta."
+    },
+    {
+     "h": "21:30",
+     "min": 15,
+     "tipo": "transporte",
+     "lugar": "tour-eiffel",
+     "tit": "Bajada por las escaleras",
+     "nota": "Quince minutos."
+    },
+    {
+     "h": "22:00",
+     "min": 15,
+     "tipo": "foto",
+     "lugar": "champ-de-mars",
+     "tit": "El centelleo de las 22:00",
+     "nota": "Cinco minutos al principio de cada hora desde que anochece. Hay que estar fuera: el Champ de Mars a los pies, o el Trocadéro cruzando el Pont d'Iéna, que es la postal con gente."
+    },
+    {
+     "h": "22:15",
+     "min": 75,
+     "tipo": "comida",
+     "lugar": "rue-saint-dominique",
+     "tit": "Cena en el séptimo",
+     "nota": "Rue Saint-Dominique o rue Cler, quince minutos andando. Elegid una que anuncie service continu: a esa hora muchas cocinas de barrio han cerrado.",
+     "alternativas": [
+      "rue-cler"
+     ]
+    },
+    {
+     "h": "23:30",
+     "min": 30,
+     "tipo": "transporte",
+     "lugar": "hotel-sanso",
+     "tit": "Vuelta al hotel",
+     "llegada": {
+      "modo": "rer",
+      "texto": "RER C desde Champ de Mars-Tour Eiffel, directo.",
+      "min": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": "mie2",
+   "fecha": "2026-09-02",
+   "titulo": "Versalles por la mañana, Montmartre por la tarde",
+   "km_a_pie": 10,
+   "items": [
+    {
+     "h": "08:00",
+     "min": 60,
+     "tipo": "transporte",
+     "lugar": "versailles-rer",
+     "tit": "RER C a Versalles",
+     "nota": "Cincuenta minutos sin transbordo. Comprobad en el panel que el tren lleva destino Versailles Château: esa rama lleva códigos que empiezan por VICK.",
+     "llegada": {
+      "modo": "rer",
+      "texto": "RER C desde Bibliothèque François Mitterrand hasta Versailles Château Rive Gauche. Del andén al palacio, diez minutos andando.",
+      "min": 50
+     }
+    },
+    {
+     "h": "09:00",
+     "min": 165,
+     "tipo": "visita",
+     "lugar": "versalles-palacio",
+     "tit": "Palacio, en la apertura",
+     "nota": "Abre a las 9:00 y cierra los lunes. Ir a la apertura es la única manera de ver los Grandes Apartamentos sin ir en fila india. Capilla real, salones de los planetas, Galería de los Espejos, aposentos del rey y de la reina.",
+     "audio": "interior"
+    },
+    {
+     "h": "11:45",
+     "min": 165,
+     "tipo": "visita",
+     "lugar": "versalles-jardines",
+     "tit": "Jardines y bosquetes",
+     "nota": "Miércoles de Jardines Musicales, de 9:00 a 19:00, con los bosquetes abiertos. La Sala de Baile, los Baños de Apolo y la Columnata solo se pueden ver estos días. Hasta el Gran Canal y vuelta son cinco kilómetros y no hay sombra en el eje central."
+    },
+    {
+     "h": "14:30",
+     "min": 75,
+     "tipo": "transporte",
+     "lugar": "place-blanche",
+     "tit": "Vuelta a París",
+     "nota": "El Trianon queda pagado con vuestra entrada pero no entra en el plan: añade tres horas y llegaríais al tour con trece kilómetros en las piernas.",
+     "llegada": {
+      "modo": "rer",
+      "texto": "RER C hasta Invalides y línea 13 hasta Place de Clichy, cinco minutos del Moulin Rouge. Una hora larga con los transbordos.",
+      "min": 70
+     },
+     "limite": {
+      "tipo": "duro",
+      "texto": "En ningún caso paséis de las 15:45 en el andén de Versailles Château Rive Gauche."
+     }
+    },
+    {
+     "h": "15:45",
+     "min": 80,
+     "tipo": "comida",
+     "lugar": "bouillon-pigalle",
+     "tit": "Comida en Pigalle",
+     "nota": "A esa hora casi todas las cocinas de París han cerrado. Bouillon Pigalle sirve de 12:00 a 00:00 sin parar: cocina francesa clásica a precio de bouillon. No reservan, pero a media tarde no hay cola.",
+     "alternativas": [
+      "la-fourmi",
+      "mian"
+     ]
+    },
+    {
+     "h": "17:15",
+     "min": 150,
+     "tipo": "tour",
+     "lugar": "place-blanche",
+     "tit": "Free tour por Montmartre",
+     "tour": "montmartre",
+     "nota": "Punto de encuentro delante del Moulin Rouge, que es de 1889, el mismo año que la Torre Eiffel. Dos horas y media por la ladera sur, terminando en el Sacré-Cœur.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Estar a las 17:05 en la Place Blanche."
+     }
+    },
+    {
+     "h": "19:45",
+     "min": 75,
+     "tipo": "visita",
+     "lugar": "sacre-coeur",
+     "tit": "Sacré-Cœur y puesta de sol",
+     "nota": "Abierto hasta las 22:30 y gratis. A esta hora no hay cola, cuando entre las 10:30 y las 17:00 hay diez o quince minutos. El sol se pone hacia las 20:30 por la derecha del encuadre. Prohibido fotografiar dentro. La cúpula ya está cerrada.",
+     "audio": "interior"
+    },
+    {
+     "h": "21:00",
+     "min": 90,
+     "tipo": "comida",
+     "lugar": "relais-gascon",
+     "tit": "Cena por Abbesses o Lepic",
+     "nota": "Le Relais Gascon, ensaladas enormes con patatas al ajo, de 11:00 a 00:00 sin cortes. Chez Marie cierra a las 23:00, así que si vais allí sentaos antes de las 21:30. Cuidado: Au Virage Lepic y La Belle Maison libran los miércoles.",
+     "alternativas": [
+      "chez-marie",
+      "adelaide"
+     ]
+    },
+    {
+     "h": "22:30",
+     "min": 40,
+     "tipo": "transporte",
+     "lugar": "hotel-sanso",
+     "tit": "Vuelta al hotel",
+     "nota": "Si queréis ver el Moulin Rouge encendido, está diez minutos cuesta abajo por la rue Lepic.",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 12 desde Abbesses o Lamarck-Caulaincourt hasta Madeleine, y allí la 14.",
+      "min": 35
+     }
+    }
+   ]
+  },
+  {
+   "id": "jue3",
+   "fecha": "2026-09-03",
+   "titulo": "La Cité, la Conciergerie, el Sena, el Panteón, Mouffetard y Orsay",
+   "km_a_pie": 9,
+   "items": [
+    {
+     "h": "08:00",
+     "min": 50,
+     "tipo": "visita",
+     "lugar": "notre-dame",
+     "tit": "Notre-Dame",
+     "nota": "Abre a las 7:50 entre semana y la primera hora está prácticamente vacía. Gratis. La franja reservable se libera dos o tres días antes; sin reserva se entra por la cola de la izquierda. Volveréis a pasar por delante en el free tour.",
+     "audio": "interior"
+    },
+    {
+     "h": "09:00",
+     "min": 25,
+     "tipo": "visita",
+     "lugar": "marche-aux-fleurs",
+     "tit": "Marché aux Fleurs",
+     "nota": "Funciona desde 1808 y es el último mercado de flores del centro de París. Gratis. A esta hora la luz entra de lado por los pabellones de cristal."
+    },
+    {
+     "h": "09:30",
+     "min": 50,
+     "tipo": "visita",
+     "lugar": "conciergerie",
+     "tit": "La Conciergerie, en la apertura",
+     "nota": "Entre 13 y 15 €, gratis para los dos chicos, con reserva de franja. La sala de los Hombres de Armas es la mayor sala gótica civil de Europa. Cocinas medievales, calabozos, capilla de los Girondinos y celda de María Antonieta. Entre 1792 y 1794 pasaron por aquí unas 2.700 personas camino de la guillotina.",
+     "audio": "interior",
+     "limite": {
+      "tipo": "blando",
+      "texto": "Salir a las 10:20: el Hôtel de Ville está a ocho minutos cruzando el Pont d'Arcole."
+     }
+    },
+    {
+     "h": "10:30",
+     "min": 165,
+     "tipo": "tour",
+     "lugar": "hotel-de-ville",
+     "tit": "Free tour por París",
+     "tour": "paris",
+     "nota": "Dos horas y tres cuartos por el centro histórico. Termina junto al Louvre hacia las 13:15.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Estar a las 10:25 en el Hôtel de Ville."
+     }
+    },
+    {
+     "h": "13:20",
+     "min": 45,
+     "tipo": "comida",
+     "lugar": "rue-sainte-anne",
+     "tit": "Comida rápida junto al Palais-Royal",
+     "nota": "La rue Sainte-Anne es la calle japonesa de París y sirve rápido y bien. La rue de Rivoli, al lado, es cara y mediocre. Cuarenta y cinco minutos, que a las 14:30 hay barco."
+    },
+    {
+     "h": "14:10",
+     "min": 20,
+     "tipo": "transporte",
+     "lugar": "vert-galant",
+     "tit": "Bajada al Pont Neuf",
+     "nota": "Diez minutos andando. Si vais sobrados, la Galerie Vivienne y la Colbert quedan cinco minutos al norte; si el tour se ha retrasado, se dejan para el viernes por la mañana.",
+     "opcional": [
+      "galerie-vivienne",
+      "galerie-colbert"
+     ]
+    },
+    {
+     "h": "14:30",
+     "min": 60,
+     "tipo": "visita",
+     "lugar": "vert-galant",
+     "tit": "Crucero por el Sena",
+     "nota": "Vedettes du Pont Neuf, una hora exacta sin paradas. Entre 15 y 17 € por persona. Sentaos en cubierta abierta y en el lado derecho a la ida. Gorra y crema: hora y media de sol y reflejo del agua. Desde mayo de 2026 la instalación de JR en el Pont Neuf ha cambiado el acceso a los embarcaderos, mirad el plano en su web.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Salida a las 14:30 desde el Square du Vert-Galant."
+     }
+    },
+    {
+     "h": "16:00",
+     "min": 70,
+     "tipo": "visita",
+     "lugar": "pantheon",
+     "tit": "El Panteón",
+     "nota": "13 €, gratis para menores de 26 de la UE. Última entrada a las 17:45 y la cripta cierra a las 17:30. La nave es fría y vacía, neoclásico de manual; lo que engancha son la cripta, con Voltaire y Rousseau enfrentados, Victor Hugo, Zola, Jean Moulin y Marie Curie, y el péndulo de Foucault, en el sitio exacto donde en 1851 se demostró que la Tierra gira.",
+     "audio": "interior",
+     "llegada": {
+      "modo": "pie",
+      "texto": "Veinticinco minutos cuesta arriba por el Barrio Latino, o RER B desde Saint-Michel hasta Luxembourg.",
+      "min": 25
+     }
+    },
+    {
+     "h": "17:10",
+     "min": 15,
+     "tipo": "visita",
+     "lugar": "saint-etienne-du-mont",
+     "tit": "Saint-Étienne-du-Mont",
+     "nota": "Gratis, pegada al Panteón. Conserva el único jubé que queda en París y las tumbas de Pascal y Racine."
+    },
+    {
+     "h": "17:25",
+     "min": 40,
+     "tipo": "comida",
+     "lugar": "rue-mouffetard",
+     "tit": "Merienda en la Mouffetard",
+     "nota": "Calle de mercado desde época romana, sobre el trazado de la vía que salía de Lutecia hacia el sur. Au P'tit Grec, en el 68, hace crepes del tamaño de un antebrazo; uno entre dos aguanta hasta las diez. Suelen pedir efectivo.",
+     "alternativas": [
+      "ptit-grec",
+      "contrescarpe"
+     ]
+    },
+    {
+     "h": "18:05",
+     "min": 25,
+     "tipo": "transporte",
+     "lugar": "orsay",
+     "tit": "A Orsay",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Desde Censier-Daubenton o Place Monge, veinticinco minutos con un transbordo. O RER B desde Luxembourg a Saint-Michel y RER C hasta Musée d'Orsay.",
+      "min": 25
+     }
+    },
+    {
+     "h": "18:30",
+     "min": 195,
+     "tipo": "visita",
+     "lugar": "orsay",
+     "tit": "Museo de Orsay, nocturna",
+     "nota": "Hasta las 21:45, última entrada a las 21:00. Tarifa nocturna única de 12 €, gratis para menores de 26 de la UE. Es la franja más vacía de la semana. Subid directos a la quinta planta, que es donde están los impresionistas, y bajad luego. A partir de las 20:00 la sala del reloj se vacía.",
+     "audio": "interior",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Última entrada a las 21:00."
+     }
+    },
+    {
+     "h": "21:45",
+     "min": 75,
+     "tipo": "comida",
+     "lugar": "saint-germain-des-pres",
+     "tit": "Cena",
+     "nota": "Saint-Germain está a tres minutos cruzando la rue de Lille y las cervecerías sirven pasadas las 22:00; vuelta en RER C desde Musée d'Orsay. La otra opción es volver a la Mouffetard, veinticinco minutos: Le Vieux Bistrot cierra a las 23:00 y La Crète a las 22:30, así que hay que ir directos.",
+     "alternativas": [
+      "vieux-bistrot",
+      "la-crete"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vie4",
+   "fecha": "2026-09-04",
+   "titulo": "El Marais entero y los grandes bulevares",
+   "km_a_pie": 8,
+   "items": [
+    {
+     "h": "09:00",
+     "min": 105,
+     "tipo": "libre",
+     "lugar": "hotel-sanso",
+     "tit": "Mañana libre",
+     "nota": "Con el tour a las 11:00 podéis dormir, desayunar sin prisa y llegar andando si os apetece. O recuperar lo que quedara pendiente del jueves: los pasajes de la rue Vivienne están a un cuarto de hora en metro.",
+     "repesca": true
+    },
+    {
+     "h": "11:00",
+     "min": 120,
+     "tipo": "tour",
+     "lugar": "saint-paul",
+     "tit": "Free tour por Le Marais y la Bastilla",
+     "tour": "marais",
+     "nota": "Punto de encuentro junto a Saint-Paul, en la Place Marie-Claude-Vaillant-Couturier-et-Pierre-Villon. Dos horas: Memorial de la Shoah, barrio judío, jardín del Hôtel de Sens donde vivió la reina Margot, Village Saint-Paul, patio del Hôtel de Sully, Place des Vosges y Bastilla, donde termina hacia las 13:00.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Estar a las 10:50 junto a Saint-Paul."
+     }
+    },
+    {
+     "h": "13:20",
+     "min": 65,
+     "tipo": "comida",
+     "lugar": "as-du-fallafel",
+     "tit": "Comida en la rue des Rosiers",
+     "nota": "L'As du Fallafel abre los viernes de 11:00 a 15:30 y cierra los sábados por el Shabbat: este es el único mediodía del viaje en que os cuadra. Suele haber cola y va a metálico. Si la cola es imposible, la misma calle tiene tres o cuatro sitios equivalentes.",
+     "llegada": {
+      "modo": "pie",
+      "texto": "Diez minutos andando desde la Bastilla.",
+      "min": 10
+     },
+     "limite": {
+      "tipo": "duro",
+      "texto": "L'As du Fallafel cierra a las 15:30 y el sábado no abre."
+     },
+     "alternativas": [
+      "rue-des-rosiers"
+     ]
+    },
+    {
+     "h": "14:25",
+     "min": 45,
+     "tipo": "libre",
+     "lugar": "place-des-vosges",
+     "tit": "Place des Vosges",
+     "nota": "El rato de estar tirados. El césped central está abierto, hay fuentes en las cuatro esquinas y los soportales quedan en sombra. Plaza planificada más antigua de París, inaugurada en 1612 con el torneo de las bodas de Luis XIII, sobre el solar del Hôtel des Tournelles que Catalina de Médicis mandó demoler. Por los soportales del sur se sale al patio del Hôtel de Sully."
+    },
+    {
+     "h": "15:20",
+     "min": 100,
+     "tipo": "visita",
+     "lugar": "carnavalet",
+     "tit": "Museo Carnavalet",
+     "nota": "Gratis y sin reserva, última entrada a las 17:15. Dos palacios unidos: el Carnavalet renacentista, donde Madame de Sévigné escribió treinta años de cartas, y el Le Peletier de Saint-Fargeau. La sección revolucionaria con la maqueta de la Bastilla tallada con una piedra de la propia Bastilla, las tiendas del XIX reconstruidas y la habitación de Proust con su cama de latón.",
+     "audio": "interior",
+     "decision": "carnavalet"
+    }
+   ],
+   "decisiones": [
+    {
+     "id": "carnavalet",
+     "h": "15:20",
+     "pregunta": "¿Carnavalet largo o corto? El tour a las 11:00 os ha comido una hora de la tarde y la tarde tiene cierres fijos.",
+     "opciones": [
+      {
+       "id": "corto",
+       "tit": "Corto, hasta las 17:00",
+       "nota": "Hora y cuarenta, suficiente para lo esencial, y os cabe L'Alchimiste antes de cenar.",
+       "desfase": 0
+      },
+      {
+       "id": "largo",
+       "tit": "Largo, hasta las 17:30",
+       "nota": "Dos horas y diez, que es lo que el museo merece. Se cae L'Alchimiste y la tarde termina en las Galeries Lafayette.",
+       "desfase": 30,
+       "quita": [
+        "alchimiste"
+       ]
+      }
+     ]
+    }
+   ],
+   "items_tarde": [
+    {
+     "h": "17:05",
+     "min": 25,
+     "tipo": "transporte",
+     "lugar": "la-madeleine",
+     "tit": "Metro 8 a Madeleine",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 8 desde Chemin Vert hasta Madeleine, veinte minutos sin transbordo.",
+      "min": 20
+     }
+    },
+    {
+     "h": "17:30",
+     "min": 30,
+     "tipo": "visita",
+     "lugar": "la-madeleine",
+     "tit": "La Madeleine",
+     "nota": "Abierta hasta las 19:00, entrada libre. Napoleón la mandó levantar como templo a la gloria de su ejército: 52 columnas corintias, sin campanario ni cruz en la fachada. Se terminó como iglesia en 1842, cuando ya no había imperio. Desde la escalinata se ve la Concorde en línea recta. Fauchon y Hédiard en la plaza, cinco minutos de escaparate.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Cierra a las 19:00."
+     },
+     "alternativas": [
+      "fauchon",
+      "hediard"
+     ]
+    },
+    {
+     "h": "18:00",
+     "min": 20,
+     "tipo": "visita",
+     "lugar": "place-vendome",
+     "tit": "Place Vendôme",
+     "nota": "De Jules Hardouin-Mansart, el mismo de Versalles. La columna está fundida con el bronce de los cañones de Austerlitz; los comuneros la derribaron en 1871 con Courbet metido en el ajo y luego le pasaron a él la factura, lo que le arruinó la vida. En el 15, el Ritz."
+    },
+    {
+     "h": "18:20",
+     "min": 15,
+     "tipo": "fachada",
+     "lugar": "opera-garnier",
+     "tit": "Ópera Garnier por fuera",
+     "nota": "No entramos. Las cuatro esculturas del pórtico, con La Danza de Carpeaux a la derecha, que escandalizó tanto en 1869 que alguien le tiró un frasco de tinta. Diecisiete tipos de mármol en la fachada."
+    },
+    {
+     "h": "18:35",
+     "min": 65,
+     "tipo": "visita",
+     "lugar": "galeries-lafayette",
+     "tit": "Galeries Lafayette Haussmann",
+     "nota": "Hasta las 20:30, entrada libre. La cúpula de vidriera neobizantina de 1912, a 43 metros, se mira desde la barandilla de la primera planta y nunca desde abajo. La terraza de la azotea son 800 metros de mirador gratuito con la Ópera a los pies. A esta hora la terraza pilla la Ópera con luz lateral.",
+     "limite": {
+      "tipo": "duro",
+      "texto": "Cierran a las 20:30."
+     }
+    },
+    {
+     "h": "19:40",
+     "min": 50,
+     "tipo": "bar",
+     "lugar": "alchimiste",
+     "tit": "L'Alchimiste",
+     "nota": "Solo con la versión corta de Carnavalet. Junto a la Torre Saint-Jacques, happy hour desde las 18:00. Nicolas Flamel fue escribano en el siglo XIV; la leyenda alquímica se la colgaron después.",
+     "rama": "corto"
+    },
+    {
+     "h": "21:00",
+     "min": 90,
+     "tipo": "comida",
+     "lugar": "comme-au-vietnam",
+     "tit": "Cena en Comme au Vietnam",
+     "nota": "Cenas de 19:00 a 22:30, conviene reservar para las 21:00 y no para las 20:30. La hora de la cena no se mueve aunque alarguéis Carnavalet: desde Ópera al distrito 13 hay media hora larga y llegáis igual. Desde el hotel, quince minutos andando por la rue de Tolbiac o el autobús 62. Estáis en el barrio asiático del distrito 13, el mayor de Europa.",
+     "reserva": true,
+     "fijo": true
+    }
+   ]
+  },
+  {
+   "id": "sab5",
+   "fecha": "2026-09-05",
+   "titulo": "Los Inválidos, el Petit Palais y vuelta",
+   "km_a_pie": 4,
+   "items": [
+    {
+     "h": "08:45",
+     "min": 35,
+     "tipo": "transporte",
+     "lugar": "gare-montparnasse",
+     "tit": "Salida del hotel con las maletas",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 14 hasta Châtelet y línea 4 hasta Montparnasse, media hora.",
+      "min": 30
+     }
+    },
+    {
+     "h": "09:20",
+     "min": 25,
+     "tipo": "servicio",
+     "lugar": "gare-montparnasse",
+     "tit": "Consigna",
+     "nota": "Casilleros automáticos de 7:00 a 23:00, solo con tarjeta, tres tamaños, se eligen en una pantalla táctil. Si están llenos, City-Locker en el 7 de la rue du Maine, cinco minutos, desde las 8:00. Sacad antes lo que necesitéis para el tren.",
+     "alternativas": [
+      "citylocker-maine"
+     ]
+    },
+    {
+     "h": "09:45",
+     "min": 10,
+     "tipo": "transporte",
+     "lugar": "invalides",
+     "tit": "Línea 13 hasta Invalides",
+     "nota": "El día entero se resuelve con la 13, que une Montparnasse, Invalides y Champs-Élysées-Clemenceau sin transbordo.",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 13, cinco paradas.",
+      "min": 10
+     }
+    },
+    {
+     "h": "09:55",
+     "min": 50,
+     "tipo": "visita",
+     "lugar": "invalides-entrada-grenelle",
+     "tit": "Inválidos: patio de honor y Saint-Louis",
+     "nota": "Acceso libre, sin billete y sin cola, por el 129 de la rue de Grenelle. La explanada con los cañones de bronce en los fosos, el patio de doscientos metros de Libéral Bruant y el Domo asomando por encima. Dentro, la iglesia de los soldados con las banderas capturadas colgando de la bóveda. El conjunto es de 1671 y sigue siendo hospital militar.",
+     "audio": "interior"
+    },
+    {
+     "h": "10:00",
+     "min": 45,
+     "tipo": "opcional",
+     "lugar": "dome-invalides",
+     "tit": "Domo y tumba de Napoleón",
+     "nota": "Esto sí se paga: billete del Musée de l'Armée, unos 17 €, gratis para los dos chicos. Napoleón está en la cripta abierta bajo el Domo de Hardouin-Mansart, en un sarcófago de cuarcita roja donde lo pusieron en 1861, cuarenta años después de morir en Santa Elena. La decisión se puede tomar allí mismo: con cuarenta y cinco minutos se ve y el plan no se toca."
+    },
+    {
+     "h": "10:45",
+     "min": 15,
+     "tipo": "visita",
+     "lugar": "pont-alexandre-iii",
+     "tit": "Pont Alexandre III",
+     "nota": "De 1900, hecho para la Exposición Universal y con el nombre del zar por la alianza franco-rusa. El puente más cargado de dorados de París.",
+     "llegada": {
+      "modo": "pie",
+      "texto": "Diez minutos andando desde la explanada.",
+      "min": 10
+     }
+    },
+    {
+     "h": "11:00",
+     "min": 75,
+     "tipo": "visita",
+     "lugar": "petit-palais",
+     "tit": "Petit Palais y Café 1902",
+     "nota": "Colecciones permanentes gratis. De Charles Girault para la Exposición de 1900, gemelo del Grand Palais de enfrente. Lo que interesa está en el centro: el jardín semicircular con peristilo de columnas pareadas, estanques, palmeras y mosaicos, y el Café 1902, abierto los sábados de 10:00 a 19:15. Desde la calle no se ve, y por eso casi nadie sabe que está ahí."
+    },
+    {
+     "h": "12:15",
+     "min": 25,
+     "tipo": "transporte",
+     "lugar": "gare-montparnasse",
+     "tit": "Vuelta a Montparnasse",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 13 desde Champs-Élysées-Clemenceau, quince minutos directos.",
+      "min": 15
+     }
+    },
+    {
+     "h": "12:40",
+     "min": 40,
+     "tipo": "comida",
+     "lugar": "rue-du-depart",
+     "tit": "Recogida de maletas y comida",
+     "nota": "Por la rue du Départ, o compra para el tren en la estación."
+    },
+    {
+     "h": "13:20",
+     "min": 40,
+     "tipo": "transporte",
+     "lugar": "gare-montparnasse",
+     "tit": "Andén",
+     "limite": {
+      "tipo": "duro",
+      "texto": "El tren sale a las 14:00."
+     }
+    }
+   ]
+  }
+ ]
+}

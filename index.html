@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<title>París 2026</title>
+<meta name="theme-color" content="#faf7f2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="París">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icono-180.png">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="cab">
+  <h1>París</h1>
+  <div class="sub">Del 1 al 5 de septiembre de 2026 · cuatro personas</div>
+</header>
+
+<div class="tiras oculto" id="tiras"></div>
+
+<main>
+  <section class="vista on" id="v-hoy"></section>
+  <section class="vista" id="v-dias"></section>
+  <section class="vista" id="v-mapa"><div id="mapa"></div></section>
+  <section class="vista" id="v-cerca"></section>
+  <section class="vista" id="v-reservas"></section>
+</main>
+
+<div class="radar" id="radar"></div>
+
+<div class="ficha" id="ficha">
+  <div class="top">
+    <h2 id="ficha-tit"></h2>
+    <button class="cerrar" id="cerrar" aria-label="Cerrar">×</button>
+  </div>
+  <div id="ficha-cuerpo"></div>
+</div>
+
+<nav class="barra">
+  <button data-v="hoy" class="act"><span class="ic">⏱</span>Hoy</button>
+  <button data-v="dias"><span class="ic">☰</span>Días</button>
+  <button data-v="mapa"><span class="ic">◎</span>Mapa</button>
+  <button data-v="cerca"><span class="ic">⌖</span>Cerca</button>
+  <button data-v="reservas"><span class="ic">✓</span>Reservas</button>
+</nav>
+
+<script src="vendor/leaflet.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
