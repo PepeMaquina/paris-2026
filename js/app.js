@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-4';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-5';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -25,6 +25,7 @@ function dist(a, b, c, d) {                       // haversine, metros
   return Math.round(2 * R * Math.asin(Math.sqrt(h)));
 }
 const fmtD = m => m < 1000 ? m + ' m' : (m / 1000).toFixed(1).replace('.', ',') + ' km';
+const fmtM = m => Math.round(m) + ' min';
 
 function itemsDe(dia) {
   const base = dia.items.slice();
@@ -73,7 +74,10 @@ function pintaDia(dia) {
     const esAhora = hoy && i === sig;
     const r = i > 0 ? ruta(items[i - 1].lugar, it.lugar) : null;
     h += `<button class="item ${pasado ? 'pasado' : ''} ${esAhora ? 'ahora' : ''}" data-dia="${dia.id}" data-i="${i}">
-      <div class="h">${it.h}</div>
+      <div class="izq">
+        <div class="n num-icono ${it.tipo}">${i + 1}</div>
+        <div class="h">${it.h}</div>
+      </div>
       <div class="cuerpo">
         <div class="tit">${it.tit}</div>
         <div class="meta">
@@ -81,7 +85,7 @@ function pintaDia(dia) {
           ${it.tipo === 'tour' ? '<span class="pill tour">free tour</span>' : ''}
           ${it.tipo === 'comida' ? '<span class="pill comida">comer</span>' : ''}
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
-          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + r.minutos + ' min andando' : ''}${D.fichas[it.lugar] ? ' · con historia' : ''}
+          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + fmtM(r.minutos) + ' andando' : ''}${D.fichas[it.lugar] ? ' · con historia' : ''}
         </div>
       </div></button>`;
   });
@@ -127,7 +131,9 @@ function abreFicha(diaId, i) {
   const t = it.tour ? D.tours.find(t => t.id === it.tour) : null;
 
   let h = `<div class="conten">
-    <div class="meta" style="color:var(--suave);font-size:13px">${it.h} · ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}</div>`;
+    <div class="meta" style="color:var(--suave);font-size:13px">
+      <span class="n num-icono ${it.tipo}" style="display:inline-flex;vertical-align:-7px;margin-right:6px">${i + 1}</span>
+      ${it.h} · ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}</div>`;
   if (it.limite) h += `<div class="aviso"><b>${it.limite.tipo === 'duro' ? 'Hora fija' : 'Conviene'}</b><br>${it.limite.texto}</div>`;
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
   if (it.llegada) h += `<div class="nota"><b>Cómo se llega</b><br>${it.llegada.texto}</div>`;
@@ -138,6 +144,7 @@ function abreFicha(diaId, i) {
       <details class="ampliar" id="ampliar"><summary>Contar la historia entera</summary>
         <div class="largo">${fi.largo.map(p => `<p>${p}</p>`).join('')}</div>
         ${fi.mirar ? `<h3>Qué mirar</h3><ul class="mirar">${fi.mirar.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
+        <div class="btns"><button class="btn" data-ver="${p.id}" data-verdia="${diaId}">Ver el ${i + 1} en el mapa</button></div>
       </details>`;
   }
 
@@ -145,12 +152,12 @@ function abreFicha(diaId, i) {
     ${(it.nota || D.fichas[it.lugar]) ? `<button class="btn sec" id="leer">Leer en voz alta</button>` : ''}
     <a class="btn sec" target="_blank" rel="noopener"
        href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&travelmode=transit">Cómo llegar</a>
-    <button class="btn sec" data-ver="${p.id}">Ver en el mapa</button>
+    <button class="btn sec" data-ver="${p.id}" data-verdia="${diaId}">Ver en el mapa</button>
   </div>`;
 
   if (r) {
     h += `<h3 style="margin-top:20px">A pie desde ${lug(items[i - 1].lugar).nombre}</h3>
-      <div style="color:var(--suave);font-size:13.5px;margin:4px 0 6px">${fmtD(r.metros)} · ${r.minutos} minutos</div>
+      <div style="color:var(--suave);font-size:13.5px;margin:4px 0 6px">${fmtD(r.metros)} · ${fmtM(r.minutos)} andando</div>
       <ol class="pasos">${r.pasos.map(s => `<li><b>${s.m ? s.m + ' m' : ''}</b><span>${s.t}</span></li>`).join('')}</ol>`;
   }
 
@@ -168,7 +175,7 @@ function abreFicha(diaId, i) {
   if (it.alternativas) {
     h += `<h3 style="margin-top:22px">Alternativas cerca</h3><div class="pasos">` +
       it.alternativas.map(id => `<li><span style="flex:1">${lug(id).nombre}</span>
-        <button class="btn sec" style="padding:5px 10px;font-size:12.5px" data-ver="${id}">mapa</button></li>`).join('') + `</div>`;
+        <button class="btn sec" style="padding:5px 10px;font-size:12.5px" data-ver="${id}" data-verdia="${diaId}">mapa</button></li>`).join('') + `</div>`;
   }
   h += `</div>`;
 
@@ -178,7 +185,7 @@ function abreFicha(diaId, i) {
 }
 
 /* ---------- mapa ---------- */
-let mapa, capaDia, marcaYo, botonTodo;
+let mapa, capaDia, marcaYo, botonTodo, marcadores = {};
 function iniMapa() {
   if (mapa) return;
   mapa = L.map('mapa', { zoomControl: false }).setView([48.8566, 2.3522], 13);
@@ -216,6 +223,7 @@ function pintaMapa(diaId) {
   if (capaDia) mapa.removeLayer(capaDia);
   const dia = D.dias.find(d => d.id === diaId) || D.dias[0];
   const items = itemsDe(dia), capa = L.layerGroup(), pts = [];
+  marcadores = {};
 
   agrupa(items).forEach(g => {
     const p = lug(g.lugar);
@@ -223,7 +231,7 @@ function pintaMapa(diaId) {
     const t = g.paradas[0].tipo;
     const etiqueta = g.paradas.length > 1 ? g.paradas.map(x => x.i + 1).join('·') : String(g.n);
     const chico = etiqueta.length > 3;
-    L.marker([p.lat, p.lon], {
+    marcadores[g.lugar] = L.marker([p.lat, p.lon], {
       icon: L.divIcon({ className: '', iconSize: [chico ? 40 : 26, 26],
         html: `<div class="num-icono ${t} ${chico ? 'ancho' : ''}">${etiqueta}</div>` })
     }).bindPopup(`<b>${p.nombre}</b><br>` +
@@ -237,7 +245,7 @@ function pintaMapa(diaId) {
     const r = ruta(items[i - 1].lugar, items[i].lugar);
     if (!r) continue;
     L.polyline(decodifica(r.shape), { color: '#8c2f1f', weight: 4, opacity: .75, dashArray: '1 7', lineCap: 'round' })
-      .bindPopup(`${fmtD(r.metros)}, ${r.minutos} min andando`).addTo(capa);
+      .bindPopup(`${fmtD(r.metros)}, ${fmtM(r.minutos)} andando`).addTo(capa);
   }
 
   capaDia = capa.addTo(mapa);
@@ -330,12 +338,23 @@ async function modoPaseo() {
   } else if (S.wake) { S.wake.release(); S.wake = null; }
   $('#v-cerca').innerHTML = pintaCerca();
 }
-function verEnMapa(id) {
+function verEnMapa(id, diaId) {
   const p = lug(id);
   $('#ficha').classList.remove('on');
+  if (diaId && diaId !== S.dia) {
+    S.dia = diaId;
+    $$('.tira').forEach(x => x.classList.toggle('act', x.dataset.dia === diaId));
+    $('#v-dias').innerHTML = pintaDia(D.dias.find(d => d.id === diaId));
+  }
   muestra('mapa');
-  pintaMapa(S.dia || D.dias[0].id);
-  setTimeout(() => { mapa.setView([p.lat, p.lon], 17); L.popup().setLatLng([p.lat, p.lon]).setContent('<b>' + p.nombre + '</b>').openOn(mapa); }, 120);
+  const centra = () => {
+    mapa.setView([p.lat, p.lon], 17, { animate: false });
+    const m = marcadores[id];
+    if (m) m.openPopup(); else L.popup().setLatLng([p.lat, p.lon]).setContent('<b>' + p.nombre + '</b>').openOn(mapa);
+    if (botonTodo) { botonTodo.remove(); botonTodo = null; }
+  };
+  centra();
+  setTimeout(centra, 200);   // el encuadre del dia se aplica con retardo; esto manda por encima
 }
 
 /* ---------- voz ---------- */
@@ -397,7 +416,7 @@ function muestra(v) {
       $('#v-hoy').innerHTML = pintaHoy();
       return;
     }
-    const ver = e.target.closest('[data-ver]'); if (ver) return verEnMapa(ver.dataset.ver);
+    const ver = e.target.closest('[data-ver]'); if (ver) return verEnMapa(ver.dataset.ver, ver.dataset.verdia);
     const ab = e.target.closest('[data-abrir]');
     if (ab) { const [d, i] = ab.dataset.abrir.split('|'); return abreFicha(d, +i); }
     const vis = e.target.closest('[data-visto]');

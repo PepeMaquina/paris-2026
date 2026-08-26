@@ -1,10 +1,10 @@
-const V = 'paris-2026-08-27-4';
+const V = 'paris-2026-08-27-5';
 const NUCLEO = [
   './', 'index.html', 'css/app.css', 'js/app.js',
   'vendor/leaflet.js', 'vendor/leaflet.css',
   'vendor/images/marker-icon.png', 'vendor/images/marker-icon-2x.png', 'vendor/images/marker-shadow.png',
-  'data/dias.json?v=2026-08-27-4', 'data/lugares.geo.json?v=2026-08-27-4', 'data/rutas.json?v=2026-08-27-4',
-  'data/tours.json?v=2026-08-27-4', 'data/reservas.json?v=2026-08-27-4', 'data/fichas.json?v=2026-08-27-4',
+  'data/dias.json?v=2026-08-27-5', 'data/lugares.geo.json?v=2026-08-27-5', 'data/rutas.json?v=2026-08-27-5',
+  'data/tours.json?v=2026-08-27-5', 'data/reservas.json?v=2026-08-27-5', 'data/fichas.json?v=2026-08-27-5',
   'manifest.webmanifest', 'icons/icono-180.png', 'icons/icono-512.png'
 ];
 
