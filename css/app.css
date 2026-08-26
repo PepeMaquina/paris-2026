@@ -100,3 +100,14 @@ a{color:var(--acento)}
 .barra button .ic{font-size:20px;line-height:1}
 .barra button.act{color:var(--acento);font-weight:700}
 .oculto{display:none!important}
+
+/* fichas largas */
+.corto{font-size:17px;line-height:1.45;font-weight:550;margin:16px 0 4px;color:var(--tinta)}
+.ampliar{margin:10px 0 4px;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:2px 0}
+.ampliar summary{padding:12px 0;font-weight:600;color:var(--acento);cursor:pointer;list-style:none}
+.ampliar summary::-webkit-details-marker{display:none}
+.ampliar summary::after{content:' ▾'}
+.ampliar[open] summary::after{content:' ▴'}
+.largo p{margin:0 0 14px;font-size:15.5px;line-height:1.62}
+ul.mirar{margin:6px 0 16px;padding-left:18px}
+ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}

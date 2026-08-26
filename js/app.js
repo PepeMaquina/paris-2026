@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-1';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-2';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -81,7 +81,7 @@ function pintaDia(dia) {
           ${it.tipo === 'tour' ? '<span class="pill tour">free tour</span>' : ''}
           ${it.tipo === 'comida' ? '<span class="pill comida">comer</span>' : ''}
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
-          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + r.minutos + ' min andando' : ''}
+          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + r.minutos + ' min andando' : ''}${D.fichas[it.lugar] ? ' · con historia' : ''}
         </div>
       </div></button>`;
   });
@@ -132,8 +132,17 @@ function abreFicha(diaId, i) {
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
   if (it.llegada) h += `<div class="nota"><b>Cómo se llega</b><br>${it.llegada.texto}</div>`;
 
+  const fi = D.fichas[it.lugar];
+  if (fi) {
+    h += `<div class="corto">${fi.corto}</div>
+      <details class="ampliar" id="ampliar"><summary>Contar la historia entera</summary>
+        <div class="largo">${fi.largo.map(p => `<p>${p}</p>`).join('')}</div>
+        ${fi.mirar ? `<h3>Qué mirar</h3><ul class="mirar">${fi.mirar.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
+      </details>`;
+  }
+
   h += `<div class="btns">
-    ${it.nota ? `<button class="btn sec" id="leer">Leer en voz alta</button>` : ''}
+    ${(it.nota || D.fichas[it.lugar]) ? `<button class="btn sec" id="leer">Leer en voz alta</button>` : ''}
     <a class="btn sec" target="_blank" rel="noopener"
        href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&travelmode=transit">Cómo llegar</a>
     <button class="btn sec" data-ver="${p.id}">Ver en el mapa</button>
@@ -305,12 +314,12 @@ function muestra(v) {
 
 /* ---------- arranque ---------- */
 (async function () {
-  const [dias, lugares, rutas, tours, reservas] = await Promise.all(
-    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
+  const [dias, lugares, rutas, tours, reservas, fichas] = await Promise.all(
+    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
   D.dias = dias.dias; D.viaje = dias.viaje;
   D.lugares = Object.fromEntries(lugares.map(p => [p.id, p]));
   D.rutas = Object.fromEntries(rutas.map(r => [r.id, r]));
-  D.tours = tours.tours; D.reservas = reservas.reservas;
+  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas;
 
   $('#tiras').innerHTML = D.dias.map(d => {
     const f = new Date(d.fecha + 'T12:00');
@@ -349,7 +358,10 @@ function muestra(v) {
       return;
     }
     if (e.target.closest('#cerrar')) return $('#ficha').classList.remove('on');
-    if (e.target.closest('#leer')) return lee($('#texto-ficha').textContent);
+    if (e.target.closest('#leer')) {
+      const l = $('#largo-oculto');
+      return lee(l ? l.textContent : $('#texto-ficha').textContent);
+    }
     if (e.target.closest('#gps')) return activaGPS();
     if (e.target.closest('#paseo')) return modoPaseo();
   });
