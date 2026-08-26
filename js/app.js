@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-5';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-7';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -158,7 +158,8 @@ function abreFicha(diaId, i) {
   if (r) {
     h += `<h3 style="margin-top:20px">A pie desde ${lug(items[i - 1].lugar).nombre}</h3>
       <div style="color:var(--suave);font-size:13.5px;margin:4px 0 6px">${fmtD(r.metros)} · ${fmtM(r.minutos)} andando</div>
-      <ol class="pasos">${r.pasos.map(s => `<li><b>${s.m ? s.m + ' m' : ''}</b><span>${s.t}</span></li>`).join('')}</ol>`;
+      <div class="btns"><button class="btn" data-camino="${r.id}">Ir andando paso a paso</button></div>
+      <ol class="pasos">${fusiona(r.pasos).map(s => `<li><b>${s.m ? s.m + ' m' : ''}</b><span>${s.t}</span></li>`).join('')}</ol>`;
   }
 
   if (t) {
@@ -327,6 +328,7 @@ async function activaGPS() {
       { icon: L.divIcon({ className: '', iconSize: [16, 16], html: '<div class="yo"></div>' }) }).addTo(mapa);
     if (S.paseo) { const c = cercanos(6); if (c[0] && c[0].d < 70) avisa(c[0]); }
     if ($('#v-cerca').classList.contains('on')) $('#v-cerca').innerHTML = pintaCerca();
+    if (C.ruta) pintaCamino();
   }, e => alert('No se pudo obtener la posición: ' + e.message),
     { enableHighAccuracy: true, maximumAge: 5000, timeout: 20000 });
 }
@@ -355,6 +357,125 @@ function verEnMapa(id, diaId) {
   };
   centra();
   setTimeout(centra, 200);   // el encuadre del dia se aplica con retardo; esto manda por encima
+}
+
+
+/* ---------- modo camino: seguir un tramo a pie paso a paso ---------- */
+const C = { ruta: null, linea: [], acum: [], paso: 0, manual: false, voz: false,
+            mapa: null, capa: null, yo: null, ultimoDicho: -1, llegado: false };
+
+function metros(a, b) { return dist(a[0], a[1], b[0], b[1]); }
+
+// Valhalla trocea el camino en maniobras de dos metros; se juntan las cortas con la anterior
+function fusiona(pasos) {
+  const out = [];
+  pasos.forEach((p, i) => {
+    const ultimo = i === pasos.length - 1;
+    if (out.length && p.m < 12 && !ultimo) { out[out.length - 1].f = p.f; return; }
+    out.push(Object.assign({}, p));
+  });
+  return out;
+}
+
+// distancia de un punto a un segmento, y el punto proyectado sobre el
+function proyectaSeg(p, a, b) {
+  const kx = 73500, ky = 111000;                        // metros por grado, aprox. en Paris
+  const ax = a[1] * kx, ay = a[0] * ky, bx = b[1] * kx, by = b[0] * ky;
+  const px = p[1] * kx, py = p[0] * ky;
+  const dx = bx - ax, dy = by - ay;
+  const largo = dx * dx + dy * dy;
+  let t = largo ? ((px - ax) * dx + (py - ay) * dy) / largo : 0;
+  t = Math.max(0, Math.min(1, t));
+  const x = ax + t * dx, y = ay + t * dy;
+  return { d: Math.hypot(px - x, py - y), t, m: Math.hypot(x - ax, y - ay) };
+}
+
+// devuelve donde estas sobre la linea: indice del vertice, metros recorridos y cuanto te separas
+function situa(pos) {
+  let mejor = { d: Infinity, idx: 0, recorrido: 0 };
+  for (let i = 0; i < C.linea.length - 1; i++) {
+    const r = proyectaSeg(pos, C.linea[i], C.linea[i + 1]);
+    if (r.d < mejor.d) mejor = { d: r.d, idx: r.t > .5 ? i + 1 : i, recorrido: C.acum[i] + r.m };
+  }
+  return mejor;
+}
+
+function abreCamino(rutaId) {
+  const r = D.rutas[rutaId];
+  if (!r) return;
+  C.ruta = r; C.pasos = fusiona(r.pasos); C.linea = decodifica(r.shape); C.paso = 0; C.manual = false;
+  C.ultimoDicho = -1; C.llegado = false;
+  C.acum = [0];
+  for (let i = 1; i < C.linea.length; i++) C.acum[i] = C.acum[i - 1] + metros(C.linea[i - 1], C.linea[i]);
+  $('#camino').classList.add('on');
+  $('#camino-destino').textContent = lug(r.a).nombre;
+  iniMapaCamino();
+  activaGPS();
+  navigator.wakeLock && navigator.wakeLock.request('screen').then(w => C.wake = w).catch(() => { });
+  pintaCamino();
+}
+
+function cierraCamino() {
+  $('#camino').classList.remove('on');
+  if (C.wake) { C.wake.release(); C.wake = null; }
+  speechSynthesis && speechSynthesis.cancel();
+  C.ruta = null;
+}
+
+function iniMapaCamino() {
+  if (!C.mapa) {
+    C.mapa = L.map('mapa-camino', { zoomControl: false, attributionControl: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(C.mapa);
+  }
+  if (C.capa) C.mapa.removeLayer(C.capa);
+  C.capa = L.layerGroup([
+    L.polyline(C.linea, { color: '#8c2f1f', weight: 5, opacity: .8 }),
+    L.circleMarker(C.linea[C.linea.length - 1], { radius: 7, color: '#1c1a17', fillColor: '#1c1a17', fillOpacity: 1 })
+  ]).addTo(C.mapa);
+  setTimeout(() => { C.mapa.invalidateSize(); C.mapa.fitBounds(L.latLngBounds(C.linea).pad(.15), { animate: false }); }, 60);
+}
+
+function pintaCamino() {
+  const r = C.ruta; if (!r) return;
+  const pasos = C.pasos;
+  let fuera = null, restante = null, aGiro = null, sitio = null;
+
+  if (S.pos && !C.manual) {
+    sitio = situa([S.pos.lat, S.pos.lon]);
+    if (sitio.d > 45) fuera = Math.round(sitio.d);
+    else {
+      let i = pasos.findIndex(p => sitio.idx >= p.i && sitio.idx < p.f);
+      if (i < 0 && sitio.idx >= pasos[pasos.length - 1].i) i = pasos.length - 1;
+      if (i >= 0) C.paso = i;
+      restante = Math.max(0, Math.round(C.acum[C.acum.length - 1] - sitio.recorrido));
+      aGiro = Math.max(0, Math.round(C.acum[pasos[C.paso].f] - sitio.recorrido));
+      if (restante < 25 && !C.llegado) { C.llegado = true; avisoCamino('Has llegado.'); }
+    }
+    if (C.yo) C.yo.setLatLng([S.pos.lat, S.pos.lon]);
+    else C.yo = L.marker([S.pos.lat, S.pos.lon],
+      { icon: L.divIcon({ className: '', iconSize: [16, 16], html: '<div class="yo"></div>' }) }).addTo(C.mapa);
+  }
+
+  const p = pasos[C.paso], sig = pasos[C.paso + 1];
+  $('#camino-paso').innerHTML =
+    `<div class="instr">${p.t}</div>` +
+    (aGiro !== null ? `<div class="agiro">${aGiro} m hasta el siguiente giro</div>`
+                    : `<div class="agiro">${p.m} m en este tramo</div>`) +
+    (sig ? `<div class="sig">Después: ${sig.t}</div>` : `<div class="sig">Es el último paso.</div>`);
+
+  $('#camino-estado').innerHTML = fuera
+    ? `<div class="fuera">Estás a ${fmtD(fuera)} del camino. Vuelve a la línea roja o abre Google Maps.</div>`
+    : `<div class="progreso">Paso ${C.paso + 1} de ${pasos.length}` +
+      (restante !== null ? ` · quedan ${fmtD(restante)}` : ` · ${fmtD(r.metros)} en total, ${fmtM(r.minutos)}`) +
+      (C.manual ? ' · avance manual' : '') + `</div>`;
+
+  if (C.voz && C.paso !== C.ultimoDicho) { C.ultimoDicho = C.paso; lee(p.voz); }
+  if (C.mapa && sitio && !fuera) C.mapa.setView(C.linea[Math.min(sitio.idx, C.linea.length - 1)], 17, { animate: false });
+}
+
+function avisoCamino(texto) {
+  if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+  if (C.voz) lee(texto);
 }
 
 /* ---------- voz ---------- */
@@ -431,6 +552,20 @@ function muestra(v) {
       const l = $('#largo-oculto');
       return lee(l ? l.textContent : $('#texto-ficha').textContent);
     }
+    const cam = e.target.closest('[data-camino]');
+    if (cam) { $('#ficha').classList.remove('on'); return abreCamino(cam.dataset.camino); }
+    if (e.target.closest('#camino-cerrar')) return cierraCamino();
+    if (e.target.closest('#camino-voz')) {
+      C.voz = !C.voz; C.ultimoDicho = -1;
+      e.target.closest('#camino-voz').classList.toggle('act', C.voz);
+      e.target.closest('#camino-voz').textContent = C.voz ? 'Voz activada' : 'Leer los pasos';
+      return pintaCamino();
+    }
+    if (e.target.closest('#camino-antes')) { C.manual = true; C.paso = Math.max(0, C.paso - 1); return pintaCamino(); }
+    if (e.target.closest('#camino-sig')) {
+      C.manual = true; C.paso = Math.min(C.pasos.length - 1, C.paso + 1); return pintaCamino();
+    }
+    if (e.target.closest('#camino-auto')) { C.manual = false; return pintaCamino(); }
     if (e.target.closest('#gps')) return activaGPS();
     if (e.target.closest('#paseo')) return modoPaseo();
   });

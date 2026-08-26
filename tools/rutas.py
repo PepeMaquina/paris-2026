@@ -83,7 +83,14 @@ for dia, a, b in TRAMOS:
     try:
         t = valhalla(lug[a], lug[b])["trip"]
         leg = t["legs"][0]
-        pasos = [{"t": m["instruction"], "m": round(m.get("length", 0) * 1000)} for m in leg["maneuvers"]]
+        pasos = [{
+            "t": m["instruction"],
+            "voz": m.get("verbal_pre_transition_instruction", m["instruction"]),
+            "m": round(m.get("length", 0) * 1000),
+            "i": m.get("begin_shape_index", 0),      # posicion del paso dentro de la linea
+            "f": m.get("end_shape_index", 0),
+            "tipo": m.get("type", 0)
+        } for m in leg["maneuvers"]]
         res.append({"id": rid, "dia": dia, "de": a, "a": b,
                     "metros": round(t["summary"]["length"] * 1000),
                     "minutos": round(t["summary"]["time"] / 60, 1),
