@@ -492,22 +492,19 @@
     {
      "id": "carnavalet",
      "h": "15:20",
-     "pregunta": "¿Carnavalet largo o corto? El tour a las 11:00 os ha comido una hora de la tarde y la tarde tiene cierres fijos.",
+     "pregunta": "¿Carnavalet largo o corto? La tarde tiene dos cierres fijos, la Madeleine a las 19:00 y las Galeries Lafayette a las 20:30, y la cena a las 21:45.",
      "opciones": [
       {
        "id": "corto",
        "tit": "Corto, hasta las 17:00",
-       "nota": "Hora y cuarenta, suficiente para lo esencial, y os cabe L'Alchimiste antes de cenar.",
+       "nota": "Hora y cuarenta, suficiente para lo esencial, y la tarde va holgada, con tiempo de sobra en L'Alchimiste antes de cenar.",
        "desfase": 0
       },
       {
        "id": "largo",
        "tit": "Largo, hasta las 17:30",
-       "nota": "Dos horas y diez, que es lo que el museo merece. Se cae L'Alchimiste y la tarde termina en las Galeries Lafayette.",
-       "desfase": 30,
-       "quita": [
-        "alchimiste"
-       ]
+       "nota": "Dos horas y diez, que es lo que el museo merece. Con la cena a las 21:45 el bar sigue cabiendo, pero justo: saldríais de L'Alchimiste a las 21:15.",
+       "desfase": 30
       }
      ]
     }
@@ -575,18 +572,21 @@
      "tipo": "bar",
      "lugar": "alchimiste",
      "tit": "L'Alchimiste",
-     "nota": "Solo con la versión corta de Carnavalet. Junto a la Torre Saint-Jacques, happy hour desde las 18:00. Nicolas Flamel fue escribano en el siglo XIV; la leyenda alquímica se la colgaron después.",
-     "rama": "corto"
+     "nota": "Junto a la Torre Saint-Jacques, happy hour desde las 18:00. Nicolas Flamel fue escribano en el siglo XIV y la leyenda alquímica se la colgaron después. Desde Châtelet, la línea 7 os deja en Tolbiac en un cuarto de hora, a cinco minutos del restaurante. Si habéis alargado Carnavalet, salid del bar a las 21:15 como muy tarde."
     },
     {
-     "h": "21:00",
+     "h": "21:45",
      "min": 90,
      "tipo": "comida",
      "lugar": "comme-au-vietnam",
      "tit": "Cena en Comme au Vietnam",
-     "nota": "Cenas de 19:00 a 22:30, conviene reservar para las 21:00 y no para las 20:30. La hora de la cena no se mueve aunque alarguéis Carnavalet: desde Ópera al distrito 13 hay media hora larga y llegáis igual. Desde el hotel, quince minutos andando por la rue de Tolbiac o el autobús 62. Estáis en el barrio asiático del distrito 13, el mayor de Europa.",
+     "nota": "Mesa reservada a las 21:45. Cierran cocina a las 22:30, así que esta sí es hora de estar sentados y no de salir de casa. Desde el hotel son quince minutos andando por la rue de Tolbiac, o el autobús 62. Estáis en el barrio asiático del distrito 13, el mayor de Europa, levantado desde finales de los setenta por la comunidad que llegó de Vietnam, Camboya y Laos.",
      "reserva": true,
-     "fijo": true
+     "fijo": true,
+     "limite": {
+      "tipo": "duro",
+      "texto": "La cocina cierra a las 22:30."
+     }
     }
    ]
   },
