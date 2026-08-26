@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-2';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-3';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -178,7 +178,7 @@ function abreFicha(diaId, i) {
 }
 
 /* ---------- mapa ---------- */
-let mapa, capaDia, marcaYo;
+let mapa, capaDia, marcaYo, botonTodo;
 function iniMapa() {
   if (mapa) return;
   mapa = L.map('mapa', { zoomControl: false }).setView([48.8566, 2.3522], 13);
@@ -186,26 +186,74 @@ function iniMapa() {
     maxZoom: 19, attribution: '© OpenStreetMap'
   }).addTo(mapa);
   L.control.zoom({ position: 'bottomright' }).addTo(mapa);
+  addEventListener('resize', () => mapa.invalidateSize());
 }
+
+// Agrupa las paradas que caen en el mismo sitio, para no apilar chinchetas encima de chinchetas
+function agrupa(items) {
+  const g = new Map();
+  items.forEach((it, i) => {
+    if (!g.has(it.lugar)) g.set(it.lugar, { lugar: it.lugar, n: i + 1, paradas: [] });
+    g.get(it.lugar).paradas.push({ h: it.h, tit: it.tit, i, tipo: it.tipo });
+  });
+  return [...g.values()];
+}
+
+// Encaja el mapa en la parte del dia que se anda, y deja fuera lo que solo se toca en metro:
+// Versalles, el hotel, la estacion. Para eso esta el boton de ver el dia entero.
+function encuadre(pts) {
+  if (pts.length < 3) return { nucleo: pts, fuera: [] };
+  const med = k => { const v = pts.map(p => p[k]).sort((a, b) => a - b); return v[Math.floor(v.length / 2)]; };
+  const c = [med(0), med(1)];
+  const km = p => Math.hypot((p[0] - c[0]) * 111, (p[1] - c[1]) * 73.5);
+  const nucleo = pts.filter(p => km(p) <= 3.5), fuera = pts.filter(p => km(p) > 3.5);
+  return nucleo.length >= 2 ? { nucleo, fuera } : { nucleo: pts, fuera: [] };
+}
+
 function pintaMapa(diaId) {
   iniMapa();
+  mapa.invalidateSize();                       // antes de encajar, o el encaje sale mal
   if (capaDia) mapa.removeLayer(capaDia);
   const dia = D.dias.find(d => d.id === diaId) || D.dias[0];
   const items = itemsDe(dia), capa = L.layerGroup(), pts = [];
-  items.forEach((it, i) => {
-    const p = lug(it.lugar);
+
+  agrupa(items).forEach(g => {
+    const p = lug(g.lugar);
     pts.push([p.lat, p.lon]);
+    const t = g.paradas[0].tipo;
+    const etiqueta = g.paradas.length > 1 ? g.paradas.map(x => x.i + 1).join('·') : String(g.n);
+    const chico = etiqueta.length > 3;
     L.marker([p.lat, p.lon], {
-      icon: L.divIcon({ className: '', iconSize: [26, 26], html: `<div class="num-icono ${it.tipo}">${i + 1}</div>` })
-    }).bindPopup(`<b>${it.h} ${it.tit}</b><br>${p.nombre}`).addTo(capa);
+      icon: L.divIcon({ className: '', iconSize: [chico ? 40 : 26, 26],
+        html: `<div class="num-icono ${t} ${chico ? 'ancho' : ''}">${etiqueta}</div>` })
+    }).bindPopup(`<b>${p.nombre}</b><br>` +
+      g.paradas.map(x => `${x.h} · ${x.tit}`).join('<br>') +
+      `<br><button class="btn sec" style="margin-top:8px;padding:6px 10px;font-size:12.5px"
+        data-abrir="${dia.id}|${g.paradas[0].i}">Ver la ficha</button>`).addTo(capa);
   });
-  Object.values(D.rutas).filter(r => r.dia === dia.id).forEach(r => {
+
+  // solo los tramos que unen dos paradas seguidas del dia; los demas confunden
+  for (let i = 1; i < items.length; i++) {
+    const r = ruta(items[i - 1].lugar, items[i].lugar);
+    if (!r) continue;
     L.polyline(decodifica(r.shape), { color: '#8c2f1f', weight: 4, opacity: .75, dashArray: '1 7', lineCap: 'round' })
       .bindPopup(`${fmtD(r.metros)}, ${r.minutos} min andando`).addTo(capa);
-  });
+  }
+
   capaDia = capa.addTo(mapa);
-  mapa.fitBounds(L.latLngBounds(pts).pad(.12));
-  setTimeout(() => mapa.invalidateSize(), 60);
+  const { nucleo, fuera } = encuadre(pts);
+  // sin animacion: encadenar animaciones de zoom dejaba el mapa a medio encajar
+  const encaja = lista => mapa.fitBounds(L.latLngBounds(lista).pad(.12), { animate: false });
+  encaja(nucleo);
+  if (botonTodo) { botonTodo.remove(); botonTodo = null; }
+  if (fuera.length) {
+    botonTodo = document.createElement('button');
+    botonTodo.className = 'todo-dia';
+    botonTodo.textContent = 'Ver el día entero';
+    botonTodo.onclick = () => { encaja(pts); botonTodo.remove(); botonTodo = null; };
+    $('#v-mapa').appendChild(botonTodo);
+  }
+  setTimeout(() => { mapa.invalidateSize(); encaja(nucleo); }, 150);   // por si el contenedor aun no tenia su alto final
 }
 function decodifica(s, precision = 6) {
   const f = 10 ** precision; let lat = 0, lon = 0, i = 0; const out = [];
@@ -306,7 +354,7 @@ function muestra(v) {
   $$('.vista').forEach(n => n.classList.toggle('on', n.id === 'v-' + v));
   $$('.barra button').forEach(n => n.classList.toggle('act', n.dataset.v === v));
   $('#tiras').classList.toggle('oculto', v !== 'dias' && v !== 'mapa');
-  if (v === 'mapa') pintaMapa(S.dia || D.dias[0].id);
+  if (v === 'mapa') { if (mapa) mapa.invalidateSize(); pintaMapa(S.dia || D.dias[0].id); }
   if (v === 'cerca') $('#v-cerca').innerHTML = pintaCerca();
   if (v === 'reservas') $('#v-reservas').innerHTML = pintaReservas();
   if (v === 'hoy') $('#v-hoy').innerHTML = pintaHoy();
@@ -350,6 +398,8 @@ function muestra(v) {
       return;
     }
     const ver = e.target.closest('[data-ver]'); if (ver) return verEnMapa(ver.dataset.ver);
+    const ab = e.target.closest('[data-abrir]');
+    if (ab) { const [d, i] = ab.dataset.abrir.split('|'); return abreFicha(d, +i); }
     const vis = e.target.closest('[data-visto]');
     if (vis) {
       const id = vis.dataset.visto;

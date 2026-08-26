@@ -111,3 +111,15 @@ a{color:var(--acento)}
 .largo p{margin:0 0 14px;font-size:15.5px;line-height:1.62}
 ul.mirar{margin:6px 0 16px;padding-left:18px}
 ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
+
+/* mapa: retoques */
+#mapa{height:calc(100dvh - var(--barra) - 150px)}
+.num-icono.ancho{width:40px;border-radius:13px;font-size:11px;letter-spacing:-.3px}
+.num-icono.transporte{background:#6b6155} .num-icono.libre,.num-icono.bar{background:#2f5d50}
+.num-icono.fachada,.num-icono.foto{background:#4a4a8c} .num-icono.servicio,.num-icono.opcional{background:#6b6155}
+.todo-dia{position:absolute;left:50%;transform:translateX(-50%);
+  bottom:calc(var(--barra) + 26px + env(safe-area-inset-bottom));z-index:500;
+  background:var(--tinta);color:#fff;font-size:13px;font-weight:600;padding:9px 16px;border-radius:999px;
+  box-shadow:0 3px 14px rgba(0,0,0,.3)}
+#v-mapa{position:relative}
+.leaflet-popup-content{font:14px/1.45 -apple-system,BlinkMacSystemFont,sans-serif}
