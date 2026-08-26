@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-3';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-4';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado

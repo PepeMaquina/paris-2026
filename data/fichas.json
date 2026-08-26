@@ -13,7 +13,6 @@
    "La losa de Descartes, en la capilla lateral derecha según se entra."
   ]
  },
-
  "bon-marche": {
   "corto": "El primer gran almacén moderno del mundo, el edificio que Zola convirtió en novela.",
   "largo": [
@@ -28,7 +27,6 @@
    "Los rótulos y el trabajo de hierro de las plantas altas, donde hay menos gente."
   ]
  },
-
  "tour-eiffel": {
   "corto": "Trescientos metros de hierro montados en dos años para una exposición, con la idea de desmontarlos veinte años después.",
   "largo": [
@@ -45,7 +43,6 @@
   ],
   "audio": true
  },
-
  "versalles-palacio": {
   "corto": "Un pabellón de caza convertido en la máquina política más cara de Europa.",
   "largo": [
@@ -62,7 +59,6 @@
   ],
   "audio": true
  },
-
  "versalles-jardines": {
   "corto": "Ochocientas hectáreas de geometría con un problema de agua que nunca se resolvió.",
   "largo": [
@@ -78,7 +74,6 @@
   ],
   "audio": true
  },
-
  "sacre-coeur": {
   "corto": "Una basílica levantada como penitencia nacional después de una derrota y de una guerra civil.",
   "largo": [
@@ -95,7 +90,6 @@
   ],
   "audio": true
  },
-
  "moulin-rouge": {
   "corto": "El cabaré de 1889, el mismo año que la Torre Eiffel y la misma exposición.",
   "largo": [
@@ -109,7 +103,6 @@
    "La calle a los lados, que sigue siendo la de los cabarés, con lo bueno y lo malo."
   ]
  },
-
  "bateau-lavoir": {
   "corto": "El caserón donde Picasso pintó Les Demoiselles d'Avignon, sin agua corriente y con una sola fuente para todos.",
   "largo": [
@@ -123,7 +116,6 @@
    "La cuesta: aquí se entiende por qué el barrio era barato."
   ]
  },
-
  "moulin-galette": {
   "corto": "Uno de los dos molinos que quedan en pie de los treinta que hubo en la colina.",
   "largo": [
@@ -136,7 +128,6 @@
    "Acordaos de este sitio el jueves, delante del Renoir en Orsay."
   ]
  },
-
  "maison-rose": {
   "corto": "La casita rosa que pintó Utrillo y que hoy es la esquina más fotografiada de Montmartre.",
   "largo": [
@@ -149,7 +140,6 @@
    "La calle empedrada bajando, con la ciudad al fondo."
   ]
  },
-
  "lapin-agile": {
   "corto": "El cabaré de la ladera norte donde Picasso pagaba con cuadros, y donde un burro llegó a exponer en un salón de arte.",
   "largo": [
@@ -163,7 +153,6 @@
    "La esquina con la rue des Saules bajando hacia la viña."
   ]
  },
-
  "vigne-montmartre": {
   "corto": "Mil setecientas cepas plantadas en 1933 para impedir que un especulador construyera aquí.",
   "largo": [
@@ -176,7 +165,6 @@
    "El cementerio de Saint-Vincent, dos minutos abajo, donde está enterrado Utrillo."
   ]
  },
-
  "deux-moulins": {
   "corto": "El café de Amélie, que existía mucho antes de la película y sigue siendo un café de barrio.",
   "largo": [
@@ -189,7 +177,6 @@
    "La rue Lepic subiendo, que es de las calles vivas del barrio y no de las de postal."
   ]
  },
-
  "casa-van-gogh": {
   "corto": "El piso del tercero donde Vincent vivió dos años con su hermano Theo y cambió de pintura.",
   "largo": [
@@ -202,7 +189,6 @@
    "La pendiente de la rue Lepic, que aparece en varios de sus cuadros parisinos."
   ]
  },
-
  "place-du-tertre": {
   "corto": "La plaza del pueblo de Montmartre, hoy tomada por retratistas.",
   "largo": [
@@ -213,6 +199,175 @@
   "mirar": [
    "Saint-Pierre de Montmartre, con sus columnas reaprovechadas de época romana.",
    "Los precios de las terrazas, para saber por qué no hay que sentarse aquí."
+  ]
+ },
+ "notre-dame": {
+  "corto": "Ochocientos años de catedral, un incendio que se llevó el tejado en 2019 y una reapertura en diciembre de 2024.",
+  "largo": [
+   "Las obras empezaron en 1163 con el obispo Maurice de Sully y no se dieron por terminadas hasta bien entrado el siglo XIV. En ese siglo y medio cambió la manera de construir: aquí se ensayaron los arbotantes, esos arcos exteriores que recogen el empuje de la bóveda y lo llevan al suelo, y que permitieron subir los muros y abrirlos en vidriera. Lo que parece decoración es la razón de que el edificio se aguante.",
+   "La Revolución la trató como símbolo del poder que derribaba. Decapitaron las veintiocho estatuas de la fachada creyendo que eran reyes de Francia, cuando eran reyes de Judá; las cabezas aparecieron en 1977 enterradas en un patio del distrito 9 y están en el Museo de Cluny. La catedral llegó a usarse como almacén de vino.",
+   "A principios del XIX estaba medio en ruinas y se planteó tirarla. La salvó un libro: Victor Hugo publicó en 1831 Nuestra Señora de París, que es en parte una novela y en parte una campaña para que se restaurara. Funcionó. Viollet-le-Duc dirigió la restauración entre 1844 y 1864, y de su cosecha son la aguja del crucero y buena parte de las gárgolas y quimeras que todo el mundo cree medievales.",
+   "El 15 de abril de 2019 ardió el tejado, un entramado de vigas de roble del siglo XIII al que llamaban el bosque, y la aguja de Viollet-le-Duc se vino abajo. Las bóvedas de piedra aguantaron casi enteras y eso salvó el interior. La reconstrucción se hizo con las mismas técnicas y con roble de bosques franceses, y reabrió en diciembre de 2024.",
+   "Lo que más sorprende al entrar es la luz. La piedra se limpió durante la restauración y ha quedado clara, casi dorada, cuando la que recuerda todo el mundo era oscura de siglos de hollín."
+  ],
+  "mirar": [
+   "Los arbotantes desde el ábside, por detrás, que es donde se ve el sistema entero.",
+   "El rosetón norte, del siglo XIII, que conserva casi toda su vidriera original.",
+   "La piedra limpia de la nave, del color que tuvo cuando se construyó."
+  ],
+  "audio": true
+ },
+ "marche-aux-fleurs": {
+  "corto": "El último mercado de flores del centro de París, funcionando desde 1808 bajo pabellones de hierro y cristal.",
+  "largo": [
+   "París tuvo mercados de flores por toda la ciudad y de todos ellos queda este. Se instaló aquí en 1808, en la isla, y los pabellones metálicos que lo cubren son de principios del siglo XX, de la misma familia de arquitectura que las estaciones y los mercados de la época.",
+   "Se llama oficialmente Marché aux Fleurs Reine Elizabeth II desde que la reina lo visitó en 2014. Los domingos hay además mercado de pájaros, aunque su continuidad ha estado en discusión los últimos años.",
+   "Es una parada de veinte minutos y de mirar, no de comprar. A primera hora la luz entra de lado por los cristales y es de lo mejor de la isla a esa hora."
+  ],
+  "mirar": [
+   "Las estructuras de hierro de los pabellones, del mismo lenguaje que las estaciones de la época.",
+   "Los puestos de plantas raras del fondo, que son los de los profesionales."
+  ]
+ },
+ "conciergerie": {
+  "corto": "El primer palacio real de París convertido en la antesala de la guillotina.",
+  "largo": [
+   "Antes de Versalles y antes del Louvre, los reyes de Francia vivían aquí. Felipe el Hermoso lo agrandó a principios del siglo XIV hasta convertirlo en el palacio más lujoso de Europa, y de aquella obra queda lo que vais a ver: la sala de los Hombres de Armas, cuatro naves abovedadas y mil ochocientos metros cuadrados, que es la mayor sala gótica civil conservada del continente. Allí comían dos mil personas del servicio real.",
+   "Cuando la corte se mudó al Louvre, el edificio se quedó como sede de la justicia y como cárcel. El nombre viene del conserje, el funcionario que custodiaba el palacio y que acabó teniendo autoridad sobre los presos.",
+   "Entre 1793 y 1794 fue la última parada antes del cadalso. Aquí esperaban los detenidos del Tribunal Revolucionario, y unas dos mil setecientas personas salieron de estas paredes camino de la guillotina. La cárcel tenía tarifas: quien pagaba dormía en una celda con cama, y quien no, sobre paja en una sala común. La miseria era también un negocio.",
+   "María Antonieta pasó aquí setenta y seis días, en una celda vigilada día y noche, hasta el 16 de octubre de 1793. Luis XVIII, ya restaurada la monarquía, mandó convertir el sitio en capilla expiatoria. Lo que se ve hoy es esa capilla y una reconstrucción, no la celda literal.",
+   "En la esquina de la calle está la Torre del Reloj, con el primer reloj público de París, instalado en 1371 y todavía en marcha."
+  ],
+  "mirar": [
+   "La bóveda de la sala de los Hombres de Armas, vacía a primera hora, que es la razón de venir a las 9:30.",
+   "Las cocinas medievales, con sus cuatro chimeneas de esquina.",
+   "El pasillo de los presos y el despacho del escribano, donde se registraba a cada detenido.",
+   "El reloj de la torre, en la esquina del boulevard du Palais."
+  ],
+  "audio": true
+ },
+ "sainte-chapelle": {
+  "corto": "Una caja de vidrieras construida en siete años para guardar una reliquia que costó más que el edificio.",
+  "largo": [
+   "Luis IX compró al emperador latino de Constantinopla la que se tenía por corona de espinas de Cristo, junto con otras reliquias, y pagó por ellas más del doble de lo que costó levantar la capilla que las guardaría. La construyó en tiempo récord, entre 1242 y 1248.",
+   "El resultado es un ejercicio de ingeniería llevado al límite: los muros casi desaparecen y quedan mil ciento trece escenas de vidriera repartidas en quince ventanales de quince metros, con la estructura reducida a nervios finísimos que se atan con cadenas de hierro escondidas.",
+   "No entra en vuestro programa y por eso está aquí como aviso: si algún día volvéis con tiempo, este es el sitio. La veréis por fuera durante el free tour, pegada a la Conciergerie, porque las dos son lo que queda del mismo palacio."
+  ],
+  "mirar": [
+   "Desde fuera, la altura del ábside y lo poco que hay de muro entre ventana y ventana."
+  ]
+ },
+ "pont-neuf": {
+  "corto": "Se llama puente nuevo y es el más viejo de París, y el primero que se hizo pensando en los peatones.",
+  "largo": [
+   "Se empezó en 1578 y se terminó en 1607, ya con Enrique IV. Rompió con todo lo anterior en dos cosas: no se construyeron casas encima, que era lo normal en los puentes de entonces, y se le pusieron aceras elevadas para que la gente pudiera cruzar sin que la atropellaran los carros.",
+   "Al quedar despejado se convirtió en el primer espacio público de la ciudad en el sentido moderno: allí se instalaron charlatanes, sacamuelas, vendedores de libros, carteristas y titiriteros. Durante dos siglos fue el sitio donde pasaba todo.",
+   "En medio está la estatua ecuestre de Enrique IV. La original la fundieron los revolucionarios; la de ahora es de 1818 y se hizo, entre otros bronces, con el metal de una estatua de Napoleón. En París casi nada se tira, se refunde.",
+   "Desde mayo de 2026 el artista JR tiene montada encima una instalación de ciento veinte metros que convierte los arcos en una caverna en trampantojo, y por eso han cambiado el acceso a los embarcaderos."
+  ],
+  "mirar": [
+   "Las máscaras talladas en las cornisas, todas distintas, unas cuatrocientas.",
+   "La instalación de JR desde el agua, que es donde se ve entera.",
+   "La punta del Vert-Galant por debajo, al nivel del río."
+  ]
+ },
+ "vert-galant": {
+  "corto": "La proa de la isla, a ras de agua, y el embarcadero de los barcos.",
+  "largo": [
+   "El nombre es el apodo de Enrique IV, el galán verde, por su fama de mujeriego a edad avanzada. La estatua del rey queda justo encima.",
+   "Este triángulo está unos metros por debajo del nivel de la ciudad, y esa es toda su gracia: se baja por una escalera y de repente el ruido desaparece y estáis al nivel del río, con las dos ramas del Sena abriéndose delante.",
+   "El crucero dura una hora exacta y no hace paradas. Baja hasta la Torre Eiffel, da la vuelta y sube hasta la punta de la isla de San Luis. Sentaos en cubierta abierta y a la derecha en la ida, que es el lado que pilla el Louvre, Orsay y la torre de frente."
+  ],
+  "mirar": [
+   "El sauce de la punta, que es de los árboles más fotografiados de París.",
+   "Desde el agua, la línea de los muelles y los puentes, un ángulo que no se tiene desde arriba."
+  ]
+ },
+ "galerie-vivienne": {
+  "corto": "Un pasaje cubierto de 1823 con mosaicos en el suelo, y la escalera de la casa donde vivió Vidocq.",
+  "largo": [
+   "Los pasajes cubiertos son un invento parisino de principios del XIX: calles privadas techadas con vidrio, con tiendas a los lados, iluminadas con gas y sin barro ni carruajes. Hubo más de ciento cincuenta y quedan una veintena. Cuando Haussmann abrió los bulevares con aceras anchas, los pasajes dejaron de hacer falta.",
+   "La Vivienne se abrió en 1823 y es la más elegante de las que sobreviven: rotonda acristalada, mosaicos de suelo firmados por Facchina, el mismo que trabajó en la Ópera, y una decoración de diosas y anclas que alude al comercio.",
+   "En el número 13 de la calle vivió Eugène-François Vidocq, un presidiario fugado varias veces que acabó fundando la policía judicial francesa y, después, la primera agencia de detectives privados. Balzac y Victor Hugo lo usaron de modelo para sus personajes; el Vautrin de Balzac y, en parte, el Valjean y el Javert de Los miserables salen de él.",
+   "Esto sustituye a la BnF Richelieu, que está cerrada toda vuestra semana por mantenimiento anual. Al salir a la rue de Richelieu tenéis su fachada enfrente, que al menos se ve."
+  ],
+  "mirar": [
+   "El mosaico del suelo bajo la rotonda.",
+   "La escalera de la casa de Vidocq, al fondo a la derecha.",
+   "La luz que entra por la claraboya: hace falta pulso para fotografiar aquí dentro."
+  ]
+ },
+ "pantheon": {
+  "corto": "Una iglesia que la Revolución convirtió en tumba de los que no creían en ella, y el sitio exacto donde se demostró que la Tierra gira.",
+  "largo": [
+   "Luis XV cayó enfermo en 1744, prometió que si se curaba levantaría una iglesia a Santa Genoveva, patrona de París, y cumplió. Encargó el proyecto a Jacques-Germain Soufflot, que quiso combinar la ligereza del gótico con las formas del templo clásico: columnas corintias, una cúpula triple y una estructura tan afinada que durante la obra hubo miedo de que no aguantara y hubo que reforzarla.",
+   "Se terminó justo cuando estalló la Revolución, y en 1791 lo convirtieron en panteón laico para enterrar a los grandes hombres de la patria. Cambió de uso cinco veces según mandaran unos u otros: iglesia, panteón, iglesia otra vez. La cruz de la cúpula subió y bajó con los regímenes.",
+   "Un aviso sobre lo que vais a encontrar: la nave es enorme, fría y bastante vacía, neoclásico de manual. Quien sale decepcionado suele ser quien esperaba una iglesia. Lo que engancha está en la cripta y colgado de la cúpula.",
+   "En la cripta hay más de setenta enterrados. Voltaire y Rousseau están enfrentados, que es una broma involuntaria de la historia porque se detestaban. Están Victor Hugo, Zola, Jean Moulin, Marie Curie, que en 1995 fue la primera mujer que entró por méritos propios, Josephine Baker desde 2021 y Missak Manouchian desde 2024.",
+   "Y está el péndulo. En 1851 Léon Foucault colgó de la cúpula una bola de veintiocho kilos con un cable de sesenta y siete metros, la puso a oscilar y el plano de oscilación fue girando poco a poco a lo largo del día. Era la primera demostración experimental de la rotación de la Tierra sin mirar al cielo. Cualquiera podía entrar y verlo con sus ojos, y eso fue lo revolucionario."
+  ],
+  "mirar": [
+   "El péndulo, y quedarse el rato suficiente para notar que el plano se ha movido.",
+   "En la cripta, las tumbas de Voltaire y Rousseau, una frente a otra.",
+   "La cúpula desde dentro: son tres cascarones encajados, y el de en medio es el que sostiene la linterna."
+  ],
+  "audio": true
+ },
+ "saint-etienne-du-mont": {
+  "corto": "El único jubé que queda en París, un puente de piedra tallada cruzando la nave.",
+  "largo": [
+   "El jubé era la tribuna que separaba el coro de los clérigos de la nave del pueblo y desde donde se leía el evangelio. En el siglo XVII y XVIII se tiraron casi todos, porque estorbaban a la nueva idea de que los fieles debían ver el altar. En París se salvó este, de hacia 1530, y es una filigrana de piedra calada con dos escaleras de caracol enroscadas a los lados.",
+   "La iglesia mezcla gótico tardío y renacimiento sin disimulo, porque se construyó a lo largo de más de un siglo y nadie se molestó en unificar el estilo. Esa mezcla es justo lo que la hace interesante.",
+   "Aquí están enterrados Pascal y Racine, y está también el relicario de Santa Genoveva, que sustituye al que los revolucionarios quemaron en la plaza de Grève.",
+   "La escalera de la puerta lateral es donde arrancaba el coche de medianoche de la película de Woody Allen, cosa que los guías cuentan siempre y que no explica nada del edificio."
+  ],
+  "mirar": [
+   "El jubé, desde debajo, mirando el calado de la piedra.",
+   "Las escaleras de caracol de los extremos del jubé.",
+   "Las losas de Pascal y Racine, a los lados del coro."
+  ]
+ },
+ "rue-mouffetard": {
+  "corto": "Calle de mercado desde época romana, sobre el camino que salía de Lutecia hacia el sur.",
+  "largo": [
+   "Es una de las calles más antiguas de París. Sigue el trazado de la vía romana que iba de Lutecia hacia Lyon, y ha sido calle de comercio sin interrupción desde entonces, lo que la convierte en una rareza incluso aquí.",
+   "El nombre probablemente venga del mal olor. Por debajo corría el río Bièvre, hoy cubierto, y en sus orillas trabajaban curtidores, tintoreros y carniceros, oficios que apestaban. La palabra moufette, mofeta, anda en el origen.",
+   "Hoy la parte alta, desde la Contrescarpe, es de bares y turismo, y la parte baja sigue teniendo comercio de barrio de verdad, con pescadería, quesería y puestos de fruta. Bajad hasta abajo, que es donde está lo bueno.",
+   "Au P'tit Grec, en el 68, hace crepes y bocadillos griegos del tamaño de un antebrazo, a la plancha y delante de vosotros. Suelen pedir efectivo. Uno entre dos aguanta hasta la cena de después de Orsay."
+  ],
+  "mirar": [
+   "La fachada pintada del número 122, con animales y guirnaldas, de una antigua carnicería.",
+   "La pendiente y el empedrado, que son los del camino romano.",
+   "La Contrescarpe arriba, con sus terrazas, para no sentarse."
+  ]
+ },
+ "orsay": {
+  "corto": "Una estación de tren de 1900 que se salvó del derribo por los pelos y hoy guarda a los impresionistas.",
+  "largo": [
+   "Victor Laloux la levantó para la Exposición Universal de 1900 como estación de la línea de Orleans, y la disfrazó de palacio para que no desentonara frente al Louvre: por fuera es piedra y estatuas, por dentro es una nave de hierro y cristal de treinta y dos metros de alto.",
+   "Duró poco como estación. Los andenes se quedaron cortos para los trenes largos que llegaron después y en 1939 dejó de dar servicio de larga distancia. Sirvió luego de almacén, de plató de cine y de sala de subastas, y en los años setenta se planteó tirarla para hacer un hotel. Justo entonces se acababa de demoler el mercado de Les Halles y el escándalo que aquello provocó le salvó la vida a esta.",
+   "Se convirtió en museo en 1986, con el interiorismo de Gae Aulenti. La colección cubre de 1848 a 1914, es decir, el hueco entre lo que guarda el Louvre y lo que guarda el Pompidou, y ahí caen justo el impresionismo y lo que vino detrás.",
+   "El truco para visitarlo es subir directos a la quinta planta al entrar. Ahí están Monet, Renoir, Degas, Van Gogh y Cézanne, que es a lo que viene todo el mundo, y bajando después se ven las plantas de abajo casi vacías. El jueves por la noche es la franja con menos gente de la semana."
+  ],
+  "mirar": [
+   "El reloj gigante de la quinta planta, con París al otro lado del cristal.",
+   "El Bal du moulin de la Galette de Renoir, después de haber estado el miércoles en el sitio donde se pintó.",
+   "La nave desde el fondo, para ver la estación que hay debajo del museo.",
+   "A partir de las 20:00 la sala del reloj se vacía."
+  ],
+  "audio": true
+ },
+ "hotel-de-ville": {
+  "corto": "El ayuntamiento que la Comuna quemó entera y que se reconstruyó copiándose a sí mismo.",
+  "largo": [
+   "Aquí ha estado el gobierno de la ciudad desde el siglo XIV. El edificio renacentista que se levantó en el XVI ardió por completo en mayo de 1871, en los últimos días de la Comuna, con el archivo municipal dentro: se perdieron los registros civiles de siglos, y por eso rastrear una familia parisina antes de 1871 es casi imposible.",
+   "Lo reconstruyeron entre 1873 y 1892 imitando el edificio quemado por fuera y haciéndolo más grande por dentro. Las estatuas de la fachada son ciento treinta y seis personajes ilustres de la ciudad, una por cada nicho.",
+   "La plaza de delante se llamó durante siglos plaza de Grève, la orilla en pendiente donde se descargaban los barcos y donde se juntaban los que buscaban trabajo. De ahí viene la palabra huelga en francés, faire grève, y de rebote la nuestra en varios idiomas. También fue el sitio de las ejecuciones públicas hasta la Revolución.",
+   "Es el punto de encuentro del free tour, así que llegad con cinco minutos y buscad el paraguas o el cartel del guía junto a la fachada."
+  ],
+  "mirar": [
+   "Las estatuas de la fachada, cada una con su nombre grabado debajo.",
+   "La plaza, pensando en lo que fue: puerto, mercado de jornaleros y patíbulo."
   ]
  }
 }
