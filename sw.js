@@ -1,4 +1,7 @@
 const V = 'paris-2026-08-27-11';
+// El audio se guarda aparte para que no se borre con cada cambio de datos.
+// Este número solo sube cuando se regeneran las pistas, y entonces sí conviene tirar las viejas.
+const AUDIO = 'audio-2-marisol';
 const NUCLEO = [
   './', 'index.html', 'css/app.css', 'js/app.js',
   'vendor/leaflet.js', 'vendor/leaflet.css',
@@ -12,7 +15,7 @@ self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(NUCLEO)).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== V && x !== 'teselas' && x !== 'audio').map(x => caches.delete(x))))
+  e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== V && x !== 'teselas' && x !== AUDIO).map(x => caches.delete(x))))
     .then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', e => {
@@ -31,7 +34,7 @@ self.addEventListener('fetch', e => {
   }
   // el audio se guarda segun se escucha, y ademas hay un boton para bajarlo entero
   if (u.origin === location.origin && u.pathname.includes('/audio/')) {
-    e.respondWith(caches.open('audio').then(async c => {
+    e.respondWith(caches.open(AUDIO).then(async c => {
       const hit = await c.match(e.request);
       if (hit) return hit;
       const r = await fetch(e.request);

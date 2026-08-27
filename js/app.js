@@ -111,7 +111,7 @@ function pintaHoy() {
 async function bajaAudio(bt) {
   const claves = Object.keys(D.audio);
   bt.textContent = 'Descargando…';
-  const c = await caches.open('audio');
+  const c = await caches.open('audio-2-marisol');   // mismo nombre que en sw.js
   let n = 0;
   for (const k of claves) {
     try { const r = await fetch(D.audio[k].archivo); if (r.ok) await c.put(D.audio[k].archivo, r.clone()); } catch (e) { }
