@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-13';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-14';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -151,7 +151,13 @@ function tarjetaAudio() {
     <div style="font-size:13.5px;color:var(--suave);margin-top:3px">
       ${claves.length} pistas, ${Math.round(seg / 60)} minutos, ${mb} MB. Descargadlo por wifi antes de salir y
       funcionará dentro de Versalles y en el metro.</div>
-    <div class="btns"><button class="btn sec" id="bajar-audio">Descargar el audio</button></div></div>`;
+    <div class="btns"><button class="btn sec" id="bajar-audio">Descargar el audio</button></div></div>
+  <div class="nota">
+    <b>Mapas para llevar</b>
+    <div style="font-size:13.5px;color:var(--suave);margin-top:3px">
+      Guarda las porciones de mapa por las que pasáis, para que se vean en el metro, en los jardines de
+      Versalles y sin cobertura. Son unos pocos megas y tarda un par de minutos. Hacedlo por wifi.</div>
+    <div class="btns"><button class="btn sec" id="bajar-mapas">Descargar los mapas</button></div></div>`;
 }
 
 /* ---------- ficha ---------- */
@@ -196,7 +202,9 @@ function abreFicha(diaId, i) {
   }
 
   if (t) {
-    h += `<h3 style="margin-top:22px">Durante el tour</h3><p style="font-size:14.5px">${t.aviso}</p>
+    h += `<h3 style="margin-top:22px">Durante el tour</h3>
+      <div class="btns"><button class="btn" data-tour="${t.id}">Empezar el modo tour</button></div>
+      <p style="font-size:14.5px">${t.aviso}</p>
       <div class="pasos">${t.paradas.map(id => {
         const q = lug(id), on = S.vistos[id];
         return `<li><span style="flex:1">${q.nombre}</span>
@@ -363,6 +371,7 @@ async function activaGPS() {
     if (S.paseo) { const c = cercanos(6); if (c[0] && c[0].d < 70) avisa(c[0]); }
     if ($('#v-cerca').classList.contains('on')) $('#v-cerca').innerHTML = pintaCerca();
     if (C.ruta) pintaCamino();
+    if (T.id) pintaTour();
   }, e => alert('No se pudo obtener la posición: ' + e.message),
     { enableHighAccuracy: true, maximumAge: 5000, timeout: 20000 });
 }
@@ -377,6 +386,7 @@ async function modoPaseo() {
 function verEnMapa(id, diaId) {
   const p = lug(id);
   $('#ficha').classList.remove('on');
+  $('#tour').classList.remove('on');
   if (diaId && diaId !== S.dia) {
     S.dia = diaId;
     $$('.tira').forEach(x => x.classList.toggle('act', x.dataset.dia === diaId));
@@ -393,6 +403,144 @@ function verEnMapa(id, diaId) {
   setTimeout(centra, 200);   // el encuadre del dia se aplica con retardo; esto manda por encima
 }
 
+
+
+
+/* ---------- mapas para llevar ---------- */
+function teselaDe(lat, lon, z) {
+  const n = 2 ** z, r = Math.PI / 180;
+  return {
+    x: Math.floor((lon + 180) / 360 * n),
+    y: Math.floor((1 - Math.log(Math.tan(lat * r) + 1 / Math.cos(lat * r)) / Math.PI) / 2 * n),
+    z
+  };
+}
+
+// Solo las teselas por las que de verdad se pasa: las paradas y las líneas de los tramos a pie,
+// con un margen de una tesela alrededor. Bajar media ciudad ni hace falta ni es de recibo.
+function teselasNecesarias(zooms = [15, 16, 17]) {
+  const puntos = [];
+  D.dias.forEach(d => {
+    itemsDe(d).forEach(it => { const p = lug(it.lugar); puntos.push([p.lat, p.lon]); });
+  });
+  Object.values(D.rutas).forEach(r => decodifica(r.shape).forEach((p, i) => { if (i % 4 === 0) puntos.push(p); }));
+  const set = new Set();
+  zooms.forEach(z => puntos.forEach(([la, lo]) => {
+    const t = teselaDe(la, lo, z);
+    for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++)
+      set.add(`${z}/${t.x + dx}/${t.y + dy}`);
+  }));
+  return [...set];
+}
+
+async function bajaMapas(bt) {
+  const lista = teselasNecesarias();
+  const c = await caches.open('teselas');
+  let n = 0, fallos = 0;
+  bt.classList.add('act');
+  for (let i = 0; i < lista.length; i += 4) {          // de cuatro en cuatro y con pausa, por educación
+    await Promise.all(lista.slice(i, i + 4).map(async k => {
+      const url = `https://tile.openstreetmap.org/${k}.png`;
+      try {
+        if (await c.match(url)) return;
+        const r = await fetch(url);
+        if (r.ok) await c.put(url, r.clone()); else fallos++;
+      } catch (e) { fallos++; }
+    }));
+    n = Math.min(lista.length, i + 4);
+    bt.textContent = `Descargando mapas… ${n} de ${lista.length}`;
+    await new Promise(r => setTimeout(r, 200));
+  }
+  bt.textContent = fallos ? `Mapas guardados (${fallos} fallaron)` : 'Mapas guardados en el móvil';
+}
+
+/* ---------- modo free tour ---------- */
+const T = { id: null, fin: null };
+
+function abreTour(tid) {
+  T.id = tid;
+  const t = D.tours.find(x => x.id === tid);
+  T.fin = null;
+  if (A.el) { A.el.pause(); A.cola = []; pintaReproductor(); }   // durante el tour, silencio
+  speechSynthesis && speechSynthesis.cancel();
+  $('#tour').classList.add('on');
+  $('#tour-tit').textContent = t.titulo;
+  activaGPS();
+  navigator.wakeLock && navigator.wakeLock.request('screen').then(w => T.wake = w).catch(() => { });
+  pintaTour();
+}
+function cierraTour() {
+  $('#tour').classList.remove('on');
+  if (T.wake) { T.wake.release(); T.wake = null; }
+  T.id = null;
+}
+
+function pintaTour() {
+  const t = D.tours.find(x => x.id === T.id);
+  if (!t) return;
+  const cerca = {};
+  if (S.pos) t.paradas.forEach(id => {
+    const p = lug(id);
+    cerca[id] = dist(S.pos.lat, S.pos.lon, p.lat, p.lon);
+  });
+  const pend = t.paradas.filter(id => !S.vistos[id]).length;
+
+  $('#tour-cuerpo').innerHTML = `
+    <div class="nota"><b>Mientras habla el guía, la app calla.</b>
+      <div style="font-size:13.5px;color:var(--suave);margin-top:3px">${t.aviso}
+      Id marcando lo que veáis bien; lo que quede en rojo aparecerá al terminar.</div></div>
+    <div class="tour-lista">
+      ${t.paradas.map(id => {
+        const p = lug(id), d = cerca[id];
+        const on = S.vistos[id];
+        return `<div class="tour-fila ${on ? 'visto' : ''} ${d !== undefined && d < 80 ? 'aqui' : ''}">
+          <div style="flex:1">
+            <b>${p.nombre}</b>
+            <div class="tour-sub">${d !== undefined ? 'a ' + fmtD(d) : p.cat}${D.audio['f-' + id] ? ' · audio ' + mmss(D.audio['f-' + id].seg) : ''}</div>
+          </div>
+          <button class="btn ${on ? 'act' : 'sec'}" style="padding:7px 12px;font-size:13px" data-visto2="${id}">
+            ${on ? '✓ visto' : 'marcar'}</button>
+        </div>`;
+      }).join('')}
+    </div>
+    <div class="btns" style="margin-top:18px">
+      <button class="btn" id="tour-fin">Ha terminado el tour${pend ? ' · ' + pend + ' sin ver' : ''}</button>
+    </div>`;
+}
+
+function pintaRepesca() {
+  const t = D.tours.find(x => x.id === T.id);
+  const fin = lug(t.final);
+  const pend = t.paradas.filter(id => !S.vistos[id]);
+  const conDist = pend.map(id => {
+    const p = lug(id);
+    const linea = dist(fin.lat, fin.lon, p.lat, p.lon);
+    const m = Math.round(linea * 1.3);                 // el callejeo alarga la línea recta
+    return { id, p, m, min: Math.max(1, Math.round(m / 75)) };
+  }).sort((a, b) => a.m - b.m);
+
+  $('#tour-tit').textContent = 'Lo que queda por ver';
+  $('#tour-cuerpo').innerHTML = `
+    <div class="nota"><b>El tour acaba en ${fin.nombre}</b>
+      <div style="font-size:14px;margin-top:4px">${t.repesca.ventana}</div>
+      <div style="font-size:13.5px;color:var(--suave);margin-top:6px">${t.repesca.nota}</div></div>
+    ${conDist.length ? `<h3 style="margin:20px 0 4px">Sin marcar: ${conDist.length}</h3>
+      <div style="font-size:13px;color:var(--suave);margin-bottom:8px">
+        Distancias desde donde termina el tour, a ojo y por la calle.</div>
+      <div class="tour-lista">${conDist.map(x => `
+        <div class="tour-fila ${x.min <= t.repesca.minutos / 3 ? 'cabe' : ''}">
+          <div style="flex:1"><b>${x.p.nombre}</b>
+            <div class="tour-sub">${fmtD(x.m)} · unos ${x.min} min andando
+              ${x.min * 2 <= t.repesca.minutos ? ' · cabe ida y vuelta' : ' · justo'}</div></div>
+          <button class="btn sec" style="padding:7px 12px;font-size:13px" data-ver="${x.id}">mapa</button>
+        </div>`).join('')}</div>`
+    : `<div class="nota" style="margin-top:16px"><b>No quedó nada sin marcar.</b>
+        <div style="font-size:13.5px;color:var(--suave)">Podéis seguir con el plan del día.</div></div>`}
+    <div class="btns" style="margin-top:18px">
+      <button class="btn sec" id="tour-volver">Volver a la lista</button>
+      <button class="btn" id="tour-cerrar2">Listo</button>
+    </div>`;
+}
 
 /* ---------- modo camino: seguir un tramo a pie paso a paso ---------- */
 const C = { ruta: null, linea: [], acum: [], paso: 0, manual: false, voz: false,
@@ -692,6 +840,14 @@ function muestra(v) {
     if (e.target.closest('#repro-sig')) return A.pos < A.cola.length - 1 && suena(A.cola, A.pos + 1);
     if (e.target.closest('#repro-fin')) { A.el.pause(); A.el.removeAttribute('src'); A.cola = []; return pintaReproductor(); }
     if (e.target.closest('#bajar-audio')) return bajaAudio(e.target.closest('#bajar-audio'));
+    if (e.target.closest('#bajar-mapas')) return bajaMapas(e.target.closest('#bajar-mapas'));
+    const tb = e.target.closest('[data-tour]');
+    if (tb) { $('#ficha').classList.remove('on'); return abreTour(tb.dataset.tour); }
+    const v2 = e.target.closest('[data-visto2]');
+    if (v2) { const id = v2.dataset.visto2; S.vistos[id] = !S.vistos[id]; guarda(); return pintaTour(); }
+    if (e.target.closest('#tour-fin')) return pintaRepesca();
+    if (e.target.closest('#tour-volver')) { const t = D.tours.find(x => x.id === T.id); $('#tour-tit').textContent = t.titulo; return pintaTour(); }
+    if (e.target.closest('#tour-cerrar') || e.target.closest('#tour-cerrar2')) return cierraTour();
     if (e.target.closest('#gps')) return activaGPS();
     if (e.target.closest('#paseo')) return modoPaseo();
   });

@@ -167,3 +167,12 @@ ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
 .ir{margin-top:7px;font-size:12.5px;font-weight:600;color:var(--acento);
   background:#fff;border:1px solid var(--linea);border-radius:9px;padding:6px 10px}
 .item.pasado .ir{opacity:.5}
+
+/* modo free tour */
+.tour-lista{margin-top:6px}
+.tour-fila{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--linea)}
+.tour-fila.visto b{opacity:.5;text-decoration:line-through;text-decoration-thickness:1px}
+.tour-fila.aqui{background:#fff8e6;margin:0 -16px;padding-left:16px;padding-right:16px;
+  border-left:3px solid var(--aviso)}
+.tour-fila.cabe{background:#f0f6f2;margin:0 -16px;padding-left:16px;padding-right:16px}
+.tour-sub{font-size:12.5px;color:var(--suave);margin-top:2px}
