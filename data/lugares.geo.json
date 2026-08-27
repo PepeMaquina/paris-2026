@@ -1034,5 +1034,55 @@
   "lon": 2.298263,
   "osm": "Avenue de la Motte-Picquet, Quartier de Grenelle, Paris 15e Arrondissement, Paris, Île-de-",
   "tipo_osm": "secondary"
+ },
+ {
+  "id": "metro-saint-germain",
+  "nombre": "Saint-Germain-des-Prés",
+  "q": "Saint-Germain-des-Prés station, Paris",
+  "cat": "transporte",
+  "lat": 48.85363,
+  "lon": 2.334471,
+  "osm": "Saint-Germain-des-Prés, Boulevard Saint-Germain, Quartier de Saint-Germain-des-P",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-madeleine",
+  "nombre": "Madeleine",
+  "q": "Madeleine station, Paris",
+  "cat": "transporte",
+  "lat": 48.87041,
+  "lon": 2.326569,
+  "osm": "Madeleine, Rue de Sèze, Quartier de la Chaussée-d'Antin, Paris 9e Arrondissement",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "rer-orsay",
+  "nombre": "Musée d'Orsay (RER C)",
+  "q": "Musée d'Orsay station, Paris",
+  "cat": "transporte",
+  "lat": 48.860589,
+  "lon": 2.32591,
+  "osm": "Musée d'Orsay, 62, Rue de Lille, Quartier Saint-Thomas-d'Aquin, Paris 7e Arrondi",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-cite",
+  "nombre": "Cité",
+  "q": "Cité station, Paris",
+  "cat": "transporte",
+  "lat": 48.855325,
+  "lon": 2.347542,
+  "osm": "Cité, Place Louis Lépine, Quartier Les Îles, Paris 4e Arrondissement, Paris, Île",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-saint-paul",
+  "nombre": "Saint-Paul",
+  "q": "Saint-Paul station, Paris",
+  "cat": "transporte",
+  "lat": 48.855384,
+  "lon": 2.360407,
+  "osm": "Saint-Paul, Rue de Rivoli, Quartier Saint-Gervais, Paris 4e Arrondissement, Pari",
+  "tipo_osm": "station"
  }
 ]

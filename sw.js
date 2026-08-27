@@ -1,13 +1,13 @@
-const V = 'paris-2026-08-27-21';
+const V = 'paris-2026-08-27-25';
 // El audio se guarda aparte para que no se borre con cada cambio de datos.
 // Este número solo sube cuando se regeneran las pistas, y entonces sí conviene tirar las viejas.
 const AUDIO = 'audio-2-marisol';
 const NUCLEO = [
-  './', 'index.html', 'css/app.css?v=2026-08-27-21', 'js/app.js?v=2026-08-27-21',
+  './', 'index.html', 'css/app.css?v=2026-08-27-25', 'js/app.js?v=2026-08-27-25',
   'vendor/leaflet.js', 'vendor/leaflet.css',
   'vendor/images/marker-icon.png', 'vendor/images/marker-icon-2x.png', 'vendor/images/marker-shadow.png',
-  'data/dias.json?v=2026-08-27-21', 'data/lugares.geo.json?v=2026-08-27-21', 'data/rutas.json?v=2026-08-27-21',
-  'data/tours.json?v=2026-08-27-21', 'data/reservas.json?v=2026-08-27-21', 'data/fichas.json?v=2026-08-27-21', 'data/audio.json?v=2026-08-27-21', 'data/interiores.json?v=2026-08-27-21',
+  'data/dias.json?v=2026-08-27-25', 'data/lugares.geo.json?v=2026-08-27-25', 'data/rutas.json?v=2026-08-27-25',
+  'data/tours.json?v=2026-08-27-25', 'data/reservas.json?v=2026-08-27-25', 'data/fichas.json?v=2026-08-27-25', 'data/audio.json?v=2026-08-27-25', 'data/interiores.json?v=2026-08-27-25',
   'manifest.webmanifest', 'icons/icono-180.png', 'icons/icono-512.png'
 ];
 

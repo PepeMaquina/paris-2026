@@ -34,7 +34,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 4 hasta Châtelet y línea 14 hasta Bibliothèque François Mitterrand. Unos 25 minutos.",
-      "min": 25
+      "min": 25,
+      "desde": "rer-bfm"
      }
     },
     {
@@ -47,7 +48,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 14 hasta Châtelet y línea 4 hasta Saint-Germain-des-Prés.",
-      "min": 25
+      "min": 25,
+      "desde": "metro-saint-germain"
      }
     },
     {
@@ -89,7 +91,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 10 hasta La Motte-Picquet-Grenelle y quince minutos andando.",
-      "min": 30
+      "min": 30,
+      "desde": "la-motte-picquet"
      }
     },
     {
@@ -148,7 +151,8 @@
      "llegada": {
       "modo": "rer",
       "texto": "RER C desde Champ de Mars-Tour Eiffel, directo.",
-      "min": 25
+      "min": 25,
+      "desde": "rer-bfm"
      }
     }
    ]
@@ -199,7 +203,8 @@
      "llegada": {
       "modo": "rer",
       "texto": "RER C hasta Invalides y línea 13 hasta Place de Clichy, cinco minutos del Moulin Rouge. Una hora larga con los transbordos.",
-      "min": 70
+      "min": 70,
+      "desde": "place-de-clichy"
      },
      "limite": {
       "tipo": "duro",
@@ -262,7 +267,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 12 desde Abbesses o Lamarck-Caulaincourt hasta Madeleine, y allí la 14.",
-      "min": 35
+      "min": 35,
+      "desde": "rer-bfm"
      }
     }
    ]
@@ -280,7 +286,12 @@
      "lugar": "notre-dame",
      "tit": "Notre-Dame",
      "nota": "Abre a las 7:50 entre semana y la primera hora está prácticamente vacía. Gratis. La franja reservable se libera dos o tres días antes; sin reserva se entra por la cola de la izquierda. Volveréis a pasar por delante en el free tour.",
-     "audio": "interior"
+     "audio": "interior",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 14 hasta Châtelet y línea 4 hasta Cité. Unos veinte minutos desde el hotel.",
+      "desde": "metro-cite"
+     }
     },
     {
      "h": "09:00",
@@ -395,7 +406,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Desde Censier-Daubenton o Place Monge, veinticinco minutos con un transbordo. O RER B desde Luxembourg a Saint-Michel y RER C hasta Musée d'Orsay.",
-      "min": 25
+      "min": 25,
+      "desde": "rer-orsay"
      }
     },
     {
@@ -451,6 +463,11 @@
      "limite": {
       "tipo": "duro",
       "texto": "Free tour del Marais: hay que estar a las 10:50 junto a Saint-Paul."
+     },
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 14 hasta Châtelet y línea 1 hasta Saint-Paul, o andando desde el hotel si os sobra la mañana.",
+      "desde": "metro-saint-paul"
      }
     },
     {
@@ -527,7 +544,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 8 desde Chemin Vert hasta Madeleine, veinte minutos sin transbordo.",
-      "min": 20
+      "min": 20,
+      "desde": "metro-madeleine"
      }
     },
     {
@@ -637,7 +655,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 13, cinco paradas.",
-      "min": 10
+      "min": 10,
+      "desde": "invalides-metro"
      }
     },
     {

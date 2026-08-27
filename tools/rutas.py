@@ -53,6 +53,22 @@ TRAMOS = [
  ("sab5","pont-alexandre-iii","petit-palais"),
  ("sab5","petit-palais","metro-champs-elysees"),
  ("sab5","gare-montparnasse","citylocker-maine"),
+ # de la salida del metro o del RER al sitio: sin esto, las paradas a las que se llega
+ # en transporte se quedaban sin indicaciones justo en el último tramo
+ ("mar1","rer-bfm","hotel-sanso"),
+ ("mar1","metro-saint-germain","saint-germain-des-pres"),
+ ("mie2","place-de-clichy","place-blanche"),
+ ("jue3","rer-orsay","orsay"),
+ ("vie4","metro-madeleine","la-madeleine"),
+ ("sab5","invalides-metro","invalides"),
+ ("sab5","invalides-metro","invalides-entrada-grenelle"),
+ ("mie2","sacre-coeur","relais-gascon"),
+ ("mie2","place-blanche","bouillon-pigalle"),
+ ("jue3","saint-etienne-du-mont","rue-mouffetard"),
+ ("jue3","metro-cite","notre-dame"),
+ ("jue3","rue-sainte-anne","vert-galant"),
+ ("vie4","metro-saint-paul","saint-paul"),
+ ("sab5","invalides","invalides-entrada-grenelle"),
 ]
 
 lug = {x["id"]: x for x in json.load(open("data/lugares.geo.json"))}
