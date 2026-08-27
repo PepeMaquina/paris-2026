@@ -1,0 +1,642 @@
+{
+ "saint-germain-des-pres": {
+  "archivo": "fotos/saint-germain-des-pres.jpg",
+  "pie": "La fachada y el campanario románico",
+  "articulo": "Abbaye de Saint-Germain-des-Prés",
+  "titulo": "Abbaye_de_Saint-Germain-des-Prés_140131_1.jpg",
+  "autor": "DXR",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Abbaye_de_Saint-Germain-des-Pr%C3%A9s_140131_1.jpg",
+  "kb": 145
+ },
+ "deux-magots": {
+  "archivo": "fotos/deux-magots.jpg",
+  "pie": "La terraza de Les Deux Magots",
+  "articulo": "Les Deux Magots",
+  "titulo": "Les_Deux_Magots,_Paris_May_2014.jpg",
+  "autor": "David McSpadden from Daly City, United States",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Les_Deux_Magots,_Paris_May_2014.jpg",
+  "kb": 266
+ },
+ "cafe-de-flore": {
+  "archivo": "fotos/cafe-de-flore.jpg",
+  "pie": "El Café de Flore, treinta metros más allá",
+  "articulo": "Café de Flore",
+  "titulo": "Café_de_Flore,_172_boulevard_Saint-Germain,_Paris_6e.jpg",
+  "autor": "Celette",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_de_Flore,_172_boulevard_Saint-Germain,_Paris_6e.jpg",
+  "kb": 253
+ },
+ "tour-eiffel": {
+  "archivo": "fotos/tour-eiffel.jpg",
+  "pie": "La torre desde el Champ de Mars",
+  "articulo": "Tour Eiffel",
+  "titulo": "Tour_Eiffel_Wikimedia_Commons.jpg",
+  "autor": "Benh LIEU SONG",
+  "licencia": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+  "kb": 81
+ },
+ "champ-de-mars": {
+  "archivo": "fotos/champ-de-mars.jpg",
+  "pie": "El Champ de Mars con la torre",
+  "articulo": "Champ-de-Mars",
+  "titulo": "Champ de Mars from the Eiffel Tower - July 2006 edit.jpg",
+  "autor": "Diliff, edited by Fir0002",
+  "licencia": "CC BY 2.5",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Champ_de_Mars_from_the_Eiffel_Tower_-_July_2006_edit.jpg",
+  "kb": 456
+ },
+ "trocadero": {
+  "archivo": "fotos/trocadero.jpg",
+  "pie": "La explanada del Trocadéro",
+  "articulo": "Palais de Chaillot",
+  "titulo": "Trocadero_2016_(4).jpg",
+  "autor": "Ibex73",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Trocadero_2016_(4).jpg",
+  "kb": 288
+ },
+ "versalles-palacio": {
+  "archivo": "fotos/versalles-palacio.jpg",
+  "pie": "La Galería de los Espejos",
+  "articulo": "Galerie des Glaces",
+  "titulo": "Chateau Versailles Galerie des Glaces.jpg",
+  "autor": "Myrabella",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Chateau_Versailles_Galerie_des_Glaces.jpg",
+  "kb": 221
+ },
+ "versalles-jardines": {
+  "archivo": "fotos/versalles-jardines.jpg",
+  "pie": "El eje central desde el palacio",
+  "articulo": "Jardins du château de Versailles",
+  "titulo": "Vue_aérienne_du_domaine_de_Versailles_le_20_août_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg",
+  "autor": "ToucanWings",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_le_20_ao%C3%BBt_2014_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_22.jpg",
+  "kb": 191
+ },
+ "sacre-coeur": {
+  "archivo": "fotos/sacre-coeur.jpg",
+  "pie": "La basílica desde el atrio",
+  "articulo": "Basilique du Sacré-Cœur de Montmartre",
+  "titulo": "Sacré_Coeur_Façade_1.jpg",
+  "autor": "Arthur Weidmann",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sacr%C3%A9_Coeur_Fa%C3%A7ade_1.jpg",
+  "kb": 152
+ },
+ "moulin-rouge": {
+  "archivo": "fotos/moulin-rouge.jpg",
+  "pie": "El Moulin Rouge en la Place Blanche",
+  "articulo": "Moulin Rouge",
+  "titulo": "Paris,_Moulin_Rouge_--_2014_--_1220.jpg",
+  "autor": "Dietmar Rabich",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris,_Moulin_Rouge_--_2014_--_1220.jpg",
+  "kb": 272
+ },
+ "place-blanche": {
+  "archivo": "fotos/place-blanche.jpg",
+  "pie": "El punto de encuentro, delante del molino",
+  "articulo": "Moulin Rouge",
+  "titulo": "Paris,_Moulin_Rouge_--_2014_--_1220.jpg",
+  "autor": "Dietmar Rabich",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris,_Moulin_Rouge_--_2014_--_1220.jpg",
+  "kb": 233
+ },
+ "deux-moulins": {
+  "archivo": "fotos/deux-moulins.jpg",
+  "pie": "El café de Amélie, en la rue Lepic",
+  "articulo": "",
+  "titulo": "Café des 2 Moulins June 2010.jpg",
+  "autor": "Aleksandr Zykov from Russia",
+  "licencia": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_des_2_Moulins_June_2010.jpg",
+  "kb": 165
+ },
+ "bateau-lavoir": {
+  "archivo": "fotos/bateau-lavoir.jpg",
+  "pie": "La fachada del Bateau-Lavoir",
+  "articulo": "Bateau-Lavoir",
+  "titulo": "Bateau-Lavoir_face_avant.jpg",
+  "autor": "Kalashni",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bateau-Lavoir_face_avant.jpg",
+  "kb": 233
+ },
+ "moulin-galette": {
+  "archivo": "fotos/moulin-galette.jpg",
+  "pie": "El molino, desde la rue Lepic",
+  "articulo": "Moulin de la Galette",
+  "titulo": "Paris_18e_Moulin_Radet_220.jpg",
+  "autor": "GFreihalter",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris_18e_Moulin_Radet_220.jpg",
+  "kb": 178
+ },
+ "maison-rose": {
+  "archivo": "fotos/maison-rose.jpg",
+  "pie": "La casa rosa de la rue de l'Abreuvoir",
+  "articulo": "La Maison Rose",
+  "titulo": "La_Maison_Rose,_Montmartre_23_July_2012.jpg",
+  "autor": "btwashburn",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:La_Maison_Rose,_Montmartre_23_July_2012.jpg",
+  "kb": 244
+ },
+ "lapin-agile": {
+  "archivo": "fotos/lapin-agile.jpg",
+  "pie": "El cabaré, con su letrero del conejo",
+  "articulo": "Au Lapin Agile",
+  "titulo": "Au_Lapin_Agile,_Paris_20_May_2014.jpg",
+  "autor": "David McSpadden from Daly City, United States",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Au_Lapin_Agile,_Paris_20_May_2014.jpg",
+  "kb": 222
+ },
+ "vigne-montmartre": {
+  "archivo": "fotos/vigne-montmartre.jpg",
+  "pie": "La viña de la ladera norte",
+  "articulo": "Clos Montmartre",
+  "titulo": "Vigne_de_Montmartre,_Paris_9_September_2013.jpg",
+  "autor": "Shadowgate from Novara, ITALY",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Vigne_de_Montmartre,_Paris_9_September_2013.jpg",
+  "kb": 258
+ },
+ "place-du-tertre": {
+  "archivo": "fotos/place-du-tertre.jpg",
+  "pie": "La plaza con los retratistas",
+  "articulo": "Place du Tertre",
+  "titulo": "Place_du_Tertre_(47547426482).jpg",
+  "autor": "Armand",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Place_du_Tertre_(47547426482).jpg",
+  "kb": 234
+ },
+ "notre-dame": {
+  "archivo": "fotos/notre-dame.jpg",
+  "pie": "La catedral desde la explanada",
+  "articulo": "Cathédrale Notre-Dame de Paris",
+  "titulo": "Notre-Dame_de_Paris_2013-07-24.jpg",
+  "autor": "P e z i",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg",
+  "kb": 208
+ },
+ "marche-aux-fleurs": {
+  "archivo": "fotos/marche-aux-fleurs.jpg",
+  "pie": "Los pabellones del mercado",
+  "articulo": "Marché aux fleurs Reine-Elizabeth-II",
+  "titulo": "Marché_aux_fleurs_et_aux_oiseaux_de_Paris_2010-07-29_n1.jpg",
+  "autor": "zoetnet",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_fleurs_et_aux_oiseaux_de_Paris_2010-07-29_n1.jpg",
+  "kb": 274
+ },
+ "sainte-chapelle": {
+  "archivo": "fotos/sainte-chapelle.jpg",
+  "pie": "Las vidrieras de la capilla alta",
+  "articulo": "Sainte-Chapelle",
+  "titulo": "Sainte-Chapelle_de_Paris_vue_du_Palais_de_justice.JPG",
+  "autor": "Tiraden",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Sainte-Chapelle_de_Paris_vue_du_Palais_de_justice.JPG",
+  "kb": 94
+ },
+ "hotel-de-ville": {
+  "archivo": "fotos/hotel-de-ville.jpg",
+  "pie": "La fachada del ayuntamiento",
+  "articulo": "Hôtel de ville de Paris",
+  "titulo": "Hôtel_ville_façade_principale_Paris_11.jpg",
+  "autor": "Chabe01",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_ville_fa%C3%A7ade_principale_Paris_11.jpg",
+  "kb": 135
+ },
+ "pont-neuf": {
+  "archivo": "fotos/pont-neuf.jpg",
+  "pie": "El puente, con sus arcos y sus máscaras",
+  "articulo": "Pont Neuf",
+  "titulo": "The_western_sides_of_the_Île_de_la_Cité_and_the_Pont_Neuf,_14_July_2008.jpg",
+  "autor": "Rmrfstar",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:The_western_sides_of_the_%C3%8Ele_de_la_Cit%C3%A9_and_the_Pont_Neuf,_14_July_2008.jpg",
+  "kb": 110
+ },
+ "pont-des-arts": {
+  "archivo": "fotos/pont-des-arts.jpg",
+  "pie": "La pasarela de hierro",
+  "articulo": "Pont des Arts",
+  "titulo": "Pont_des_Arts,_6e_Arrondissement,_Paris_(HDR)_20140320_1.jpg",
+  "autor": "DXR",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Pont_des_Arts,_6e_Arrondissement,_Paris_(HDR)_20140320_1.jpg",
+  "kb": 111
+ },
+ "louvre-explanada": {
+  "archivo": "fotos/louvre-explanada.jpg",
+  "pie": "La pirámide en la Cour Napoléon",
+  "articulo": "Pyramide du Louvre",
+  "titulo": "Louvre_museum_01.jpg",
+  "autor": "Maksim Sokolov (maxergon.com)",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Louvre_museum_01.jpg",
+  "kb": 124
+ },
+ "galerie-vivienne": {
+  "archivo": "fotos/galerie-vivienne.jpg",
+  "pie": "El pasaje y sus mosaicos",
+  "articulo": "Galerie Vivienne",
+  "titulo": "GalerieVivienne1.jpg",
+  "autor": "David Pendery",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:GalerieVivienne1.jpg",
+  "kb": 282
+ },
+ "galerie-colbert": {
+  "archivo": "fotos/galerie-colbert.jpg",
+  "pie": "La rotonda acristalada",
+  "articulo": "Galerie Colbert",
+  "titulo": "Galerie_Colbert.jpg",
+  "autor": "Benh LIEU SONG",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Galerie_Colbert.jpg",
+  "kb": 167
+ },
+ "vert-galant": {
+  "archivo": "fotos/vert-galant.jpg",
+  "pie": "La punta de la isla, a ras de agua",
+  "articulo": "Square du Vert-Galant",
+  "titulo": "Le_Vert_galant.jpg",
+  "autor": "Inocybe - Piero d'Houin",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Le_Vert_galant.jpg",
+  "kb": 130
+ },
+ "pantheon": {
+  "archivo": "fotos/pantheon.jpg",
+  "pie": "El pórtico y la cúpula de Soufflot",
+  "articulo": "Panthéon (Paris)",
+  "titulo": "Pantheon_of_Paris_007.JPG",
+  "autor": "Moonik",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Pantheon_of_Paris_007.JPG",
+  "kb": 151
+ },
+ "saint-etienne-du-mont": {
+  "archivo": "fotos/saint-etienne-du-mont.jpg",
+  "pie": "La fachada, pegada al Panteón",
+  "articulo": "Église Saint-Étienne-du-Mont",
+  "titulo": "St-Etienne-du-Mont_Exterior,_Paris,_France_-_Diliff.jpg",
+  "autor": "Diliff",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:St-Etienne-du-Mont_Exterior,_Paris,_France_-_Diliff.jpg",
+  "kb": 131
+ },
+ "contrescarpe": {
+  "archivo": "fotos/contrescarpe.jpg",
+  "pie": "La plaza y sus terrazas",
+  "articulo": "Place de la Contrescarpe",
+  "titulo": "P1300182_Paris_V_place_Contrescarpe_rwk.jpg",
+  "autor": "Mbzt",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:P1300182_Paris_V_place_Contrescarpe_rwk.jpg",
+  "kb": 283
+ },
+ "orsay": {
+  "archivo": "fotos/orsay.jpg",
+  "pie": "La nave de la antigua estación",
+  "articulo": "",
+  "titulo": "MuseeOrsay 20070324.jpg",
+  "autor": "Benh",
+  "licencia": "CC BY 2.5",
+  "pagina": "https://commons.wikimedia.org/wiki/File:MuseeOrsay_20070324.jpg",
+  "kb": 160
+ },
+ "cluny": {
+  "archivo": "fotos/cluny.jpg",
+  "pie": "El palacio medieval de los abades",
+  "articulo": "",
+  "titulo": "Hôtel de Cluny square Painlevé.jpg",
+  "autor": "Jebulon",
+  "licencia": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Cluny_square_Painlev%C3%A9.jpg",
+  "kb": 267
+ },
+ "saint-paul": {
+  "archivo": "fotos/saint-paul.jpg",
+  "pie": "La fachada barroca de la rue Saint-Antoine",
+  "articulo": "Église Saint-Paul-Saint-Louis",
+  "titulo": "Église_Saint-Paul-Saint-Louis_-_Façade_-_Août_2025_-_1.jpg",
+  "autor": "ZeusUpsistos",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Saint-Paul-Saint-Louis_-_Fa%C3%A7ade_-_Ao%C3%BBt_2025_-_1.jpg",
+  "kb": 137
+ },
+ "rue-des-rosiers": {
+  "archivo": "fotos/rue-des-rosiers.jpg",
+  "pie": "La calle del barrio judío",
+  "articulo": "Rue des Rosiers",
+  "titulo": "Rue des Rosiers, Paris, France 01.jpg",
+  "autor": "ninara from Helsinki, Finland",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rue_des_Rosiers,_Paris,_France_01.jpg",
+  "kb": 219
+ },
+ "as-du-fallafel": {
+  "archivo": "fotos/as-du-fallafel.jpg",
+  "pie": "L'As du Fallafel, en el 34",
+  "articulo": "",
+  "titulo": "L'As du Fallafel, Jewish Quarter, Paris 2015.jpg",
+  "autor": "Ed Ogle",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:L%27As_du_Fallafel,_Jewish_Quarter,_Paris_2015.jpg",
+  "kb": 189
+ },
+ "hotel-de-sens": {
+  "archivo": "fotos/hotel-de-sens.jpg",
+  "pie": "La casa medieval con sus torreones",
+  "articulo": "Hôtel de Sens",
+  "titulo": "P1030885_Paris_IV_hôtel_de_Sens_rwk.JPG",
+  "autor": "Mbzt",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:P1030885_Paris_IV_h%C3%B4tel_de_Sens_rwk.JPG",
+  "kb": 230
+ },
+ "hotel-de-sully": {
+  "archivo": "fotos/hotel-de-sully.jpg",
+  "pie": "El patio de honor",
+  "articulo": "Hôtel de Sully",
+  "titulo": "P1200929_Paris_IV_hotel_de_Sully_rwk.jpg",
+  "autor": "Mbzt",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:P1200929_Paris_IV_hotel_de_Sully_rwk.jpg",
+  "kb": 249
+ },
+ "bastille": {
+  "archivo": "fotos/bastille.jpg",
+  "pie": "La columna de Julio en la plaza",
+  "articulo": "Colonne de Juillet",
+  "titulo": "Colonne_Juillet_-_Paris_IV_(FR75)_-_2021-05-23_-_1.jpg",
+  "autor": "Chabe01",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Colonne_Juillet_-_Paris_IV_(FR75)_-_2021-05-23_-_1.jpg",
+  "kb": 94
+ },
+ "carnavalet": {
+  "archivo": "fotos/carnavalet.jpg",
+  "pie": "El patio del palacio renacentista",
+  "articulo": "Musée Carnavalet",
+  "titulo": "Cour_Louis_XIV_au_Musée_Carnavalet_à_Paris_le_30_septembre_2016_-_17.jpg",
+  "autor": "Lionel Allorge",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Cour_Louis_XIV_au_Mus%C3%A9e_Carnavalet_%C3%A0_Paris_le_30_septembre_2016_-_17.jpg",
+  "kb": 175
+ },
+ "la-madeleine": {
+  "archivo": "fotos/la-madeleine.jpg",
+  "pie": "Las 52 columnas corintias",
+  "articulo": "Église de la Madeleine",
+  "titulo": "Eglise_de_la_Madeleine_2024.jpg",
+  "autor": "Callaway Kosine – de Suzannet",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Eglise_de_la_Madeleine_2024.jpg",
+  "kb": 162
+ },
+ "place-vendome": {
+  "archivo": "fotos/place-vendome.jpg",
+  "pie": "La columna y las fachadas",
+  "articulo": "Place Vendôme",
+  "titulo": "Place_Vendôme_vue_aérienne.png",
+  "autor": "Des Racines et des Ailes",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Place_Vend%C3%B4me_vue_a%C3%A9rienne.png",
+  "kb": 120
+ },
+ "ritz": {
+  "archivo": "fotos/ritz.jpg",
+  "pie": "El Ritz, en el número 15",
+  "articulo": "Ritz Paris",
+  "titulo": "Hôtel_Ritz.jpg",
+  "autor": "Arthur Weidmann",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Ritz.jpg",
+  "kb": 182
+ },
+ "galeries-lafayette": {
+  "archivo": "fotos/galeries-lafayette.jpg",
+  "pie": "La cúpula de vidriera de 1912",
+  "articulo": "",
+  "titulo": "Interior of Galeries Lafayette Haussmann Paris 001.JPG",
+  "autor": "Moonik",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Interior_of_Galeries_Lafayette_Haussmann_Paris_001.JPG",
+  "kb": 246
+ },
+ "tour-saint-jacques": {
+  "archivo": "fotos/tour-saint-jacques.jpg",
+  "pie": "La torre sola, en su jardín",
+  "articulo": "Tour Saint-Jacques",
+  "titulo": "Tour_Saint-Jacques_2008.jpg",
+  "autor": "Siren-Com",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Tour_Saint-Jacques_2008.jpg",
+  "kb": 117
+ },
+ "alchimiste": {
+  "archivo": "fotos/alchimiste.jpg",
+  "pie": "La torre, junto al bar",
+  "articulo": "Tour Saint-Jacques",
+  "titulo": "Tour_Saint-Jacques_2008.jpg",
+  "autor": "Siren-Com",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Tour_Saint-Jacques_2008.jpg",
+  "kb": 117
+ },
+ "invalides": {
+  "archivo": "fotos/invalides.jpg",
+  "pie": "El conjunto desde la explanada",
+  "articulo": "Hôtel des Invalides",
+  "titulo": "Invalides_aerial_view.jpg",
+  "autor": "Eric Gaba (Sting - fr:Sting)",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Invalides_aerial_view.jpg",
+  "kb": 310
+ },
+ "dome-invalides": {
+  "archivo": "fotos/dome-invalides.jpg",
+  "pie": "El Domo dorado de Hardouin-Mansart",
+  "articulo": "Dôme des Invalides",
+  "titulo": "South facade of Dôme des Invalides.jpg",
+  "autor": "Maksim Sokolov (maxergon.com)",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:South_facade_of_D%C3%B4me_des_Invalides.jpg",
+  "kb": 105
+ },
+ "pont-alexandre-iii": {
+  "archivo": "fotos/pont-alexandre-iii.jpg",
+  "pie": "El puente con sus famas doradas",
+  "articulo": "Pont Alexandre-III",
+  "titulo": "Pont_Alexandre_III_from_pont_de_la_Concorde,_Paris_17_May_2012.jpg",
+  "autor": "Jebulon",
+  "licencia": "CC0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Pont_Alexandre_III_from_pont_de_la_Concorde,_Paris_17_May_2012.jpg",
+  "kb": 120
+ },
+ "petit-palais": {
+  "archivo": "fotos/petit-palais.jpg",
+  "pie": "El jardín interior con el peristilo",
+  "articulo": "Petit Palais",
+  "titulo": "Petit-Palais-Paris-02-2018.jpg",
+  "autor": "Gunnar Klack",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Petit-Palais-Paris-02-2018.jpg",
+  "kb": 114
+ },
+ "grand-palais": {
+  "archivo": "fotos/grand-palais.jpg",
+  "pie": "La nave del Grand Palais",
+  "articulo": "",
+  "titulo": "Grand Palais - PA00088877 - Bonhams 2013 - Vue d'ensemble - 007.jpg",
+  "autor": "Thesupermat",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg",
+  "kb": 249
+ },
+ "bnf-richelieu": {
+  "archivo": "fotos/bnf-richelieu.jpg",
+  "pie": "La fachada de la BnF Richelieu",
+  "articulo": "",
+  "titulo": "Arrêt Bus Bibliothèque Nationale Rue Richelieu - Paris II (FR75) - 2024-12-08 - 2.jpg",
+  "autor": "Chabe01",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Arr%C3%AAt_Bus_Biblioth%C3%A8que_Nationale_Rue_Richelieu_-_Paris_II_(FR75)_-_2024-12-08_-_2.jpg",
+  "kb": 381
+ },
+ "rue-saint-vincent": {
+  "archivo": "fotos/rue-saint-vincent.jpg",
+  "pie": "La calle de la ladera norte",
+  "articulo": "Clos Montmartre",
+  "titulo": "Vigne_de_Montmartre,_Paris_9_September_2013.jpg",
+  "autor": "Shadowgate from Novara, ITALY",
+  "licencia": "CC BY 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Vigne_de_Montmartre,_Paris_9_September_2013.jpg",
+  "kb": 258
+ },
+ "casa-van-gogh": {
+  "archivo": "fotos/casa-van-gogh.jpg",
+  "pie": "La placa en la fachada del 54 de la rue Lepic",
+  "articulo": "",
+  "titulo": "Paris rue lepic 54.jpg",
+  "autor": "Vincent de Groot - http://www.videgro.net",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris_rue_lepic_54.jpg",
+  "kb": 124
+ },
+ "bouillon-pigalle": {
+  "archivo": "fotos/bouillon-pigalle.jpg",
+  "pie": "Bouillon Pigalle, en el bulevar de Clichy",
+  "articulo": "",
+  "titulo": "Bouillon Pigalle.jpg",
+  "autor": "Thomon",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Bouillon_Pigalle.jpg",
+  "kb": 213
+ },
+ "rue-sainte-anne": {
+  "archivo": "fotos/rue-sainte-anne.jpg",
+  "pie": "La rue Sainte-Anne, la calle japonesa",
+  "articulo": "",
+  "titulo": "P1040451 Paris Ier rue Sainte-Anne rwk.JPG",
+  "autor": "Mbzt",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:P1040451_Paris_Ier_rue_Sainte-Anne_rwk.JPG",
+  "kb": 162
+ },
+ "conciergerie": {
+  "archivo": "fotos/conciergerie.jpg",
+  "pie": "La fachada desde el muelle del Reloj",
+  "articulo": "Conciergerie",
+  "titulo": "Paris, Conciergerie -- 2014 -- 1320.jpg",
+  "autor": "Dietmar Rabich",
+  "licencia": "CC BY-SA 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris,_Conciergerie_--_2014_--_1320.jpg",
+  "kb": 111
+ },
+ "gare-montparnasse": {
+  "archivo": "fotos/gare-montparnasse.jpg",
+  "pie": "El accidente de 1895 en la estación vieja",
+  "articulo": "Accident ferroviaire de la gare Montparnasse",
+  "titulo": "Train_wreck_at_Montparnasse_1895.jpg",
+  "autor": "Photo credited to the firm Levy &amp; fils by this site. (It is credit",
+  "licencia": "Public domain",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Train_wreck_at_Montparnasse_1895.jpg",
+  "kb": 189
+ },
+ "invalides-entrada-grenelle": {
+  "archivo": "fotos/invalides-entrada-grenelle.jpg",
+  "pie": "El patio de honor de los Inválidos",
+  "articulo": "",
+  "titulo": "Paris - Les Invalides - La cour d'honneur - 033.jpg",
+  "autor": "Thesupermat",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris_-_Les_Invalides_-_La_cour_d%27honneur_-_033.jpg",
+  "kb": 181
+ },
+ "opera-garnier": {
+  "archivo": "fotos/opera-garnier.jpg",
+  "pie": "La fachada de Charles Garnier",
+  "articulo": "Palais Garnier",
+  "titulo": "Paris_Palais_Garnier_2010-04-06_16.55.07.jpg",
+  "autor": "Alexander Hoernigk",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Paris_Palais_Garnier_2010-04-06_16.55.07.jpg",
+  "kb": 156
+ },
+ "place-des-vosges": {
+  "archivo": "fotos/place-des-vosges.jpg",
+  "pie": "Los pabellones de ladrillo y los soportales",
+  "articulo": "Place des Vosges",
+  "titulo": "Place_des_Vosges_vue_aérienne.png",
+  "autor": "Des Racines et des Ailes",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Place_des_Vosges_vue_a%C3%A9rienne.png",
+  "kb": 162
+ },
+ "rue-mouffetard": {
+  "archivo": "fotos/rue-mouffetard.jpg",
+  "pie": "La calle de mercado",
+  "articulo": "Rue Mouffetard",
+  "titulo": "Rue_Mouffetard.JPG",
+  "autor": "LPLT",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Rue_Mouffetard.JPG",
+  "kb": 188
+ },
+ "rue-saint-dominique": {
+  "archivo": "fotos/rue-saint-dominique.jpg",
+  "pie": "La rue Saint-Dominique con la torre al fondo",
+  "articulo": "",
+  "titulo": "Boulangerie 64 rue Saint-Dominique Paris 7e.jpg",
+  "autor": "Moonik",
+  "licencia": "CC BY-SA 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Boulangerie_64_rue_Saint-Dominique_Paris_7e.jpg",
+  "kb": 167
+ },
+ "tuileries": {
+  "archivo": "fotos/tuileries.jpg",
+  "pie": "El jardín hacia la Concorde",
+  "articulo": "Jardin des Tuileries",
+  "titulo": "Jardin_des_Tuileries_-_panoramio_-_Javier_B.jpg",
+  "autor": "Javier B",
+  "licencia": "CC BY 3.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Jardin_des_Tuileries_-_panoramio_-_Javier_B.jpg",
+  "kb": 216
+ }
+}

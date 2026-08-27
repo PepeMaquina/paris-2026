@@ -188,3 +188,4 @@ ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
   aspect-ratio:3/2;object-fit:cover}
 .foto figcaption{font-size:12px;color:var(--suave);margin-top:6px;line-height:1.4}
 .foto figcaption a{color:var(--suave);text-decoration:underline;text-underline-offset:2px}
+.tour-fila .mini{width:64px;height:48px;object-fit:cover;border-radius:8px;flex:0 0 64px;background:#efe9e0}

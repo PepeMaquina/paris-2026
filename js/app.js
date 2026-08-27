@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-17';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-18';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -514,7 +514,9 @@ function pintaTour() {
       ${t.paradas.map(id => {
         const p = lug(id), d = cerca[id];
         const on = S.vistos[id];
+        const fo = D.fotos[id];
         return `<div class="tour-fila ${on ? 'visto' : ''} ${d !== undefined && d < 80 ? 'aqui' : ''}">
+          ${fo ? `<img class="mini" src="${fo.archivo}" alt="" loading="lazy">` : ''}
           <div style="flex:1">
             <b>${p.nombre}</b>
             <div class="tour-sub">${d !== undefined ? 'a ' + fmtD(d) : p.cat}${D.audio['f-' + id] ? ' · audio ' + mmss(D.audio['f-' + id].seg) : ''}</div>
@@ -702,8 +704,8 @@ function avisoCamino(texto) {
 const A = { el: null, cola: [], pos: 0 };
 
 function mmss(seg) {
-  const m = Math.floor(seg / 60), s = Math.round(seg % 60);
-  return m + ':' + String(s).padStart(2, '0');
+  const t = Math.round(seg);                    // redondear al final, o salen cosas como 1:60
+  return Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0');
 }
 
 function suena(claves, i = 0) {
