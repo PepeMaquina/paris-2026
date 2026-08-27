@@ -68,6 +68,8 @@ TRAMOS = [
  ("jue3","metro-cite","notre-dame"),
  ("jue3","rue-sainte-anne","vert-galant"),
  ("vie4","metro-saint-paul","saint-paul"),
+ ("vie4","metro-chatelet","alchimiste"),
+ ("vie4","metro-tolbiac","comme-au-vietnam"),
  ("sab5","invalides","invalides-entrada-grenelle"),
 ]
 

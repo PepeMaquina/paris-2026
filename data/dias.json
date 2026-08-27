@@ -598,7 +598,12 @@
      "tipo": "bar",
      "lugar": "alchimiste",
      "tit": "L'Alchimiste",
-     "nota": "Junto a la Torre Saint-Jacques, happy hour desde las 18:00. Nicolas Flamel fue escribano en el siglo XIV y la leyenda alquímica se la colgaron después. Desde Châtelet, la línea 7 os deja en Tolbiac en un cuarto de hora, a cinco minutos del restaurante. Si habéis alargado Carnavalet, salid del bar a las 21:15 como muy tarde."
+     "nota": "Junto a la Torre Saint-Jacques, happy hour desde las 18:00. Nicolas Flamel fue escribano en el siglo XIV y la leyenda alquímica se la colgaron después. Desde Châtelet, la línea 7 os deja en Tolbiac en un cuarto de hora, a cinco minutos del restaurante. Si habéis alargado Carnavalet, salid del bar a las 21:15 como muy tarde.",
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 14 desde Opéra hasta Châtelet, diez minutos, y tres andando.",
+      "desde": "metro-chatelet"
+     }
     },
     {
      "h": "21:45",
@@ -612,6 +617,11 @@
      "limite": {
       "tipo": "duro",
       "texto": "Comme au Vietnam: la cocina cierra a las 22:30, así que esa es hora de estar sentados."
+     },
+     "llegada": {
+      "modo": "metro",
+      "texto": "Línea 7 desde Châtelet hasta Tolbiac, un cuarto de hora. Desde el hotel son quince minutos andando por la rue de Tolbiac, o el autobús 62.",
+      "desde": "metro-tolbiac"
      }
     }
    ]

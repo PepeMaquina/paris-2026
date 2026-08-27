@@ -41,6 +41,9 @@ def contrae(nombre):
     return 'a ' + nombre
 
 def frase(t, destino):
+    # el router deja algunas cosas en ingles aunque se le pida castellano
+    t = t.replace("the crosswalk", "el paso de peatones")
+    t = re.sub(r"a Level [-\d.]+", "", t)
     t = t.strip()
     if not t:
         return t
