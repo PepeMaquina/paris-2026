@@ -638,5 +638,43 @@
   "licencia": "CC BY 3.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Jardin_des_Tuileries_-_panoramio_-_Javier_B.jpg",
   "kb": 216
+ },
+ "memorial-shoah": {
+  "archivo": "fotos/memorial-shoah.jpg",
+  "pie": "El Muro de los Nombres",
+  "titulo": "Wall of names, Memorial of the Shoah, Paris.jpg",
+  "autor": "Ninaraas",
+  "licencia": "CC BY 4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Wall_of_names,_Memorial_of_the_Shoah,_Paris.jpg",
+  "kb": 173
+ },
+ "bon-marche": {
+  "archivo": "fotos/bon-marche.jpg",
+  "pie": "Le Bon Marché desde la rue de Sèvres",
+  "titulo": "Le Bon Marché, Paris 27 May 2012.jpg",
+  "autor": "Guillaume Speurt",
+  "licencia": "CC BY-SA 2.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Le_Bon_March%C3%A9,_Paris_27_May_2012.jpg",
+  "kb": 165
+ },
+ "relais-gascon": {
+  "archivo": "fotos/relais-gascon.jpg",
+  "pie": "Le Relais Gascon, en la rue des Abbesses",
+  "autor": "Foto propia",
+  "licencia": "",
+  "pagina": "",
+  "titulo": "le-relais-gascon-paris. Foto mía.webp",
+  "kb": 105,
+  "fijado": true
+ },
+ "village-saint-paul": {
+  "archivo": "fotos/village-saint-paul.jpg",
+  "pie": "Uno de los patios de anticuarios",
+  "autor": "Foto propia",
+  "licencia": "",
+  "pagina": "",
+  "titulo": "eaig-le-village-saint-paul. Foto mía.webp",
+  "kb": 166,
+  "fijado": true
  }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-19';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-21';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -193,7 +193,9 @@ function abreFicha(diaId, i) {
   if (foto) h += `<figure class="foto">
       <img src="${foto.archivo}" alt="${p.nombre}" loading="lazy">
       <figcaption>${foto.pie || p.nombre}
-        <a href="${foto.pagina}" target="_blank" rel="noopener">${foto.autor || 'Wikimedia Commons'} · ${foto.licencia}</a>
+        ${foto.pagina
+          ? `<a href="${foto.pagina}" target="_blank" rel="noopener">${foto.autor || 'Wikimedia Commons'}${foto.licencia ? ' · ' + foto.licencia : ''}</a>`
+          : `<span>${foto.autor || ''}</span>`}
       </figcaption></figure>`;
   if (it.limite) h += `<div class="aviso"><b>${it.limite.tipo === 'duro' ? 'Hora fija' : 'Conviene'}</b><br>${it.limite.texto}</div>`;
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
