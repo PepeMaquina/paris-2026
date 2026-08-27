@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-14';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-15';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -197,8 +197,7 @@ function abreFicha(diaId, i) {
   if (r) {
     h += `<h3 style="margin-top:20px">A pie desde ${lug(items[i - 1].lugar).nombre}</h3>
       <div style="color:var(--suave);font-size:13.5px;margin:4px 0 6px">${fmtD(r.metros)} · ${fmtM(r.minutos)} andando</div>
-      <div class="btns"><button class="btn" data-camino="${r.id}">Ir andando paso a paso</button></div>
-      <ol class="pasos">${fusiona(r.pasos).map(s => `<li><b>${s.m ? s.m + ' m' : ''}</b><span>${s.t}</span></li>`).join('')}</ol>`;
+      <div class="btns"><button class="btn" data-camino="${r.id}" data-ctx="${diaId}|${i}">Ir andando paso a paso</button></div>`;
   }
 
   if (t) {
