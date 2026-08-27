@@ -58,11 +58,11 @@
   },
   {
    "id": "navigo",
-   "tit": "Navigo semanal",
-   "estado": "pendiente",
-   "limite": "2026-09-01T15:00:00",
-   "nota": "Vuestras Navigo Easy no admiten el forfait semanal. Lo más limpio es cargarlo en el móvil con la app Île-de-France Mobilités, 32,40 € por persona, todas las zonas, que es la que interesa por Versalles. La alternativa es comprar cuatro Navigo Découverte a 5 € en la taquilla de Montparnasse con foto de carnet pegada, así que llevad las fotos hechas de casa.",
-   "urgencia": 2
+   "tit": "Navigo en el móvil, con la app Île-de-France Mobilités",
+   "estado": "hecho",
+   "limite": null,
+   "nota": "App instalada. Queda cargar el forfait Navigo Semaine dentro de ella, 32,40 € por persona en la versión de todas las zonas, que es la que interesa por Versalles. Vale de lunes a domingo natural, no siete días desde la compra, así que vuestra semana entra entera, y se puede comprar desde el viernes anterior. Las Navigo Easy quedan de respaldo con tickets sueltos a 2,55 €.",
+   "urgencia": 4
   }
  ]
 }
