@@ -1,714 +1,714 @@
 {
  "f-saint-germain-des-pres": {
   "archivo": "audio/f-saint-germain-des-pres.m4a",
-  "firma": "1f225b021930",
-  "voz": "Mónica",
+  "firma": "82d8e0a6cae3",
+  "voz": "Marisol (Premium)",
   "titulo": "Saint-Germain-des-Prés",
-  "seg": 87.7,
-  "kb": 381
+  "seg": 102.2,
+  "kb": 436
  },
  "f-bon-marche": {
   "archivo": "audio/f-bon-marche.m4a",
-  "firma": "9d213ada5b06",
-  "voz": "Mónica",
+  "firma": "31e275584503",
+  "voz": "Marisol (Premium)",
   "titulo": "Le Bon Marché",
-  "seg": 71.9,
-  "kb": 319
+  "seg": 83.7,
+  "kb": 364
  },
  "f-tour-eiffel": {
   "archivo": "audio/f-tour-eiffel.m4a",
-  "firma": "8c7560436176",
-  "voz": "Mónica",
+  "firma": "27f6aaf28c15",
+  "voz": "Marisol (Premium)",
   "titulo": "Torre Eiffel",
-  "seg": 101.4,
-  "kb": 435
+  "seg": 118.4,
+  "kb": 501
  },
  "f-versalles-palacio": {
   "archivo": "audio/f-versalles-palacio.m4a",
-  "firma": "a2de106add72",
-  "voz": "Mónica",
+  "firma": "b87d496c2207",
+  "voz": "Marisol (Premium)",
   "titulo": "Palacio de Versalles",
-  "seg": 100.6,
-  "kb": 432
+  "seg": 117.2,
+  "kb": 496
  },
  "f-versalles-jardines": {
   "archivo": "audio/f-versalles-jardines.m4a",
-  "firma": "7804c1316065",
-  "voz": "Mónica",
+  "firma": "2d69f87dd512",
+  "voz": "Marisol (Premium)",
   "titulo": "Jardines de Versalles",
-  "seg": 87.3,
-  "kb": 380
+  "seg": 102.6,
+  "kb": 438
  },
  "f-sacre-coeur": {
   "archivo": "audio/f-sacre-coeur.m4a",
-  "firma": "105d0784fa9e",
-  "voz": "Mónica",
+  "firma": "dfc142c458d9",
+  "voz": "Marisol (Premium)",
   "titulo": "Sacré-Cœur",
-  "seg": 102.6,
-  "kb": 441
+  "seg": 119.7,
+  "kb": 506
  },
  "f-moulin-rouge": {
   "archivo": "audio/f-moulin-rouge.m4a",
-  "firma": "1eda03c01817",
-  "voz": "Mónica",
+  "firma": "77728b840cc5",
+  "voz": "Marisol (Premium)",
   "titulo": "Moulin Rouge",
-  "seg": 61.4,
-  "kb": 276
+  "seg": 72.7,
+  "kb": 320
  },
  "f-bateau-lavoir": {
   "archivo": "audio/f-bateau-lavoir.m4a",
-  "firma": "04bccb73fc4f",
-  "voz": "Mónica",
+  "firma": "82f837c7823b",
+  "voz": "Marisol (Premium)",
   "titulo": "Bateau-Lavoir",
-  "seg": 60.9,
-  "kb": 274
- },
- "f-moulin-galette": {
-  "archivo": "audio/f-moulin-galette.m4a",
-  "firma": "ca7edda461e9",
-  "voz": "Mónica",
-  "titulo": "Moulin de la Galette",
-  "seg": 50.1,
-  "kb": 232
- },
- "f-maison-rose": {
-  "archivo": "audio/f-maison-rose.m4a",
-  "firma": "50c76ee354f2",
-  "voz": "Mónica",
-  "titulo": "La Maison Rose",
-  "seg": 45.8,
-  "kb": 214
- },
- "f-lapin-agile": {
-  "archivo": "audio/f-lapin-agile.m4a",
-  "firma": "7ec8c26f5368",
-  "voz": "Mónica",
-  "titulo": "Au Lapin Agile",
-  "seg": 64.6,
-  "kb": 289
- },
- "f-vigne-montmartre": {
-  "archivo": "audio/f-vigne-montmartre.m4a",
-  "firma": "402ba9b947ae",
-  "voz": "Mónica",
-  "titulo": "Viña de Montmartre",
-  "seg": 50.5,
-  "kb": 234
- },
- "f-deux-moulins": {
-  "archivo": "audio/f-deux-moulins.m4a",
-  "firma": "9b2ab7acede8",
-  "voz": "Mónica",
-  "titulo": "Café des Deux Moulins",
-  "seg": 33.9,
-  "kb": 168
- },
- "f-casa-van-gogh": {
-  "archivo": "audio/f-casa-van-gogh.m4a",
-  "firma": "f6a2b5c98ef8",
-  "voz": "Mónica",
-  "titulo": "Casa de Van Gogh",
-  "seg": 48.3,
-  "kb": 225
- },
- "f-place-du-tertre": {
-  "archivo": "audio/f-place-du-tertre.m4a",
-  "firma": "9580bbafe523",
-  "voz": "Mónica",
-  "titulo": "Place du Tertre",
-  "seg": 46.3,
-  "kb": 217
- },
- "f-notre-dame": {
-  "archivo": "audio/f-notre-dame.m4a",
-  "firma": "10c5c9658961",
-  "voz": "Mónica",
-  "titulo": "Notre-Dame de París",
-  "seg": 111.5,
-  "kb": 476
- },
- "f-marche-aux-fleurs": {
-  "archivo": "audio/f-marche-aux-fleurs.m4a",
-  "firma": "d05ccfdf9172",
-  "voz": "Mónica",
-  "titulo": "Marché aux Fleurs",
-  "seg": 49.8,
-  "kb": 230
- },
- "f-conciergerie": {
-  "archivo": "audio/f-conciergerie.m4a",
-  "firma": "d58f42b68aa2",
-  "voz": "Mónica",
-  "titulo": "La Conciergerie",
-  "seg": 100.2,
-  "kb": 431
- },
- "f-sainte-chapelle": {
-  "archivo": "audio/f-sainte-chapelle.m4a",
-  "firma": "41ae644f4524",
-  "voz": "Mónica",
-  "titulo": "Sainte-Chapelle",
-  "seg": 51.5,
-  "kb": 237
- },
- "f-pont-neuf": {
-  "archivo": "audio/f-pont-neuf.m4a",
-  "firma": "d0f629c468d5",
-  "voz": "Mónica",
-  "titulo": "Pont Neuf",
-  "seg": 70.7,
-  "kb": 313
- },
- "f-vert-galant": {
-  "archivo": "audio/f-vert-galant.m4a",
-  "firma": "2008cb5a76fb",
-  "voz": "Mónica",
-  "titulo": "Square du Vert-Galant",
-  "seg": 45.2,
-  "kb": 212
- },
- "f-galerie-vivienne": {
-  "archivo": "audio/f-galerie-vivienne.m4a",
-  "firma": "0d164940bdc5",
-  "voz": "Mónica",
-  "titulo": "Galerie Vivienne",
-  "seg": 74.6,
-  "kb": 329
- },
- "f-pantheon": {
-  "archivo": "audio/f-pantheon.m4a",
-  "firma": "c4eb8b35f6f2",
-  "voz": "Mónica",
-  "titulo": "El Panteón",
-  "seg": 109.5,
-  "kb": 467
- },
- "f-saint-etienne-du-mont": {
-  "archivo": "audio/f-saint-etienne-du-mont.m4a",
-  "firma": "0d0fac3c6d07",
-  "voz": "Mónica",
-  "titulo": "Saint-Étienne-du-Mont",
-  "seg": 60.1,
-  "kb": 271
- },
- "f-rue-mouffetard": {
-  "archivo": "audio/f-rue-mouffetard.m4a",
-  "firma": "7ad9efe1a264",
-  "voz": "Mónica",
-  "titulo": "Rue Mouffetard",
-  "seg": 65.5,
-  "kb": 293
- },
- "f-orsay": {
-  "archivo": "audio/f-orsay.m4a",
-  "firma": "e24507876827",
-  "voz": "Mónica",
-  "titulo": "Museo de Orsay",
-  "seg": 85.8,
-  "kb": 373
- },
- "f-hotel-de-ville": {
-  "archivo": "audio/f-hotel-de-ville.m4a",
-  "firma": "665a7b84a0a2",
-  "voz": "Mónica",
-  "titulo": "Hôtel de Ville",
-  "seg": 69.4,
-  "kb": 309
- },
- "f-saint-paul": {
-  "archivo": "audio/f-saint-paul.m4a",
-  "firma": "051aaf2aeac0",
-  "voz": "Mónica",
-  "titulo": "Saint-Paul (punto de encuentro)",
-  "seg": 64.3,
-  "kb": 288
- },
- "f-memorial-shoah": {
-  "archivo": "audio/f-memorial-shoah.m4a",
-  "firma": "1a56fd59f318",
-  "voz": "Mónica",
-  "titulo": "Memorial de la Shoah",
   "seg": 70.5,
   "kb": 312
  },
+ "f-moulin-galette": {
+  "archivo": "audio/f-moulin-galette.m4a",
+  "firma": "91285a62b72a",
+  "voz": "Marisol (Premium)",
+  "titulo": "Moulin de la Galette",
+  "seg": 58.6,
+  "kb": 264
+ },
+ "f-maison-rose": {
+  "archivo": "audio/f-maison-rose.m4a",
+  "firma": "6b3ec4c2769f",
+  "voz": "Marisol (Premium)",
+  "titulo": "La Maison Rose",
+  "seg": 54.8,
+  "kb": 249
+ },
+ "f-lapin-agile": {
+  "archivo": "audio/f-lapin-agile.m4a",
+  "firma": "d863bf99c795",
+  "voz": "Marisol (Premium)",
+  "titulo": "Au Lapin Agile",
+  "seg": 74.9,
+  "kb": 329
+ },
+ "f-vigne-montmartre": {
+  "archivo": "audio/f-vigne-montmartre.m4a",
+  "firma": "4b44665af47f",
+  "voz": "Marisol (Premium)",
+  "titulo": "Viña de Montmartre",
+  "seg": 58.6,
+  "kb": 264
+ },
+ "f-deux-moulins": {
+  "archivo": "audio/f-deux-moulins.m4a",
+  "firma": "39f6cc3c9740",
+  "voz": "Marisol (Premium)",
+  "titulo": "Café des Deux Moulins",
+  "seg": 40.3,
+  "kb": 192
+ },
+ "f-casa-van-gogh": {
+  "archivo": "audio/f-casa-van-gogh.m4a",
+  "firma": "661295379ddd",
+  "voz": "Marisol (Premium)",
+  "titulo": "Casa de Van Gogh",
+  "seg": 56.5,
+  "kb": 257
+ },
+ "f-place-du-tertre": {
+  "archivo": "audio/f-place-du-tertre.m4a",
+  "firma": "905cac7a3f2c",
+  "voz": "Marisol (Premium)",
+  "titulo": "Place du Tertre",
+  "seg": 53.5,
+  "kb": 245
+ },
+ "f-notre-dame": {
+  "archivo": "audio/f-notre-dame.m4a",
+  "firma": "930258987b8c",
+  "voz": "Marisol (Premium)",
+  "titulo": "Notre-Dame de París",
+  "seg": 129.5,
+  "kb": 547
+ },
+ "f-marche-aux-fleurs": {
+  "archivo": "audio/f-marche-aux-fleurs.m4a",
+  "firma": "a6ccf41d3248",
+  "voz": "Marisol (Premium)",
+  "titulo": "Marché aux Fleurs",
+  "seg": 57.5,
+  "kb": 261
+ },
+ "f-conciergerie": {
+  "archivo": "audio/f-conciergerie.m4a",
+  "firma": "f7fe83e78bfa",
+  "voz": "Marisol (Premium)",
+  "titulo": "La Conciergerie",
+  "seg": 116.6,
+  "kb": 492
+ },
+ "f-sainte-chapelle": {
+  "archivo": "audio/f-sainte-chapelle.m4a",
+  "firma": "64a903d7ff6a",
+  "voz": "Marisol (Premium)",
+  "titulo": "Sainte-Chapelle",
+  "seg": 60.0,
+  "kb": 270
+ },
+ "f-pont-neuf": {
+  "archivo": "audio/f-pont-neuf.m4a",
+  "firma": "4d320c0d09bd",
+  "voz": "Marisol (Premium)",
+  "titulo": "Pont Neuf",
+  "seg": 83.0,
+  "kb": 361
+ },
+ "f-vert-galant": {
+  "archivo": "audio/f-vert-galant.m4a",
+  "firma": "ce738dec157f",
+  "voz": "Marisol (Premium)",
+  "titulo": "Square du Vert-Galant",
+  "seg": 53.5,
+  "kb": 244
+ },
+ "f-galerie-vivienne": {
+  "archivo": "audio/f-galerie-vivienne.m4a",
+  "firma": "49019c1b5751",
+  "voz": "Marisol (Premium)",
+  "titulo": "Galerie Vivienne",
+  "seg": 87.2,
+  "kb": 378
+ },
+ "f-pantheon": {
+  "archivo": "audio/f-pantheon.m4a",
+  "firma": "ebb4fae3d384",
+  "voz": "Marisol (Premium)",
+  "titulo": "El Panteón",
+  "seg": 127.2,
+  "kb": 536
+ },
+ "f-saint-etienne-du-mont": {
+  "archivo": "audio/f-saint-etienne-du-mont.m4a",
+  "firma": "0bc1cd957d8a",
+  "voz": "Marisol (Premium)",
+  "titulo": "Saint-Étienne-du-Mont",
+  "seg": 68.9,
+  "kb": 306
+ },
+ "f-rue-mouffetard": {
+  "archivo": "audio/f-rue-mouffetard.m4a",
+  "firma": "321e092f544c",
+  "voz": "Marisol (Premium)",
+  "titulo": "Rue Mouffetard",
+  "seg": 75.9,
+  "kb": 334
+ },
+ "f-orsay": {
+  "archivo": "audio/f-orsay.m4a",
+  "firma": "b2f7bf17590c",
+  "voz": "Marisol (Premium)",
+  "titulo": "Museo de Orsay",
+  "seg": 99.7,
+  "kb": 425
+ },
+ "f-hotel-de-ville": {
+  "archivo": "audio/f-hotel-de-ville.m4a",
+  "firma": "ccc9cd8fb88b",
+  "voz": "Marisol (Premium)",
+  "titulo": "Hôtel de Ville",
+  "seg": 80.6,
+  "kb": 352
+ },
+ "f-saint-paul": {
+  "archivo": "audio/f-saint-paul.m4a",
+  "firma": "371643687ab8",
+  "voz": "Marisol (Premium)",
+  "titulo": "Saint-Paul (punto de encuentro)",
+  "seg": 74.4,
+  "kb": 326
+ },
+ "f-memorial-shoah": {
+  "archivo": "audio/f-memorial-shoah.m4a",
+  "firma": "84aa304b9353",
+  "voz": "Marisol (Premium)",
+  "titulo": "Memorial de la Shoah",
+  "seg": 81.8,
+  "kb": 355
+ },
  "f-rue-des-rosiers": {
   "archivo": "audio/f-rue-des-rosiers.m4a",
-  "firma": "aa25ad4a9692",
-  "voz": "Mónica",
+  "firma": "d5a3864e46ec",
+  "voz": "Marisol (Premium)",
   "titulo": "Rue des Rosiers",
-  "seg": 78.1,
-  "kb": 344
+  "seg": 88.8,
+  "kb": 384
  },
  "f-hotel-de-sens": {
   "archivo": "audio/f-hotel-de-sens.m4a",
-  "firma": "f558dd628fbb",
-  "voz": "Mónica",
+  "firma": "8be0ea5f8c7c",
+  "voz": "Marisol (Premium)",
   "titulo": "Hôtel de Sens",
-  "seg": 71.0,
-  "kb": 314
+  "seg": 81.5,
+  "kb": 354
  },
  "f-village-saint-paul": {
   "archivo": "audio/f-village-saint-paul.m4a",
-  "firma": "d97ba6022fee",
-  "voz": "Mónica",
+  "firma": "3faabe196c4b",
+  "voz": "Marisol (Premium)",
   "titulo": "Village Saint-Paul",
-  "seg": 48.5,
-  "kb": 225
+  "seg": 56.0,
+  "kb": 255
  },
  "f-hotel-de-sully": {
   "archivo": "audio/f-hotel-de-sully.m4a",
-  "firma": "306681b7feb3",
-  "voz": "Mónica",
+  "firma": "ac9e300d9a61",
+  "voz": "Marisol (Premium)",
   "titulo": "Hôtel de Sully",
-  "seg": 48.4,
-  "kb": 225
+  "seg": 56.4,
+  "kb": 256
  },
  "f-place-des-vosges": {
   "archivo": "audio/f-place-des-vosges.m4a",
-  "firma": "5d84e363844b",
-  "voz": "Mónica",
+  "firma": "4f97053e86e1",
+  "voz": "Marisol (Premium)",
   "titulo": "Place des Vosges",
-  "seg": 83.6,
-  "kb": 365
+  "seg": 97.1,
+  "kb": 417
  },
  "f-bastille": {
   "archivo": "audio/f-bastille.m4a",
-  "firma": "461960efa3e4",
-  "voz": "Mónica",
+  "firma": "4db92fb86aa1",
+  "voz": "Marisol (Premium)",
   "titulo": "Plaza de la Bastilla",
-  "seg": 73.3,
-  "kb": 324
+  "seg": 83.8,
+  "kb": 365
  },
  "f-carnavalet": {
   "archivo": "audio/f-carnavalet.m4a",
-  "firma": "947dfbbdd830",
-  "voz": "Mónica",
+  "firma": "efa7bbda268e",
+  "voz": "Marisol (Premium)",
   "titulo": "Museo Carnavalet",
-  "seg": 91.1,
-  "kb": 394
+  "seg": 105.7,
+  "kb": 452
  },
  "f-la-madeleine": {
   "archivo": "audio/f-la-madeleine.m4a",
-  "firma": "c97cf7370501",
-  "voz": "Mónica",
+  "firma": "f686227e3c44",
+  "voz": "Marisol (Premium)",
   "titulo": "La Madeleine",
-  "seg": 77.5,
-  "kb": 341
+  "seg": 89.8,
+  "kb": 387
  },
  "f-place-vendome": {
   "archivo": "audio/f-place-vendome.m4a",
-  "firma": "a306d69b0ff6",
-  "voz": "Mónica",
+  "firma": "c91cdaba1975",
+  "voz": "Marisol (Premium)",
   "titulo": "Place Vendôme",
-  "seg": 75.9,
-  "kb": 335
+  "seg": 87.6,
+  "kb": 380
  },
  "f-opera-garnier": {
   "archivo": "audio/f-opera-garnier.m4a",
-  "firma": "ac14704380d2",
-  "voz": "Mónica",
+  "firma": "e082ac88f4da",
+  "voz": "Marisol (Premium)",
   "titulo": "Ópera Garnier",
-  "seg": 90.0,
-  "kb": 391
+  "seg": 103.2,
+  "kb": 441
  },
  "f-galeries-lafayette": {
   "archivo": "audio/f-galeries-lafayette.m4a",
-  "firma": "234df2335b95",
-  "voz": "Mónica",
+  "firma": "a29d1e534713",
+  "voz": "Marisol (Premium)",
   "titulo": "Galeries Lafayette Haussmann",
-  "seg": 67.8,
-  "kb": 302
+  "seg": 78.2,
+  "kb": 342
  },
  "f-tour-saint-jacques": {
   "archivo": "audio/f-tour-saint-jacques.m4a",
-  "firma": "cfc021bd874d",
-  "voz": "Mónica",
+  "firma": "9d2422c86975",
+  "voz": "Marisol (Premium)",
   "titulo": "Torre Saint-Jacques",
-  "seg": 74.5,
-  "kb": 329
+  "seg": 87.7,
+  "kb": 380
  },
  "f-comme-au-vietnam": {
   "archivo": "audio/f-comme-au-vietnam.m4a",
-  "firma": "8962c03a0481",
-  "voz": "Mónica",
+  "firma": "d38f71c78e49",
+  "voz": "Marisol (Premium)",
   "titulo": "Comme au Vietnam",
-  "seg": 67.9,
-  "kb": 302
+  "seg": 79.4,
+  "kb": 347
  },
  "f-invalides-entrada-grenelle": {
   "archivo": "audio/f-invalides-entrada-grenelle.m4a",
-  "firma": "fbb1a4a15ec2",
-  "voz": "Mónica",
+  "firma": "5837a7724eef",
+  "voz": "Marisol (Premium)",
   "titulo": "Invalides, entrada de rue de Grenelle",
-  "seg": 93.4,
-  "kb": 404
+  "seg": 108.3,
+  "kb": 460
  },
  "f-dome-invalides": {
   "archivo": "audio/f-dome-invalides.m4a",
-  "firma": "8de1e35057c3",
-  "voz": "Mónica",
+  "firma": "4726606b798f",
+  "voz": "Marisol (Premium)",
   "titulo": "Domo de los Inválidos y tumba de Napoleón",
-  "seg": 97.6,
-  "kb": 420
+  "seg": 114.5,
+  "kb": 487
  },
  "f-pont-alexandre-iii": {
   "archivo": "audio/f-pont-alexandre-iii.m4a",
-  "firma": "f0011d3fdf9e",
-  "voz": "Mónica",
+  "firma": "803f98fe40ea",
+  "voz": "Marisol (Premium)",
   "titulo": "Pont Alexandre III",
-  "seg": 71.5,
-  "kb": 317
+  "seg": 82.8,
+  "kb": 360
  },
  "f-petit-palais": {
   "archivo": "audio/f-petit-palais.m4a",
-  "firma": "9aa5f3697d58",
-  "voz": "Mónica",
+  "firma": "c8ba8b5e8c6b",
+  "voz": "Marisol (Premium)",
   "titulo": "Petit Palais",
-  "seg": 66.4,
-  "kb": 297
+  "seg": 77.0,
+  "kb": 337
  },
  "f-gare-montparnasse": {
   "archivo": "audio/f-gare-montparnasse.m4a",
-  "firma": "684933adfd4e",
-  "voz": "Mónica",
+  "firma": "2e1dfe63e7db",
+  "voz": "Marisol (Premium)",
   "titulo": "Gare Montparnasse",
-  "seg": 65.8,
-  "kb": 294
+  "seg": 76.3,
+  "kb": 335
  },
  "f-deux-magots": {
   "archivo": "audio/f-deux-magots.m4a",
-  "firma": "43be8246cc82",
-  "voz": "Mónica",
+  "firma": "e0266f894ad5",
+  "voz": "Marisol (Premium)",
   "titulo": "Les Deux Magots",
-  "seg": 49.1,
-  "kb": 228
+  "seg": 55.4,
+  "kb": 252
  },
  "f-champ-de-mars": {
   "archivo": "audio/f-champ-de-mars.m4a",
-  "firma": "870d53dcfa23",
-  "voz": "Mónica",
+  "firma": "c0511fdc329d",
+  "voz": "Marisol (Premium)",
   "titulo": "Champ de Mars",
-  "seg": 52.4,
-  "kb": 242
+  "seg": 61.0,
+  "kb": 274
  },
  "f-rue-saint-dominique": {
   "archivo": "audio/f-rue-saint-dominique.m4a",
-  "firma": "4584144a777a",
-  "voz": "Mónica",
+  "firma": "30248b8220c4",
+  "voz": "Marisol (Premium)",
   "titulo": "Rue Saint-Dominique",
-  "seg": 39.6,
-  "kb": 190
+  "seg": 45.8,
+  "kb": 212
  },
  "f-bouillon-pigalle": {
   "archivo": "audio/f-bouillon-pigalle.m4a",
-  "firma": "5bd590005104",
-  "voz": "Mónica",
+  "firma": "db3b8b44866a",
+  "voz": "Marisol (Premium)",
   "titulo": "Bouillon Pigalle",
-  "seg": 59.9,
-  "kb": 270
+  "seg": 69.7,
+  "kb": 307
  },
  "f-relais-gascon": {
   "archivo": "audio/f-relais-gascon.m4a",
-  "firma": "56e5c463c4b9",
-  "voz": "Mónica",
+  "firma": "5c1b63bb27f8",
+  "voz": "Marisol (Premium)",
   "titulo": "Le Relais Gascon",
-  "seg": 53.6,
-  "kb": 245
+  "seg": 63.0,
+  "kb": 280
  },
  "f-as-du-fallafel": {
   "archivo": "audio/f-as-du-fallafel.m4a",
-  "firma": "90b00d50f55d",
-  "voz": "Mónica",
+  "firma": "0a62dbab19f6",
+  "voz": "Marisol (Premium)",
   "titulo": "L'As du Fallafel",
-  "seg": 44.3,
-  "kb": 209
+  "seg": 52.0,
+  "kb": 238
  },
  "f-rue-sainte-anne": {
   "archivo": "audio/f-rue-sainte-anne.m4a",
-  "firma": "f8b4f96504e9",
-  "voz": "Mónica",
+  "firma": "3b65de7f3e4a",
+  "voz": "Marisol (Premium)",
   "titulo": "Rue Sainte-Anne",
-  "seg": 41.4,
-  "kb": 198
+  "seg": 46.6,
+  "kb": 216
  },
  "f-alchimiste": {
   "archivo": "audio/f-alchimiste.m4a",
-  "firma": "faf812d9cd77",
-  "voz": "Mónica",
+  "firma": "adc83ac66c37",
+  "voz": "Marisol (Premium)",
   "titulo": "L'Alchimiste",
-  "seg": 46.4,
-  "kb": 217
+  "seg": 54.9,
+  "kb": 250
  },
  "f-invalides": {
   "archivo": "audio/f-invalides.m4a",
-  "firma": "bf60930906ae",
-  "voz": "Mónica",
+  "firma": "1c494eda3f8f",
+  "voz": "Marisol (Premium)",
   "titulo": "Hôtel national des Invalides",
-  "seg": 43.6,
-  "kb": 206
+  "seg": 51.3,
+  "kb": 236
  },
  "f-place-blanche": {
   "archivo": "audio/f-place-blanche.m4a",
-  "firma": "201aafe82133",
-  "voz": "Mónica",
+  "firma": "73e7a1fc0a00",
+  "voz": "Marisol (Premium)",
   "titulo": "Place Blanche",
-  "seg": 42.9,
-  "kb": 203
+  "seg": 49.0,
+  "kb": 226
  },
  "i-versalles-palacio-capilla": {
   "archivo": "audio/i-versalles-palacio-capilla.m4a",
-  "firma": "38ea625cc460",
-  "voz": "Mónica",
+  "firma": "71e5f822008b",
+  "voz": "Marisol (Premium)",
   "titulo": "La Capilla Real",
-  "seg": 31.2,
-  "kb": 156
+  "seg": 36.3,
+  "kb": 176
  },
  "i-versalles-palacio-hercules": {
   "archivo": "audio/i-versalles-palacio-hercules.m4a",
-  "firma": "d288b9a96602",
-  "voz": "Mónica",
+  "firma": "0594a83a918a",
+  "voz": "Marisol (Premium)",
   "titulo": "El Salón de Hércules",
-  "seg": 26.0,
-  "kb": 136
+  "seg": 30.7,
+  "kb": 154
  },
  "i-versalles-palacio-planetas": {
   "archivo": "audio/i-versalles-palacio-planetas.m4a",
-  "firma": "be7f1023234d",
-  "voz": "Mónica",
+  "firma": "62a8f9da7edc",
+  "voz": "Marisol (Premium)",
   "titulo": "Los salones de los planetas",
-  "seg": 31.6,
-  "kb": 159
+  "seg": 35.0,
+  "kb": 171
  },
  "i-versalles-palacio-guerra": {
   "archivo": "audio/i-versalles-palacio-guerra.m4a",
-  "firma": "205d42c5e41b",
-  "voz": "Mónica",
+  "firma": "ce7afd7aa0de",
+  "voz": "Marisol (Premium)",
   "titulo": "El Salón de la Guerra",
-  "seg": 20.6,
-  "kb": 114
+  "seg": 24.5,
+  "kb": 130
  },
  "i-versalles-palacio-espejos": {
   "archivo": "audio/i-versalles-palacio-espejos.m4a",
-  "firma": "0abc8c915a96",
-  "voz": "Mónica",
+  "firma": "6352960cceb6",
+  "voz": "Marisol (Premium)",
   "titulo": "La Galería de los Espejos",
-  "seg": 42.5,
-  "kb": 201
+  "seg": 48.8,
+  "kb": 226
  },
  "i-versalles-palacio-reina": {
   "archivo": "audio/i-versalles-palacio-reina.m4a",
-  "firma": "326dab59b6b0",
-  "voz": "Mónica",
+  "firma": "597908118b42",
+  "voz": "Marisol (Premium)",
   "titulo": "Los aposentos de la Reina",
-  "seg": 32.0,
-  "kb": 159
+  "seg": 38.4,
+  "kb": 184
  },
  "i-versalles-palacio-sacre": {
   "archivo": "audio/i-versalles-palacio-sacre.m4a",
-  "firma": "190c227dd7d5",
-  "voz": "Mónica",
+  "firma": "934983607a55",
+  "voz": "Marisol (Premium)",
   "titulo": "La Sala del Sacre",
-  "seg": 25.8,
-  "kb": 135
+  "seg": 30.1,
+  "kb": 152
  },
  "i-versalles-palacio-rey": {
   "archivo": "audio/i-versalles-palacio-rey.m4a",
-  "firma": "54bb1fc8322d",
-  "voz": "Mónica",
+  "firma": "7f516deea66f",
+  "voz": "Marisol (Premium)",
   "titulo": "El dormitorio del Rey",
-  "seg": 27.3,
-  "kb": 141
+  "seg": 32.3,
+  "kb": 159
  },
  "i-versalles-palacio-batallas": {
   "archivo": "audio/i-versalles-palacio-batallas.m4a",
-  "firma": "7bd9f00d7c45",
-  "voz": "Mónica",
+  "firma": "52a4f3f10243",
+  "voz": "Marisol (Premium)",
   "titulo": "La Galería de las Batallas",
-  "seg": 22.5,
-  "kb": 122
+  "seg": 26.1,
+  "kb": 136
  },
  "i-versalles-jardines-parterre": {
   "archivo": "audio/i-versalles-jardines-parterre.m4a",
-  "firma": "12a14a041b6c",
-  "voz": "Mónica",
+  "firma": "1e29795a0dbb",
+  "voz": "Marisol (Premium)",
   "titulo": "El Parterre de Agua",
-  "seg": 23.9,
-  "kb": 127
- },
- "i-versalles-jardines-latona": {
-  "archivo": "audio/i-versalles-jardines-latona.m4a",
-  "firma": "fdbd5c360787",
-  "voz": "Mónica",
-  "titulo": "La fuente de Latona",
-  "seg": 23.1,
-  "kb": 125
- },
- "i-versalles-jardines-tapis": {
-  "archivo": "audio/i-versalles-jardines-tapis.m4a",
-  "firma": "6e7cdff7a442",
-  "voz": "Mónica",
-  "titulo": "El Tapis Vert y el agua que no había",
-  "seg": 33.4,
-  "kb": 165
- },
- "i-versalles-jardines-apolo": {
-  "archivo": "audio/i-versalles-jardines-apolo.m4a",
-  "firma": "43e258856561",
-  "voz": "Mónica",
-  "titulo": "La fuente de Apolo",
-  "seg": 19.5,
-  "kb": 110
- },
- "i-versalles-jardines-bosquetes": {
-  "archivo": "audio/i-versalles-jardines-bosquetes.m4a",
-  "firma": "866278420775",
-  "voz": "Mónica",
-  "titulo": "Los bosquetes",
-  "seg": 29.4,
-  "kb": 149
- },
- "i-versalles-jardines-canal": {
-  "archivo": "audio/i-versalles-jardines-canal.m4a",
-  "firma": "0465f7bf8e9b",
-  "voz": "Mónica",
-  "titulo": "El Gran Canal",
-  "seg": 22.2,
-  "kb": 121
- },
- "i-conciergerie-armas": {
-  "archivo": "audio/i-conciergerie-armas.m4a",
-  "firma": "3092c18bc184",
-  "voz": "Mónica",
-  "titulo": "La sala de los Hombres de Armas",
-  "seg": 25.5,
-  "kb": 134
- },
- "i-conciergerie-cocinas": {
-  "archivo": "audio/i-conciergerie-cocinas.m4a",
-  "firma": "14ac49ca4232",
-  "voz": "Mónica",
-  "titulo": "Las cocinas",
-  "seg": 17.9,
-  "kb": 104
- },
- "i-conciergerie-presos": {
-  "archivo": "audio/i-conciergerie-presos.m4a",
-  "firma": "f1c4bea3edd0",
-  "voz": "Mónica",
-  "titulo": "El pasillo de los presos",
-  "seg": 21.1,
-  "kb": 116
- },
- "i-conciergerie-antonieta": {
-  "archivo": "audio/i-conciergerie-antonieta.m4a",
-  "firma": "0a12162d62fe",
-  "voz": "Mónica",
-  "titulo": "La celda de María Antonieta",
-  "seg": 25.8,
-  "kb": 135
- },
- "i-conciergerie-girondinos": {
-  "archivo": "audio/i-conciergerie-girondinos.m4a",
-  "firma": "14eae0cdf729",
-  "voz": "Mónica",
-  "titulo": "La capilla de los Girondinos",
-  "seg": 28.1,
-  "kb": 144
- },
- "i-pantheon-nave": {
-  "archivo": "audio/i-pantheon-nave.m4a",
-  "firma": "1e6bad7e1c45",
-  "voz": "Mónica",
-  "titulo": "La nave",
-  "seg": 23.3,
-  "kb": 125
- },
- "i-pantheon-pendulo": {
-  "archivo": "audio/i-pantheon-pendulo.m4a",
-  "firma": "8877ce324148",
-  "voz": "Mónica",
-  "titulo": "El péndulo de Foucault",
   "seg": 28.2,
   "kb": 144
  },
+ "i-versalles-jardines-latona": {
+  "archivo": "audio/i-versalles-jardines-latona.m4a",
+  "firma": "ddcf09379682",
+  "voz": "Marisol (Premium)",
+  "titulo": "La fuente de Latona",
+  "seg": 27.8,
+  "kb": 143
+ },
+ "i-versalles-jardines-tapis": {
+  "archivo": "audio/i-versalles-jardines-tapis.m4a",
+  "firma": "d38377f6e3dc",
+  "voz": "Marisol (Premium)",
+  "titulo": "El Tapis Vert y el agua que no había",
+  "seg": 40.1,
+  "kb": 190
+ },
+ "i-versalles-jardines-apolo": {
+  "archivo": "audio/i-versalles-jardines-apolo.m4a",
+  "firma": "27478fa7d2e9",
+  "voz": "Marisol (Premium)",
+  "titulo": "La fuente de Apolo",
+  "seg": 22.9,
+  "kb": 123
+ },
+ "i-versalles-jardines-bosquetes": {
+  "archivo": "audio/i-versalles-jardines-bosquetes.m4a",
+  "firma": "6e4d5f6eb041",
+  "voz": "Marisol (Premium)",
+  "titulo": "Los bosquetes",
+  "seg": 33.8,
+  "kb": 167
+ },
+ "i-versalles-jardines-canal": {
+  "archivo": "audio/i-versalles-jardines-canal.m4a",
+  "firma": "49118dcf79b4",
+  "voz": "Marisol (Premium)",
+  "titulo": "El Gran Canal",
+  "seg": 26.2,
+  "kb": 135
+ },
+ "i-conciergerie-armas": {
+  "archivo": "audio/i-conciergerie-armas.m4a",
+  "firma": "31adb9297ff8",
+  "voz": "Marisol (Premium)",
+  "titulo": "La sala de los Hombres de Armas",
+  "seg": 29.0,
+  "kb": 148
+ },
+ "i-conciergerie-cocinas": {
+  "archivo": "audio/i-conciergerie-cocinas.m4a",
+  "firma": "3e3496e10e4e",
+  "voz": "Marisol (Premium)",
+  "titulo": "Las cocinas",
+  "seg": 20.6,
+  "kb": 114
+ },
+ "i-conciergerie-presos": {
+  "archivo": "audio/i-conciergerie-presos.m4a",
+  "firma": "50fe1ee2ca1d",
+  "voz": "Marisol (Premium)",
+  "titulo": "El pasillo de los presos",
+  "seg": 25.1,
+  "kb": 132
+ },
+ "i-conciergerie-antonieta": {
+  "archivo": "audio/i-conciergerie-antonieta.m4a",
+  "firma": "f97caecc4fa2",
+  "voz": "Marisol (Premium)",
+  "titulo": "La celda de María Antonieta",
+  "seg": 30.2,
+  "kb": 153
+ },
+ "i-conciergerie-girondinos": {
+  "archivo": "audio/i-conciergerie-girondinos.m4a",
+  "firma": "b082ca1b4b49",
+  "voz": "Marisol (Premium)",
+  "titulo": "La capilla de los Girondinos",
+  "seg": 33.0,
+  "kb": 164
+ },
+ "i-pantheon-nave": {
+  "archivo": "audio/i-pantheon-nave.m4a",
+  "firma": "01c641d862d9",
+  "voz": "Marisol (Premium)",
+  "titulo": "La nave",
+  "seg": 27.2,
+  "kb": 139
+ },
+ "i-pantheon-pendulo": {
+  "archivo": "audio/i-pantheon-pendulo.m4a",
+  "firma": "660dfbce6190",
+  "voz": "Marisol (Premium)",
+  "titulo": "El péndulo de Foucault",
+  "seg": 32.8,
+  "kb": 163
+ },
  "i-pantheon-cripta": {
   "archivo": "audio/i-pantheon-cripta.m4a",
-  "firma": "f33fb1c46623",
-  "voz": "Mónica",
+  "firma": "0a1ec5fc414d",
+  "voz": "Marisol (Premium)",
   "titulo": "La cripta",
-  "seg": 34.8,
-  "kb": 171
+  "seg": 40.6,
+  "kb": 193
  },
  "i-pantheon-cupula": {
   "archivo": "audio/i-pantheon-cupula.m4a",
-  "firma": "5b291298264c",
-  "voz": "Mónica",
+  "firma": "3c7cdf7e8453",
+  "voz": "Marisol (Premium)",
   "titulo": "La cúpula",
-  "seg": 23.2,
-  "kb": 125
+  "seg": 27.6,
+  "kb": 142
  },
  "i-orsay-nave": {
   "archivo": "audio/i-orsay-nave.m4a",
-  "firma": "492cd662bad6",
-  "voz": "Mónica",
+  "firma": "c286f72b3a28",
+  "voz": "Marisol (Premium)",
   "titulo": "La nave central",
-  "seg": 19.3,
-  "kb": 110
+  "seg": 22.6,
+  "kb": 123
  },
  "i-orsay-quinta": {
   "archivo": "audio/i-orsay-quinta.m4a",
-  "firma": "46638fc3cf8a",
-  "voz": "Mónica",
+  "firma": "a3e82248b53e",
+  "voz": "Marisol (Premium)",
   "titulo": "La quinta planta, los impresionistas",
-  "seg": 29.5,
-  "kb": 150
+  "seg": 34.3,
+  "kb": 168
  },
  "i-orsay-reloj": {
   "archivo": "audio/i-orsay-reloj.m4a",
-  "firma": "48563784f05d",
-  "voz": "Mónica",
+  "firma": "fc7625da8508",
+  "voz": "Marisol (Premium)",
   "titulo": "El reloj",
-  "seg": 15.7,
-  "kb": 95
+  "seg": 18.5,
+  "kb": 105
  },
  "i-orsay-vangogh": {
   "archivo": "audio/i-orsay-vangogh.m4a",
-  "firma": "c822718e9ee8",
-  "voz": "Mónica",
+  "firma": "21d751b1dfd0",
+  "voz": "Marisol (Premium)",
   "titulo": "Van Gogh y Cézanne",
-  "seg": 23.6,
-  "kb": 127
+  "seg": 27.7,
+  "kb": 142
  },
  "i-notre-dame-nave": {
   "archivo": "audio/i-notre-dame-nave.m4a",
-  "firma": "46f542ff5919",
-  "voz": "Mónica",
+  "firma": "ed3e11b43e11",
+  "voz": "Marisol (Premium)",
   "titulo": "La nave",
-  "seg": 25.0,
-  "kb": 132
+  "seg": 29.5,
+  "kb": 149
  },
  "i-notre-dame-rosetones": {
   "archivo": "audio/i-notre-dame-rosetones.m4a",
-  "firma": "d2a84837ae66",
-  "voz": "Mónica",
+  "firma": "d3091fa15a60",
+  "voz": "Marisol (Premium)",
   "titulo": "Los rosetones",
-  "seg": 20.8,
-  "kb": 115
+  "seg": 24.4,
+  "kb": 130
  },
  "i-notre-dame-coro": {
   "archivo": "audio/i-notre-dame-coro.m4a",
-  "firma": "35e74dff3916",
-  "voz": "Mónica",
+  "firma": "5d2b6d0848b1",
+  "voz": "Marisol (Premium)",
   "titulo": "El coro y el tesoro",
-  "seg": 21.0,
-  "kb": 115
+  "seg": 25.0,
+  "kb": 131
  },
  "i-notre-dame-incendio": {
   "archivo": "audio/i-notre-dame-incendio.m4a",
-  "firma": "9c5c7511eceb",
-  "voz": "Mónica",
+  "firma": "4ead0458b455",
+  "voz": "Marisol (Premium)",
   "titulo": "Lo que ardió",
-  "seg": 31.1,
-  "kb": 156
+  "seg": 36.8,
+  "kb": 178
  }
 }
