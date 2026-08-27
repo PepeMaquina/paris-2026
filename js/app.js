@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-11';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-12';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -674,4 +674,8 @@ function muestra(v) {
   });
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+
+  // El service worker tarda en enterarse de que hay uno nuevo, así que la caché de audio
+  // vieja, la de la voz de antes, se borra aquí mismo al abrir. Se puede quitar tras el viaje.
+  if ('caches' in window) caches.keys().then(ks => ks.filter(k => k === 'audio').forEach(k => caches.delete(k)));
 })();
