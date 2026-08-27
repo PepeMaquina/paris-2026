@@ -18,11 +18,11 @@
   },
   {
    "id": "torre-eiffel",
-   "tit": "Torre Eiffel por escaleras, martes",
-   "estado": "comprobar",
-   "limite": "2026-09-01T19:00:00",
-   "nota": "Hasta el 29 de septiembre de 2026 la entrada de escaleras no exige reserva previa y la cola casi siempre tiene sitio. Aun así, comprad en línea si podéis. 14,80 € adultos y tarifa joven de 12 a 24 años.",
-   "urgencia": 3
+   "tit": "Torre Eiffel por escaleras, martes, comprobado",
+   "estado": "hecho",
+   "limite": null,
+   "nota": "Comprobado. 14,80 € los adultos y tarifa joven de 12 a 24 años para los dos chicos, unos 44 € los cuatro. Recordad que las escaleras mandan sobre el horario del día: hay que empezar a subir a las 19:35 como muy tarde para estar arriba en la puesta de sol.",
+   "urgencia": 4
   },
   {
    "id": "versalles",
@@ -42,11 +42,11 @@
   },
   {
    "id": "orsay",
-   "tit": "Orsay, jueves a las 18:30",
-   "estado": "comprobar",
-   "limite": "2026-09-03T18:30:00",
-   "nota": "Ya lo tenéis. Comprobad que constan dos entradas de pago y dos gratuitas, no cuatro de pago: desde marzo de 2026 el museo exige franja horaria también a los gratuitos.",
-   "urgencia": 3
+   "tit": "Orsay, jueves a las 18:30, comprobado",
+   "estado": "hecho",
+   "limite": null,
+   "nota": "Comprobado. Tarifa nocturna de 12 €, gratis para los dos chicos por ser menores de 26 de la UE. Última entrada a las 21:00 y cierre a las 21:45.",
+   "urgencia": 4
   },
   {
    "id": "free-tours",
