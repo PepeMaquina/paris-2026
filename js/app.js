@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-8';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-9';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -106,6 +106,19 @@ function pintaHoy() {
     <h3 style="margin:22px 0 6px">Primer día</h3>` + pintaDia(d0);
 }
 
+async function bajaAudio(bt) {
+  const claves = Object.keys(D.audio);
+  bt.textContent = 'Descargando…';
+  const c = await caches.open('audio');
+  let n = 0;
+  for (const k of claves) {
+    try { const r = await fetch(D.audio[k].archivo); if (r.ok) await c.put(D.audio[k].archivo, r.clone()); } catch (e) { }
+    n++; bt.textContent = `Descargando… ${n} de ${claves.length}`;
+  }
+  bt.textContent = 'Audio guardado en el móvil';
+  bt.classList.add('act');
+}
+
 function pintaReservas() {
   const orden = { pendiente: 0, comprobar: 1, hecho: 2 };
   return [...D.reservas].sort((a, b) => orden[a.estado] - orden[b.estado] || a.urgencia - b.urgencia)
@@ -120,7 +133,20 @@ function pintaReservas() {
         <div><b>${r.tit}</b>
           ${cuenta ? `<div class="cuenta">${cuenta}</div>` : ''}
           <div style="font-size:13.5px;color:var(--suave);margin-top:3px">${r.nota}</div></div></div>`;
-    }).join('');
+    }).join('') + tarjetaAudio();
+}
+
+function tarjetaAudio() {
+  const claves = Object.keys(D.audio || {});
+  if (!claves.length) return '';
+  const seg = claves.reduce((a, k) => a + D.audio[k].seg, 0);
+  const mb = (claves.reduce((a, k) => a + D.audio[k].kb, 0) / 1024).toFixed(1);
+  return `<div class="nota" style="margin-top:22px">
+    <b>Audio para llevar</b>
+    <div style="font-size:13.5px;color:var(--suave);margin-top:3px">
+      ${claves.length} pistas, ${Math.round(seg / 60)} minutos, ${mb} MB. Descargadlo por wifi antes de salir y
+      funcionará dentro de Versalles y en el metro.</div>
+    <div class="btns"><button class="btn sec" id="bajar-audio">Descargar el audio</button></div></div>`;
 }
 
 /* ---------- ficha ---------- */
@@ -148,8 +174,10 @@ function abreFicha(diaId, i) {
       </details>`;
   }
 
+  const pista = D.audio['f-' + p.id];
   h += `<div class="btns">
-    ${(it.nota || D.fichas[it.lugar]) ? `<button class="btn sec" id="leer">Leer en voz alta</button>` : ''}
+    ${pista ? `<button class="btn" data-suena="f-${p.id}">Escuchar · ${mmss(pista.seg)}</button>` : ''}
+    ${(it.nota || D.fichas[it.lugar]) && !pista ? `<button class="btn sec" id="leer">Leer en voz alta</button>` : ''}
     <a class="btn sec" target="_blank" rel="noopener"
        href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lon}&travelmode=transit">Cómo llegar</a>
     <button class="btn sec" data-ver="${p.id}" data-verdia="${diaId}">Ver en el mapa</button>
@@ -178,6 +206,7 @@ function abreFicha(diaId, i) {
       it.alternativas.map(id => `<li><span style="flex:1">${lug(id).nombre}</span>
         <button class="btn sec" style="padding:5px 10px;font-size:12.5px" data-ver="${id}" data-verdia="${diaId}">mapa</button></li>`).join('') + `</div>`;
   }
+  h += panelInterior(p.id);
   h += `</div>`;
 
   $('#ficha-tit').textContent = it.tit;
@@ -478,7 +507,70 @@ function avisoCamino(texto) {
   if (C.voz) lee(texto);
 }
 
-/* ---------- voz ---------- */
+
+/* ---------- audio grabado ---------- */
+const A = { el: null, cola: [], pos: 0 };
+
+function mmss(seg) {
+  const m = Math.floor(seg / 60), s = Math.round(seg % 60);
+  return m + ':' + String(s).padStart(2, '0');
+}
+
+function suena(claves, i = 0) {
+  if (!A.el) {
+    A.el = new Audio();
+    A.el.addEventListener('ended', () => { if (A.pos < A.cola.length - 1) suena(A.cola, A.pos + 1); else pintaReproductor(); });
+    A.el.addEventListener('timeupdate', () => {
+      const b = $('#repro-barra');
+      if (b && A.el.duration) b.style.width = (100 * A.el.currentTime / A.el.duration) + '%';
+    });
+  }
+  speechSynthesis && speechSynthesis.cancel();
+  A.cola = claves; A.pos = i;
+  const p = D.audio[claves[i]];
+  if (!p) return;
+  A.el.src = p.archivo;
+  A.el.play().catch(() => { });
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({ title: p.titulo, artist: 'París 2026' });
+    navigator.mediaSession.setActionHandler('nexttrack', () => A.pos < A.cola.length - 1 && suena(A.cola, A.pos + 1));
+    navigator.mediaSession.setActionHandler('previoustrack', () => A.pos > 0 && suena(A.cola, A.pos - 1));
+  }
+  pintaReproductor();
+}
+
+function pintaReproductor() {
+  const n = $('#repro');
+  if (!A.el || !A.cola.length) { n.classList.remove('on'); return; }
+  const p = D.audio[A.cola[A.pos]];
+  n.classList.add('on');
+  n.innerHTML = `<div class="repro-prog"><div id="repro-barra"></div></div>
+    <div class="repro-fila">
+      <button id="repro-play" class="repro-bt">${A.el.paused ? '▶' : '❚❚'}</button>
+      <div class="repro-tit">${p.titulo}
+        <div class="repro-sub">${A.cola.length > 1 ? `tramo ${A.pos + 1} de ${A.cola.length} · ` : ''}${mmss(p.seg)}</div></div>
+      ${A.cola.length > 1 ? '<button id="repro-sig" class="repro-bt">▶▶</button>' : ''}
+      <button id="repro-fin" class="repro-bt">×</button>
+    </div>`;
+}
+
+function panelInterior(lid) {
+  const b = D.interiores[lid];
+  if (!b) return '';
+  const claves = b.tramos.map(t => `i-${lid}-${t.id}`).filter(k => D.audio[k]);
+  const total = claves.reduce((a, k) => a + D.audio[k].seg, 0);
+  return `<h3 style="margin-top:22px">${b.titulo}</h3>
+    ${b.nota ? `<p style="font-size:14.5px;color:var(--suave)">${b.nota}</p>` : ''}
+    <div class="btns"><button class="btn" data-suena="${claves.join(',')}">Escuchar el recorrido entero · ${mmss(total)}</button></div>
+    <div class="pasos">${b.tramos.map((t, i) => {
+      const k = `i-${lid}-${t.id}`;
+      return `<li><span style="flex:1">${t.t}</span>
+        <button class="btn sec" style="padding:5px 10px;font-size:12.5px" data-suena="${claves.join(',')}" data-desde="${i}">
+          ${D.audio[k] ? mmss(D.audio[k].seg) : 'texto'}</button></li>`;
+    }).join('')}</div>`;
+}
+
+/* ---------- voz del sistema, para lo que no está grabado ---------- */
 function lee(texto) {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
@@ -502,12 +594,12 @@ function muestra(v) {
 
 /* ---------- arranque ---------- */
 (async function () {
-  const [dias, lugares, rutas, tours, reservas, fichas] = await Promise.all(
-    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
+  const [dias, lugares, rutas, tours, reservas, fichas, audio, interiores] = await Promise.all(
+    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas', 'audio', 'interiores'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
   D.dias = dias.dias; D.viaje = dias.viaje;
   D.lugares = Object.fromEntries(lugares.map(p => [p.id, p]));
   D.rutas = Object.fromEntries(rutas.map(r => [r.id, r]));
-  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas;
+  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas; D.audio = audio; D.interiores = interiores;
 
   $('#tiras').innerHTML = D.dias.map(d => {
     const f = new Date(d.fecha + 'T12:00');
@@ -566,6 +658,15 @@ function muestra(v) {
       C.manual = true; C.paso = Math.min(C.pasos.length - 1, C.paso + 1); return pintaCamino();
     }
     if (e.target.closest('#camino-auto')) { C.manual = false; return pintaCamino(); }
+    const sn = e.target.closest('[data-suena]');
+    if (sn) {
+      $('#ficha').classList.remove('on');
+      return suena(sn.dataset.suena.split(','), +(sn.dataset.desde || 0));
+    }
+    if (e.target.closest('#repro-play')) { A.el.paused ? A.el.play() : A.el.pause(); return pintaReproductor(); }
+    if (e.target.closest('#repro-sig')) return A.pos < A.cola.length - 1 && suena(A.cola, A.pos + 1);
+    if (e.target.closest('#repro-fin')) { A.el.pause(); A.el.removeAttribute('src'); A.cola = []; return pintaReproductor(); }
+    if (e.target.closest('#bajar-audio')) return bajaAudio(e.target.closest('#bajar-audio'));
     if (e.target.closest('#gps')) return activaGPS();
     if (e.target.closest('#paseo')) return modoPaseo();
   });

@@ -1,10 +1,10 @@
-const V = 'paris-2026-08-27-8';
+const V = 'paris-2026-08-27-9';
 const NUCLEO = [
   './', 'index.html', 'css/app.css', 'js/app.js',
   'vendor/leaflet.js', 'vendor/leaflet.css',
   'vendor/images/marker-icon.png', 'vendor/images/marker-icon-2x.png', 'vendor/images/marker-shadow.png',
-  'data/dias.json?v=2026-08-27-8', 'data/lugares.geo.json?v=2026-08-27-8', 'data/rutas.json?v=2026-08-27-8',
-  'data/tours.json?v=2026-08-27-8', 'data/reservas.json?v=2026-08-27-8', 'data/fichas.json?v=2026-08-27-8',
+  'data/dias.json?v=2026-08-27-9', 'data/lugares.geo.json?v=2026-08-27-9', 'data/rutas.json?v=2026-08-27-9',
+  'data/tours.json?v=2026-08-27-9', 'data/reservas.json?v=2026-08-27-9', 'data/fichas.json?v=2026-08-27-9', 'data/audio.json?v=2026-08-27-9', 'data/interiores.json?v=2026-08-27-9',
   'manifest.webmanifest', 'icons/icono-180.png', 'icons/icono-512.png'
 ];
 
@@ -12,7 +12,7 @@ self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(NUCLEO)).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== V && x !== 'teselas').map(x => caches.delete(x))))
+  e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== V && x !== 'teselas' && x !== 'audio').map(x => caches.delete(x))))
     .then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', e => {
@@ -26,6 +26,17 @@ self.addEventListener('fetch', e => {
       if (hit) return hit;
       try { const r = await fetch(e.request); if (r.ok) c.put(e.request, r.clone()); return r; }
       catch (err) { return new Response('', { status: 504 }); }
+    }));
+    return;
+  }
+  // el audio se guarda segun se escucha, y ademas hay un boton para bajarlo entero
+  if (u.origin === location.origin && u.pathname.includes('/audio/')) {
+    e.respondWith(caches.open('audio').then(async c => {
+      const hit = await c.match(e.request);
+      if (hit) return hit;
+      const r = await fetch(e.request);
+      if (r.ok) c.put(e.request, r.clone());
+      return r;
     }));
     return;
   }

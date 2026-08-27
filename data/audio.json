@@ -1,0 +1,346 @@
+{
+ "f-tour-eiffel": {
+  "archivo": "audio/f-tour-eiffel.m4a",
+  "firma": "8c7560436176",
+  "voz": "Mónica",
+  "titulo": "Torre Eiffel",
+  "seg": 101.4,
+  "kb": 435
+ },
+ "f-versalles-palacio": {
+  "archivo": "audio/f-versalles-palacio.m4a",
+  "firma": "a2de106add72",
+  "voz": "Mónica",
+  "titulo": "Palacio de Versalles",
+  "seg": 100.6,
+  "kb": 432
+ },
+ "f-versalles-jardines": {
+  "archivo": "audio/f-versalles-jardines.m4a",
+  "firma": "7804c1316065",
+  "voz": "Mónica",
+  "titulo": "Jardines de Versalles",
+  "seg": 87.3,
+  "kb": 380
+ },
+ "f-sacre-coeur": {
+  "archivo": "audio/f-sacre-coeur.m4a",
+  "firma": "105d0784fa9e",
+  "voz": "Mónica",
+  "titulo": "Sacré-Cœur",
+  "seg": 102.6,
+  "kb": 441
+ },
+ "f-notre-dame": {
+  "archivo": "audio/f-notre-dame.m4a",
+  "firma": "10c5c9658961",
+  "voz": "Mónica",
+  "titulo": "Notre-Dame de París",
+  "seg": 111.5,
+  "kb": 476
+ },
+ "f-conciergerie": {
+  "archivo": "audio/f-conciergerie.m4a",
+  "firma": "d58f42b68aa2",
+  "voz": "Mónica",
+  "titulo": "La Conciergerie",
+  "seg": 100.2,
+  "kb": 431
+ },
+ "f-pantheon": {
+  "archivo": "audio/f-pantheon.m4a",
+  "firma": "c4eb8b35f6f2",
+  "voz": "Mónica",
+  "titulo": "El Panteón",
+  "seg": 109.5,
+  "kb": 467
+ },
+ "f-orsay": {
+  "archivo": "audio/f-orsay.m4a",
+  "firma": "e24507876827",
+  "voz": "Mónica",
+  "titulo": "Museo de Orsay",
+  "seg": 85.8,
+  "kb": 373
+ },
+ "f-carnavalet": {
+  "archivo": "audio/f-carnavalet.m4a",
+  "firma": "947dfbbdd830",
+  "voz": "Mónica",
+  "titulo": "Museo Carnavalet",
+  "seg": 91.1,
+  "kb": 394
+ },
+ "f-invalides-entrada-grenelle": {
+  "archivo": "audio/f-invalides-entrada-grenelle.m4a",
+  "firma": "fbb1a4a15ec2",
+  "voz": "Mónica",
+  "titulo": "Invalides, entrada de rue de Grenelle",
+  "seg": 93.4,
+  "kb": 404
+ },
+ "f-dome-invalides": {
+  "archivo": "audio/f-dome-invalides.m4a",
+  "firma": "8de1e35057c3",
+  "voz": "Mónica",
+  "titulo": "Domo de los Inválidos y tumba de Napoleón",
+  "seg": 97.6,
+  "kb": 420
+ },
+ "i-versalles-palacio-capilla": {
+  "archivo": "audio/i-versalles-palacio-capilla.m4a",
+  "firma": "38ea625cc460",
+  "voz": "Mónica",
+  "titulo": "La Capilla Real",
+  "seg": 31.2,
+  "kb": 156
+ },
+ "i-versalles-palacio-hercules": {
+  "archivo": "audio/i-versalles-palacio-hercules.m4a",
+  "firma": "d288b9a96602",
+  "voz": "Mónica",
+  "titulo": "El Salón de Hércules",
+  "seg": 26.0,
+  "kb": 136
+ },
+ "i-versalles-palacio-planetas": {
+  "archivo": "audio/i-versalles-palacio-planetas.m4a",
+  "firma": "be7f1023234d",
+  "voz": "Mónica",
+  "titulo": "Los salones de los planetas",
+  "seg": 31.6,
+  "kb": 159
+ },
+ "i-versalles-palacio-guerra": {
+  "archivo": "audio/i-versalles-palacio-guerra.m4a",
+  "firma": "205d42c5e41b",
+  "voz": "Mónica",
+  "titulo": "El Salón de la Guerra",
+  "seg": 20.6,
+  "kb": 114
+ },
+ "i-versalles-palacio-espejos": {
+  "archivo": "audio/i-versalles-palacio-espejos.m4a",
+  "firma": "0abc8c915a96",
+  "voz": "Mónica",
+  "titulo": "La Galería de los Espejos",
+  "seg": 42.5,
+  "kb": 201
+ },
+ "i-versalles-palacio-reina": {
+  "archivo": "audio/i-versalles-palacio-reina.m4a",
+  "firma": "326dab59b6b0",
+  "voz": "Mónica",
+  "titulo": "Los aposentos de la Reina",
+  "seg": 32.0,
+  "kb": 159
+ },
+ "i-versalles-palacio-sacre": {
+  "archivo": "audio/i-versalles-palacio-sacre.m4a",
+  "firma": "190c227dd7d5",
+  "voz": "Mónica",
+  "titulo": "La Sala del Sacre",
+  "seg": 25.8,
+  "kb": 135
+ },
+ "i-versalles-palacio-rey": {
+  "archivo": "audio/i-versalles-palacio-rey.m4a",
+  "firma": "54bb1fc8322d",
+  "voz": "Mónica",
+  "titulo": "El dormitorio del Rey",
+  "seg": 27.3,
+  "kb": 141
+ },
+ "i-versalles-palacio-batallas": {
+  "archivo": "audio/i-versalles-palacio-batallas.m4a",
+  "firma": "7bd9f00d7c45",
+  "voz": "Mónica",
+  "titulo": "La Galería de las Batallas",
+  "seg": 22.5,
+  "kb": 122
+ },
+ "i-versalles-jardines-parterre": {
+  "archivo": "audio/i-versalles-jardines-parterre.m4a",
+  "firma": "12a14a041b6c",
+  "voz": "Mónica",
+  "titulo": "El Parterre de Agua",
+  "seg": 23.9,
+  "kb": 127
+ },
+ "i-versalles-jardines-latona": {
+  "archivo": "audio/i-versalles-jardines-latona.m4a",
+  "firma": "fdbd5c360787",
+  "voz": "Mónica",
+  "titulo": "La fuente de Latona",
+  "seg": 23.1,
+  "kb": 125
+ },
+ "i-versalles-jardines-tapis": {
+  "archivo": "audio/i-versalles-jardines-tapis.m4a",
+  "firma": "6e7cdff7a442",
+  "voz": "Mónica",
+  "titulo": "El Tapis Vert y el agua que no había",
+  "seg": 33.4,
+  "kb": 165
+ },
+ "i-versalles-jardines-apolo": {
+  "archivo": "audio/i-versalles-jardines-apolo.m4a",
+  "firma": "43e258856561",
+  "voz": "Mónica",
+  "titulo": "La fuente de Apolo",
+  "seg": 19.5,
+  "kb": 110
+ },
+ "i-versalles-jardines-bosquetes": {
+  "archivo": "audio/i-versalles-jardines-bosquetes.m4a",
+  "firma": "866278420775",
+  "voz": "Mónica",
+  "titulo": "Los bosquetes",
+  "seg": 29.4,
+  "kb": 149
+ },
+ "i-versalles-jardines-canal": {
+  "archivo": "audio/i-versalles-jardines-canal.m4a",
+  "firma": "0465f7bf8e9b",
+  "voz": "Mónica",
+  "titulo": "El Gran Canal",
+  "seg": 22.2,
+  "kb": 121
+ },
+ "i-conciergerie-armas": {
+  "archivo": "audio/i-conciergerie-armas.m4a",
+  "firma": "3092c18bc184",
+  "voz": "Mónica",
+  "titulo": "La sala de los Hombres de Armas",
+  "seg": 25.5,
+  "kb": 134
+ },
+ "i-conciergerie-cocinas": {
+  "archivo": "audio/i-conciergerie-cocinas.m4a",
+  "firma": "14ac49ca4232",
+  "voz": "Mónica",
+  "titulo": "Las cocinas",
+  "seg": 17.9,
+  "kb": 104
+ },
+ "i-conciergerie-presos": {
+  "archivo": "audio/i-conciergerie-presos.m4a",
+  "firma": "f1c4bea3edd0",
+  "voz": "Mónica",
+  "titulo": "El pasillo de los presos",
+  "seg": 21.1,
+  "kb": 116
+ },
+ "i-conciergerie-antonieta": {
+  "archivo": "audio/i-conciergerie-antonieta.m4a",
+  "firma": "0a12162d62fe",
+  "voz": "Mónica",
+  "titulo": "La celda de María Antonieta",
+  "seg": 25.8,
+  "kb": 135
+ },
+ "i-conciergerie-girondinos": {
+  "archivo": "audio/i-conciergerie-girondinos.m4a",
+  "firma": "14eae0cdf729",
+  "voz": "Mónica",
+  "titulo": "La capilla de los Girondinos",
+  "seg": 28.1,
+  "kb": 144
+ },
+ "i-pantheon-nave": {
+  "archivo": "audio/i-pantheon-nave.m4a",
+  "firma": "1e6bad7e1c45",
+  "voz": "Mónica",
+  "titulo": "La nave",
+  "seg": 23.3,
+  "kb": 125
+ },
+ "i-pantheon-pendulo": {
+  "archivo": "audio/i-pantheon-pendulo.m4a",
+  "firma": "8877ce324148",
+  "voz": "Mónica",
+  "titulo": "El péndulo de Foucault",
+  "seg": 28.2,
+  "kb": 144
+ },
+ "i-pantheon-cripta": {
+  "archivo": "audio/i-pantheon-cripta.m4a",
+  "firma": "f33fb1c46623",
+  "voz": "Mónica",
+  "titulo": "La cripta",
+  "seg": 34.8,
+  "kb": 171
+ },
+ "i-pantheon-cupula": {
+  "archivo": "audio/i-pantheon-cupula.m4a",
+  "firma": "5b291298264c",
+  "voz": "Mónica",
+  "titulo": "La cúpula",
+  "seg": 23.2,
+  "kb": 125
+ },
+ "i-orsay-nave": {
+  "archivo": "audio/i-orsay-nave.m4a",
+  "firma": "492cd662bad6",
+  "voz": "Mónica",
+  "titulo": "La nave central",
+  "seg": 19.3,
+  "kb": 110
+ },
+ "i-orsay-quinta": {
+  "archivo": "audio/i-orsay-quinta.m4a",
+  "firma": "46638fc3cf8a",
+  "voz": "Mónica",
+  "titulo": "La quinta planta, los impresionistas",
+  "seg": 29.5,
+  "kb": 150
+ },
+ "i-orsay-reloj": {
+  "archivo": "audio/i-orsay-reloj.m4a",
+  "firma": "48563784f05d",
+  "voz": "Mónica",
+  "titulo": "El reloj",
+  "seg": 15.7,
+  "kb": 95
+ },
+ "i-orsay-vangogh": {
+  "archivo": "audio/i-orsay-vangogh.m4a",
+  "firma": "c822718e9ee8",
+  "voz": "Mónica",
+  "titulo": "Van Gogh y Cézanne",
+  "seg": 23.6,
+  "kb": 127
+ },
+ "i-notre-dame-nave": {
+  "archivo": "audio/i-notre-dame-nave.m4a",
+  "firma": "46f542ff5919",
+  "voz": "Mónica",
+  "titulo": "La nave",
+  "seg": 25.0,
+  "kb": 132
+ },
+ "i-notre-dame-rosetones": {
+  "archivo": "audio/i-notre-dame-rosetones.m4a",
+  "firma": "d2a84837ae66",
+  "voz": "Mónica",
+  "titulo": "Los rosetones",
+  "seg": 20.8,
+  "kb": 115
+ },
+ "i-notre-dame-coro": {
+  "archivo": "audio/i-notre-dame-coro.m4a",
+  "firma": "35e74dff3916",
+  "voz": "Mónica",
+  "titulo": "El coro y el tesoro",
+  "seg": 21.0,
+  "kb": 115
+ },
+ "i-notre-dame-incendio": {
+  "archivo": "audio/i-notre-dame-incendio.m4a",
+  "firma": "9c5c7511eceb",
+  "voz": "Mónica",
+  "titulo": "Lo que ardió",
+  "seg": 31.1,
+  "kb": 156
+ }
+}
