@@ -101,7 +101,7 @@
      "nota": "674 escalones hasta la segunda planta, 115 metros. Entre 30 y 40 minutos con descansillos.",
      "limite": {
       "tipo": "duro",
-      "texto": "Empezar a subir a las 19:35 como muy tarde para estar arriba en la puesta de sol, hacia las 20:30."
+      "texto": "La Torre Eiffel: hay que empezar a subir a las 19:35 como muy tarde para estar arriba en la puesta de sol, hacia las 20:30."
      }
     },
     {
@@ -203,7 +203,7 @@
      },
      "limite": {
       "tipo": "duro",
-      "texto": "En ningún caso paséis de las 15:45 en el andén de Versailles Château Rive Gauche."
+      "texto": "Versalles: en ningún caso paséis de las 15:45 en el andén de Versailles Château Rive Gauche."
      }
     },
     {
@@ -228,7 +228,7 @@
      "nota": "Punto de encuentro delante del Moulin Rouge, que es de 1889, el mismo año que la Torre Eiffel. Dos horas y media por la ladera sur, terminando en el Sacré-Cœur.",
      "limite": {
       "tipo": "duro",
-      "texto": "Estar a las 17:05 en la Place Blanche."
+      "texto": "Free tour de Montmartre: hay que estar a las 17:05 en la Place Blanche, delante del Moulin Rouge."
      }
     },
     {
@@ -300,7 +300,7 @@
      "audio": "interior",
      "limite": {
       "tipo": "blando",
-      "texto": "Salir a las 10:20: el Hôtel de Ville está a ocho minutos cruzando el Pont d'Arcole."
+      "texto": "La Conciergerie: salid a las 10:20, que el Hôtel de Ville está a ocho minutos cruzando el Pont d'Arcole."
      }
     },
     {
@@ -313,7 +313,7 @@
      "nota": "Dos horas y tres cuartos por el centro histórico. Termina junto al Louvre hacia las 13:15.",
      "limite": {
       "tipo": "duro",
-      "texto": "Estar a las 10:25 en el Hôtel de Ville."
+      "texto": "Free tour de París: hay que estar a las 10:25 en el Hôtel de Ville."
      }
     },
     {
@@ -345,7 +345,7 @@
      "nota": "Vedettes du Pont Neuf, una hora exacta sin paradas. Entre 15 y 17 € por persona. Sentaos en cubierta abierta y en el lado derecho a la ida. Gorra y crema: hora y media de sol y reflejo del agua. Desde mayo de 2026 la instalación de JR en el Pont Neuf ha cambiado el acceso a los embarcaderos, mirad el plano en su web.",
      "limite": {
       "tipo": "duro",
-      "texto": "Salida a las 14:30 desde el Square du Vert-Galant."
+      "texto": "El crucero sale a las 14:30 del Square du Vert-Galant y no espera."
      }
     },
     {
@@ -360,6 +360,10 @@
       "modo": "pie",
       "texto": "Veinticinco minutos cuesta arriba por el Barrio Latino, o RER B desde Saint-Michel hasta Luxembourg.",
       "min": 25
+     },
+     "limite": {
+      "tipo": "duro",
+      "texto": "El Panteón: última entrada a las 17:45 y la cripta cierra a las 17:30."
      }
     },
     {
@@ -404,7 +408,7 @@
      "audio": "interior",
      "limite": {
       "tipo": "duro",
-      "texto": "Última entrada a las 21:00."
+      "texto": "Orsay: última entrada a las 21:00 y el museo cierra a las 21:45."
      }
     },
     {
@@ -446,7 +450,7 @@
      "nota": "Punto de encuentro junto a Saint-Paul, en la Place Marie-Claude-Vaillant-Couturier-et-Pierre-Villon. Dos horas: Memorial de la Shoah, barrio judío, jardín del Hôtel de Sens donde vivió la reina Margot, Village Saint-Paul, patio del Hôtel de Sully, Place des Vosges y Bastilla, donde termina hacia las 13:00.",
      "limite": {
       "tipo": "duro",
-      "texto": "Estar a las 10:50 junto a Saint-Paul."
+      "texto": "Free tour del Marais: hay que estar a las 10:50 junto a Saint-Paul."
      }
     },
     {
@@ -463,7 +467,7 @@
      },
      "limite": {
       "tipo": "duro",
-      "texto": "L'As du Fallafel cierra a las 15:30 y el sábado no abre."
+      "texto": "L'As du Fallafel cierra a las 15:30 y el sábado no abre: este mediodía es el único que os cuadra."
      },
      "alternativas": [
       "rue-des-rosiers"
@@ -485,7 +489,11 @@
      "tit": "Museo Carnavalet",
      "nota": "Gratis y sin reserva, última entrada a las 17:15. Dos palacios unidos: el Carnavalet renacentista, donde Madame de Sévigné escribió treinta años de cartas, y el Le Peletier de Saint-Fargeau. La sección revolucionaria con la maqueta de la Bastilla tallada con una piedra de la propia Bastilla, las tiendas del XIX reconstruidas y la habitación de Proust con su cama de latón.",
      "audio": "interior",
-     "decision": "carnavalet"
+     "decision": "carnavalet",
+     "limite": {
+      "tipo": "duro",
+      "texto": "El Museo Carnavalet: última entrada a las 17:15."
+     }
     }
    ],
    "decisiones": [
@@ -531,7 +539,7 @@
      "nota": "Abierta hasta las 19:00, entrada libre. Napoleón la mandó levantar como templo a la gloria de su ejército: 52 columnas corintias, sin campanario ni cruz en la fachada. Se terminó como iglesia en 1842, cuando ya no había imperio. Desde la escalinata se ve la Concorde en línea recta. Fauchon y Hédiard en la plaza, cinco minutos de escaparate.",
      "limite": {
       "tipo": "duro",
-      "texto": "Cierra a las 19:00."
+      "texto": "La Madeleine cierra a las 19:00."
      },
      "alternativas": [
       "fauchon",
@@ -563,7 +571,7 @@
      "nota": "Hasta las 20:30, entrada libre. La cúpula de vidriera neobizantina de 1912, a 43 metros, se mira desde la barandilla de la primera planta y nunca desde abajo. La terraza de la azotea son 800 metros de mirador gratuito con la Ópera a los pies. A esta hora la terraza pilla la Ópera con luz lateral.",
      "limite": {
       "tipo": "duro",
-      "texto": "Cierran a las 20:30."
+      "texto": "Las Galeries Lafayette cierran a las 20:30."
      }
     },
     {
@@ -585,7 +593,7 @@
      "fijo": true,
      "limite": {
       "tipo": "duro",
-      "texto": "La cocina cierra a las 22:30."
+      "texto": "Comme au Vietnam: la cocina cierra a las 22:30, así que esa es hora de estar sentados."
      }
     }
    ]
@@ -698,7 +706,7 @@
      "tit": "Andén",
      "limite": {
       "tipo": "duro",
-      "texto": "El tren sale a las 14:00."
+      "texto": "Montparnasse: el tren sale a las 14:00."
      }
     }
    ]

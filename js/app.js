@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-16';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-17';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -68,8 +68,17 @@ function pintaDia(dia) {
       <div style="font-size:13px;color:var(--suave)">${dec.opciones.find(o => o.id === S.rama).nota}</div>
     </div>`).join('');
 
+  // un sitio puede salir varias veces el mismo día; la etiqueta de audio va solo en la principal
+  const principal = {};
+  items.forEach((it, i) => {
+    const ya = principal[it.lugar];
+    if (ya === undefined || (items[ya].tipo === 'transporte' && it.tipo !== 'transporte')
+        || (items[ya].tipo === it.tipo && (it.min || 0) > (items[ya].min || 0))) principal[it.lugar] = i;
+  });
+
   items.forEach((it, i) => {
     const p = lug(it.lugar);
+    const suena = principal[it.lugar] === i;
     const pasado = hoy && sig >= 0 && i < sig;
     const esAhora = hoy && i === sig;
     const r = i > 0 ? ruta(items[i - 1].lugar, it.lugar) : null;
@@ -85,8 +94,8 @@ function pintaDia(dia) {
           ${it.tipo === 'tour' ? '<span class="pill tour">free tour</span>' : ''}
           ${it.tipo === 'comida' ? '<span class="pill comida">comer</span>' : ''}
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
-          ${D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
-          ${D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
+          ${suena && D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
+          ${suena && D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
           ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}
         </div>
         ${r ? `<button class="ir" data-camino="${r.id}" data-ctx="${dia.id}|${i}">
@@ -113,6 +122,7 @@ function pintaHoy() {
 
 async function bajaAudio(bt) {
   const claves = Object.keys(D.audio);
+  const fotos = Object.values(D.fotos || {}).map(f => f.archivo);
   bt.textContent = 'Descargando…';
   const c = await caches.open('audio-2-marisol');   // mismo nombre que en sw.js
   let n = 0;
@@ -120,7 +130,11 @@ async function bajaAudio(bt) {
     try { const r = await fetch(D.audio[k].archivo); if (r.ok) await c.put(D.audio[k].archivo, r.clone()); } catch (e) { }
     n++; bt.textContent = `Descargando… ${n} de ${claves.length}`;
   }
-  bt.textContent = 'Audio guardado en el móvil';
+  const cf = await caches.open('fotos');
+  for (const f of fotos) {
+    try { if (!(await cf.match(f))) { const r = await fetch(f); if (r.ok) await cf.put(f, r.clone()); } } catch (e) { }
+  }
+  bt.textContent = 'Audio y fotos guardados en el móvil';
   bt.classList.add('act');
 }
 
@@ -147,11 +161,11 @@ function tarjetaAudio() {
   const seg = claves.reduce((a, k) => a + D.audio[k].seg, 0);
   const mb = (claves.reduce((a, k) => a + D.audio[k].kb, 0) / 1024).toFixed(1);
   return `<div class="nota" style="margin-top:22px">
-    <b>Audio para llevar</b>
+    <b>Audio y fotos para llevar</b>
     <div style="font-size:13.5px;color:var(--suave);margin-top:3px">
       ${claves.length} pistas, ${Math.round(seg / 60)} minutos, ${mb} MB. Descargadlo por wifi antes de salir y
       funcionará dentro de Versalles y en el metro.</div>
-    <div class="btns"><button class="btn sec" id="bajar-audio">Descargar el audio</button></div></div>
+    <div class="btns"><button class="btn sec" id="bajar-audio">Descargar audio y fotos</button></div></div>
   <div class="nota">
     <b>Mapas para llevar</b>
     <div style="font-size:13.5px;color:var(--suave);margin-top:3px">
@@ -173,6 +187,12 @@ function abreFicha(diaId, i) {
       <span class="h-lugar">${it.h} · ${p.nombre}</span>
       ${it.min ? `<span class="dur">${it.min} min</span>` : ''}
     </div>`;
+  const foto = D.fotos[p.id];
+  if (foto) h += `<figure class="foto">
+      <img src="${foto.archivo}" alt="${p.nombre}" loading="lazy">
+      <figcaption>${foto.pie || p.nombre}
+        <a href="${foto.pagina}" target="_blank" rel="noopener">${foto.autor || 'Wikimedia Commons'} · ${foto.licencia}</a>
+      </figcaption></figure>`;
   if (it.limite) h += `<div class="aviso"><b>${it.limite.tipo === 'duro' ? 'Hora fija' : 'Conviene'}</b><br>${it.limite.texto}</div>`;
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
   if (it.llegada) h += `<div class="nota"><b>Cómo se llega</b><br>${it.llegada.texto}</div>`;
@@ -764,12 +784,12 @@ function muestra(v) {
 
 /* ---------- arranque ---------- */
 (async function () {
-  const [dias, lugares, rutas, tours, reservas, fichas, audio, interiores] = await Promise.all(
-    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas', 'audio', 'interiores'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
+  const [dias, lugares, rutas, tours, reservas, fichas, audio, interiores, fotos] = await Promise.all(
+    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas', 'audio', 'interiores', 'fotos'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
   D.dias = dias.dias; D.viaje = dias.viaje;
   D.lugares = Object.fromEntries(lugares.map(p => [p.id, p]));
   D.rutas = Object.fromEntries(rutas.map(r => [r.id, r]));
-  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas; D.audio = audio; D.interiores = interiores;
+  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas; D.audio = audio; D.interiores = interiores; D.fotos = fotos;
 
   $('#tiras').innerHTML = D.dias.map(d => {
     const f = new Date(d.fecha + 'T12:00');
