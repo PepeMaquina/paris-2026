@@ -1,4 +1,20 @@
 {
+ "f-saint-germain-des-pres": {
+  "archivo": "audio/f-saint-germain-des-pres.m4a",
+  "firma": "1f225b021930",
+  "voz": "Mónica",
+  "titulo": "Saint-Germain-des-Prés",
+  "seg": 87.7,
+  "kb": 381
+ },
+ "f-bon-marche": {
+  "archivo": "audio/f-bon-marche.m4a",
+  "firma": "9d213ada5b06",
+  "voz": "Mónica",
+  "titulo": "Le Bon Marché",
+  "seg": 71.9,
+  "kb": 319
+ },
  "f-tour-eiffel": {
   "archivo": "audio/f-tour-eiffel.m4a",
   "firma": "8c7560436176",
@@ -31,6 +47,78 @@
   "seg": 102.6,
   "kb": 441
  },
+ "f-moulin-rouge": {
+  "archivo": "audio/f-moulin-rouge.m4a",
+  "firma": "1eda03c01817",
+  "voz": "Mónica",
+  "titulo": "Moulin Rouge",
+  "seg": 61.4,
+  "kb": 276
+ },
+ "f-bateau-lavoir": {
+  "archivo": "audio/f-bateau-lavoir.m4a",
+  "firma": "04bccb73fc4f",
+  "voz": "Mónica",
+  "titulo": "Bateau-Lavoir",
+  "seg": 60.9,
+  "kb": 274
+ },
+ "f-moulin-galette": {
+  "archivo": "audio/f-moulin-galette.m4a",
+  "firma": "ca7edda461e9",
+  "voz": "Mónica",
+  "titulo": "Moulin de la Galette",
+  "seg": 50.1,
+  "kb": 232
+ },
+ "f-maison-rose": {
+  "archivo": "audio/f-maison-rose.m4a",
+  "firma": "50c76ee354f2",
+  "voz": "Mónica",
+  "titulo": "La Maison Rose",
+  "seg": 45.8,
+  "kb": 214
+ },
+ "f-lapin-agile": {
+  "archivo": "audio/f-lapin-agile.m4a",
+  "firma": "7ec8c26f5368",
+  "voz": "Mónica",
+  "titulo": "Au Lapin Agile",
+  "seg": 64.6,
+  "kb": 289
+ },
+ "f-vigne-montmartre": {
+  "archivo": "audio/f-vigne-montmartre.m4a",
+  "firma": "402ba9b947ae",
+  "voz": "Mónica",
+  "titulo": "Viña de Montmartre",
+  "seg": 50.5,
+  "kb": 234
+ },
+ "f-deux-moulins": {
+  "archivo": "audio/f-deux-moulins.m4a",
+  "firma": "9b2ab7acede8",
+  "voz": "Mónica",
+  "titulo": "Café des Deux Moulins",
+  "seg": 33.9,
+  "kb": 168
+ },
+ "f-casa-van-gogh": {
+  "archivo": "audio/f-casa-van-gogh.m4a",
+  "firma": "f6a2b5c98ef8",
+  "voz": "Mónica",
+  "titulo": "Casa de Van Gogh",
+  "seg": 48.3,
+  "kb": 225
+ },
+ "f-place-du-tertre": {
+  "archivo": "audio/f-place-du-tertre.m4a",
+  "firma": "9580bbafe523",
+  "voz": "Mónica",
+  "titulo": "Place du Tertre",
+  "seg": 46.3,
+  "kb": 217
+ },
  "f-notre-dame": {
   "archivo": "audio/f-notre-dame.m4a",
   "firma": "10c5c9658961",
@@ -38,6 +126,14 @@
   "titulo": "Notre-Dame de París",
   "seg": 111.5,
   "kb": 476
+ },
+ "f-marche-aux-fleurs": {
+  "archivo": "audio/f-marche-aux-fleurs.m4a",
+  "firma": "d05ccfdf9172",
+  "voz": "Mónica",
+  "titulo": "Marché aux Fleurs",
+  "seg": 49.8,
+  "kb": 230
  },
  "f-conciergerie": {
   "archivo": "audio/f-conciergerie.m4a",
@@ -47,6 +143,38 @@
   "seg": 100.2,
   "kb": 431
  },
+ "f-sainte-chapelle": {
+  "archivo": "audio/f-sainte-chapelle.m4a",
+  "firma": "41ae644f4524",
+  "voz": "Mónica",
+  "titulo": "Sainte-Chapelle",
+  "seg": 51.5,
+  "kb": 237
+ },
+ "f-pont-neuf": {
+  "archivo": "audio/f-pont-neuf.m4a",
+  "firma": "d0f629c468d5",
+  "voz": "Mónica",
+  "titulo": "Pont Neuf",
+  "seg": 70.7,
+  "kb": 313
+ },
+ "f-vert-galant": {
+  "archivo": "audio/f-vert-galant.m4a",
+  "firma": "2008cb5a76fb",
+  "voz": "Mónica",
+  "titulo": "Square du Vert-Galant",
+  "seg": 45.2,
+  "kb": 212
+ },
+ "f-galerie-vivienne": {
+  "archivo": "audio/f-galerie-vivienne.m4a",
+  "firma": "0d164940bdc5",
+  "voz": "Mónica",
+  "titulo": "Galerie Vivienne",
+  "seg": 74.6,
+  "kb": 329
+ },
  "f-pantheon": {
   "archivo": "audio/f-pantheon.m4a",
   "firma": "c4eb8b35f6f2",
@@ -54,6 +182,22 @@
   "titulo": "El Panteón",
   "seg": 109.5,
   "kb": 467
+ },
+ "f-saint-etienne-du-mont": {
+  "archivo": "audio/f-saint-etienne-du-mont.m4a",
+  "firma": "0d0fac3c6d07",
+  "voz": "Mónica",
+  "titulo": "Saint-Étienne-du-Mont",
+  "seg": 60.1,
+  "kb": 271
+ },
+ "f-rue-mouffetard": {
+  "archivo": "audio/f-rue-mouffetard.m4a",
+  "firma": "7ad9efe1a264",
+  "voz": "Mónica",
+  "titulo": "Rue Mouffetard",
+  "seg": 65.5,
+  "kb": 293
  },
  "f-orsay": {
   "archivo": "audio/f-orsay.m4a",
@@ -63,6 +207,78 @@
   "seg": 85.8,
   "kb": 373
  },
+ "f-hotel-de-ville": {
+  "archivo": "audio/f-hotel-de-ville.m4a",
+  "firma": "665a7b84a0a2",
+  "voz": "Mónica",
+  "titulo": "Hôtel de Ville",
+  "seg": 69.4,
+  "kb": 309
+ },
+ "f-saint-paul": {
+  "archivo": "audio/f-saint-paul.m4a",
+  "firma": "051aaf2aeac0",
+  "voz": "Mónica",
+  "titulo": "Saint-Paul (punto de encuentro)",
+  "seg": 64.3,
+  "kb": 288
+ },
+ "f-memorial-shoah": {
+  "archivo": "audio/f-memorial-shoah.m4a",
+  "firma": "1a56fd59f318",
+  "voz": "Mónica",
+  "titulo": "Memorial de la Shoah",
+  "seg": 70.5,
+  "kb": 312
+ },
+ "f-rue-des-rosiers": {
+  "archivo": "audio/f-rue-des-rosiers.m4a",
+  "firma": "aa25ad4a9692",
+  "voz": "Mónica",
+  "titulo": "Rue des Rosiers",
+  "seg": 78.1,
+  "kb": 344
+ },
+ "f-hotel-de-sens": {
+  "archivo": "audio/f-hotel-de-sens.m4a",
+  "firma": "f558dd628fbb",
+  "voz": "Mónica",
+  "titulo": "Hôtel de Sens",
+  "seg": 71.0,
+  "kb": 314
+ },
+ "f-village-saint-paul": {
+  "archivo": "audio/f-village-saint-paul.m4a",
+  "firma": "d97ba6022fee",
+  "voz": "Mónica",
+  "titulo": "Village Saint-Paul",
+  "seg": 48.5,
+  "kb": 225
+ },
+ "f-hotel-de-sully": {
+  "archivo": "audio/f-hotel-de-sully.m4a",
+  "firma": "306681b7feb3",
+  "voz": "Mónica",
+  "titulo": "Hôtel de Sully",
+  "seg": 48.4,
+  "kb": 225
+ },
+ "f-place-des-vosges": {
+  "archivo": "audio/f-place-des-vosges.m4a",
+  "firma": "5d84e363844b",
+  "voz": "Mónica",
+  "titulo": "Place des Vosges",
+  "seg": 83.6,
+  "kb": 365
+ },
+ "f-bastille": {
+  "archivo": "audio/f-bastille.m4a",
+  "firma": "461960efa3e4",
+  "voz": "Mónica",
+  "titulo": "Plaza de la Bastilla",
+  "seg": 73.3,
+  "kb": 324
+ },
  "f-carnavalet": {
   "archivo": "audio/f-carnavalet.m4a",
   "firma": "947dfbbdd830",
@@ -70,6 +286,54 @@
   "titulo": "Museo Carnavalet",
   "seg": 91.1,
   "kb": 394
+ },
+ "f-la-madeleine": {
+  "archivo": "audio/f-la-madeleine.m4a",
+  "firma": "c97cf7370501",
+  "voz": "Mónica",
+  "titulo": "La Madeleine",
+  "seg": 77.5,
+  "kb": 341
+ },
+ "f-place-vendome": {
+  "archivo": "audio/f-place-vendome.m4a",
+  "firma": "a306d69b0ff6",
+  "voz": "Mónica",
+  "titulo": "Place Vendôme",
+  "seg": 75.9,
+  "kb": 335
+ },
+ "f-opera-garnier": {
+  "archivo": "audio/f-opera-garnier.m4a",
+  "firma": "ac14704380d2",
+  "voz": "Mónica",
+  "titulo": "Ópera Garnier",
+  "seg": 90.0,
+  "kb": 391
+ },
+ "f-galeries-lafayette": {
+  "archivo": "audio/f-galeries-lafayette.m4a",
+  "firma": "234df2335b95",
+  "voz": "Mónica",
+  "titulo": "Galeries Lafayette Haussmann",
+  "seg": 67.8,
+  "kb": 302
+ },
+ "f-tour-saint-jacques": {
+  "archivo": "audio/f-tour-saint-jacques.m4a",
+  "firma": "cfc021bd874d",
+  "voz": "Mónica",
+  "titulo": "Torre Saint-Jacques",
+  "seg": 74.5,
+  "kb": 329
+ },
+ "f-comme-au-vietnam": {
+  "archivo": "audio/f-comme-au-vietnam.m4a",
+  "firma": "8962c03a0481",
+  "voz": "Mónica",
+  "titulo": "Comme au Vietnam",
+  "seg": 67.9,
+  "kb": 302
  },
  "f-invalides-entrada-grenelle": {
   "archivo": "audio/f-invalides-entrada-grenelle.m4a",
@@ -86,6 +350,110 @@
   "titulo": "Domo de los Inválidos y tumba de Napoleón",
   "seg": 97.6,
   "kb": 420
+ },
+ "f-pont-alexandre-iii": {
+  "archivo": "audio/f-pont-alexandre-iii.m4a",
+  "firma": "f0011d3fdf9e",
+  "voz": "Mónica",
+  "titulo": "Pont Alexandre III",
+  "seg": 71.5,
+  "kb": 317
+ },
+ "f-petit-palais": {
+  "archivo": "audio/f-petit-palais.m4a",
+  "firma": "9aa5f3697d58",
+  "voz": "Mónica",
+  "titulo": "Petit Palais",
+  "seg": 66.4,
+  "kb": 297
+ },
+ "f-gare-montparnasse": {
+  "archivo": "audio/f-gare-montparnasse.m4a",
+  "firma": "684933adfd4e",
+  "voz": "Mónica",
+  "titulo": "Gare Montparnasse",
+  "seg": 65.8,
+  "kb": 294
+ },
+ "f-deux-magots": {
+  "archivo": "audio/f-deux-magots.m4a",
+  "firma": "43be8246cc82",
+  "voz": "Mónica",
+  "titulo": "Les Deux Magots",
+  "seg": 49.1,
+  "kb": 228
+ },
+ "f-champ-de-mars": {
+  "archivo": "audio/f-champ-de-mars.m4a",
+  "firma": "870d53dcfa23",
+  "voz": "Mónica",
+  "titulo": "Champ de Mars",
+  "seg": 52.4,
+  "kb": 242
+ },
+ "f-rue-saint-dominique": {
+  "archivo": "audio/f-rue-saint-dominique.m4a",
+  "firma": "4584144a777a",
+  "voz": "Mónica",
+  "titulo": "Rue Saint-Dominique",
+  "seg": 39.6,
+  "kb": 190
+ },
+ "f-bouillon-pigalle": {
+  "archivo": "audio/f-bouillon-pigalle.m4a",
+  "firma": "5bd590005104",
+  "voz": "Mónica",
+  "titulo": "Bouillon Pigalle",
+  "seg": 59.9,
+  "kb": 270
+ },
+ "f-relais-gascon": {
+  "archivo": "audio/f-relais-gascon.m4a",
+  "firma": "56e5c463c4b9",
+  "voz": "Mónica",
+  "titulo": "Le Relais Gascon",
+  "seg": 53.6,
+  "kb": 245
+ },
+ "f-as-du-fallafel": {
+  "archivo": "audio/f-as-du-fallafel.m4a",
+  "firma": "90b00d50f55d",
+  "voz": "Mónica",
+  "titulo": "L'As du Fallafel",
+  "seg": 44.3,
+  "kb": 209
+ },
+ "f-rue-sainte-anne": {
+  "archivo": "audio/f-rue-sainte-anne.m4a",
+  "firma": "f8b4f96504e9",
+  "voz": "Mónica",
+  "titulo": "Rue Sainte-Anne",
+  "seg": 41.4,
+  "kb": 198
+ },
+ "f-alchimiste": {
+  "archivo": "audio/f-alchimiste.m4a",
+  "firma": "faf812d9cd77",
+  "voz": "Mónica",
+  "titulo": "L'Alchimiste",
+  "seg": 46.4,
+  "kb": 217
+ },
+ "f-invalides": {
+  "archivo": "audio/f-invalides.m4a",
+  "firma": "bf60930906ae",
+  "voz": "Mónica",
+  "titulo": "Hôtel national des Invalides",
+  "seg": 43.6,
+  "kb": 206
+ },
+ "f-place-blanche": {
+  "archivo": "audio/f-place-blanche.m4a",
+  "firma": "201aafe82133",
+  "voz": "Mónica",
+  "titulo": "Place Blanche",
+  "seg": 42.9,
+  "kb": 203
  },
  "i-versalles-palacio-capilla": {
   "archivo": "audio/i-versalles-palacio-capilla.m4a",

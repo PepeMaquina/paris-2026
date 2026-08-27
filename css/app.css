@@ -159,3 +159,5 @@ ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .repro-sub{font-size:11.5px;font-weight:400;opacity:.65;margin-top:2px}
 .repro-bt{color:#fff;font-size:15px;padding:6px 8px;line-height:1}
+.pill.audio{background:#e9e4f4;color:#4a3a7a}
+.pill.salas{background:#f2e6ef;color:#7a3a63}

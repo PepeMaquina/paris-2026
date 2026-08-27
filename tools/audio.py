@@ -41,8 +41,7 @@ inter = json.load(open("data/interiores.json"))
 
 hechos = 0
 for lid, f in fichas.items():
-    if not f.get("audio"):
-        continue
+    # se graban todas, no solo los interiores: si hay ficha, hay audio
     texto = lugares[lid]["nombre"] + ". " + f["corto"] + " " + " ".join(f["largo"])
     if f.get("mirar"):
         texto += " Qué mirar. " + " ".join(f["mirar"])

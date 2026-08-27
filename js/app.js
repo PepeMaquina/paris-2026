@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-9';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-10';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -85,7 +85,9 @@ function pintaDia(dia) {
           ${it.tipo === 'tour' ? '<span class="pill tour">free tour</span>' : ''}
           ${it.tipo === 'comida' ? '<span class="pill comida">comer</span>' : ''}
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
-          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + fmtM(r.minutos) + ' andando' : ''}${D.fichas[it.lugar] ? ' · con historia' : ''}
+          ${D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
+          ${D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
+          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + fmtM(r.minutos) + ' andando' : ''}
         </div>
       </div></button>`;
   });
