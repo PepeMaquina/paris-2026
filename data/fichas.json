@@ -369,5 +369,406 @@
    "Las estatuas de la fachada, cada una con su nombre grabado debajo.",
    "La plaza, pensando en lo que fue: puerto, mercado de jornaleros y patíbulo."
   ]
+ },
+ "saint-paul": {
+  "corto": "La iglesia de los jesuitas, con la primera gran cúpula barroca de París, y el punto donde arranca el tour.",
+  "largo": [
+   "Saint-Paul-Saint-Louis se levantó entre 1627 y 1641 por encargo de Luis XIII, con los jesuitas detrás, y trajo a París un modo de construir que venía de Roma: planta única, mucha luz y una cúpula de sesenta metros que fue la primera de ese tamaño en la ciudad. Las de los Inválidos y la Sorbona vinieron después y de aquí.",
+   "Dentro se guardaron durante siglo y medio los corazones embalsamados de Luis XIII y Luis XIV, en relicarios de plata. Los revolucionarios los vendieron, y una parte acabó en el taller de un pintor que los usaba para fabricar un pigmento pardo llamado momia. No es leyenda de guía, está documentado.",
+   "Queda dentro un Delacroix, el Cristo en el Monte de los Olivos, de 1827, en el crucero izquierdo.",
+   "El punto de encuentro del free tour está en la placita de al lado. Llegad diez minutos antes y buscad al guía por el paraguas o el cartel."
+  ],
+  "mirar": [
+   "La cúpula desde debajo, que es la que abrió el camino.",
+   "El Delacroix del crucero izquierdo.",
+   "Los relojes de sol de la fachada lateral, en la rue Saint-Antoine."
+  ]
+ },
+ "memorial-shoah": {
+  "corto": "El Muro de los Nombres, con los setenta y seis mil judíos deportados de Francia grabados uno a uno.",
+  "largo": [
+   "El memorial se abrió en 2005 sobre una institución anterior de 1956, la primera de Europa dedicada a las víctimas del Holocausto. Es a la vez museo, archivo y monumento, y la entrada es libre.",
+   "Lo primero que se ve al entrar en el recinto es el Muro de los Nombres: cuatro paredes de piedra con los nombres de las setenta y seis mil personas judías deportadas desde Francia entre 1942 y 1944, ordenadas por año. Once mil eran niños. De todas ellas volvieron unas dos mil quinientas.",
+   "Dentro está la cripta, con una estrella de David de mármol negro sobre cenizas traídas de los campos y del gueto de Varsovia, y el archivo, que conserva los ficheros de la policía francesa usados para organizar las redadas. Esa parte incomoda por una razón concreta: la deportación la organizó la administración francesa, no solo el ocupante.",
+   "El tour pasa por delante. Si os quedáis con ganas, la visita completa es de otro día, pero el muro se lee en diez minutos y merecen la pena."
+  ],
+  "mirar": [
+   "El Muro de los Nombres, buscando el año 1942, que es el de las grandes redadas.",
+   "Las placas de las escuelas del barrio, que nombran a los niños que salieron de cada una."
+  ]
+ },
+ "rue-des-rosiers": {
+  "corto": "El corazón del barrio judío de París, el Pletzl, con sus panaderías, sus falafel y sus placas.",
+  "largo": [
+   "El nombre viene de los rosales que crecían junto a la muralla de Felipe Augusto, que pasaba por aquí. El barrio es judío desde el siglo XIII, con expulsiones y regresos de por medio, y se llenó de nuevo a finales del XIX y principios del XX con la llegada de familias de Polonia, Rusia y Rumanía que huían de los pogromos. De ahí el apodo, Pletzl, la placita en yidis.",
+   "En julio de 1942, en la redada del Velódromo de Invierno, la policía francesa detuvo aquí a miles de vecinos. Las placas de las escuelas del barrio cuentan cuántos niños salieron de cada una y no volvieron. Se leen en un minuto y cambian el paseo.",
+   "Hoy la calle mezcla lo de siempre con las tiendas de ropa que han ido entrando: panaderías askenazíes, restaurantes sefardíes, la sinagoga de la rue Pavée de Hector Guimard, el mismo del art nouveau del metro, a dos pasos.",
+   "L'As du Fallafel, en el 34, abre los viernes de 11:00 a 15:30 y cierra los sábados por el Shabbat. Este es el único mediodía del viaje que os cuadra. Va a metálico y suele haber cola; si es imposible, la misma calle tiene tres o cuatro sitios equivalentes."
+  ],
+  "mirar": [
+   "Las placas de las escuelas, en la fachada, con los nombres de los niños.",
+   "La sinagoga de la rue Pavée, de Guimard, a dos calles.",
+   "Los escaparates de las panaderías, con el pan trenzado y el strudel."
+  ]
+ },
+ "hotel-de-sens": {
+  "corto": "Una de las tres casas medievales que quedan en pie en París, con una bala de cañón de 1830 todavía clavada en la fachada.",
+  "largo": [
+   "Se construyó entre finales del siglo XV y principios del XVI para los arzobispos de Sens, que entonces mandaban sobre la diócesis de París. Es una casa fortificada de verdad, con torreones, garitas de vigilancia en las esquinas y una puerta pensada para carruajes y para resistir. Junto al Hôtel de Cluny y los restos del Hôtel de Clisson, es lo poco que sobrevive de la arquitectura civil medieval de la ciudad.",
+   "Aquí vivió en 1605 la reina Margot, Margarita de Valois, primera esposa de Enrique IV, ya repudiada y de vuelta en París. Tiene fama de haber hecho aquí una vida bastante libre para su época, y de aquellos años sale la mayor parte de la leyenda negra que le colgaron.",
+   "En la fachada, en la esquina, hay una bala de cañón incrustada con una fecha grabada al lado: 28 de julio de 1830, uno de los tres días de la revolución que echó a Carlos X. La dejaron ahí a propósito.",
+   "Hoy dentro está la biblioteca Forney, de artes decorativas, y el jardín de atrás es de acceso libre y casi siempre está vacío."
+  ],
+  "mirar": [
+   "La bala de cañón de la fachada, con la fecha grabada.",
+   "Las garitas de las esquinas, para vigilar la calle.",
+   "El jardín trasero, a la francesa y sin gente."
+  ]
+ },
+ "village-saint-paul": {
+  "corto": "Cinco patios encadenados de anticuarios, en lo que fueron los jardines del rey Carlos V.",
+  "largo": [
+   "Carlos V se mudó en el siglo XIV a este barrio huyendo del palacio de la Cité, y montó aquí una residencia con huertas y jardines. De aquello no queda el palacio, pero sí la trama de patios interiores, que es lo que se recorre.",
+   "En los años setenta, cuando el Marais se estaba cayendo a pedazos y se planteó demolerlo entero, la zona se rehabilitó y estos patios se llenaron de anticuarios y talleres. Se pasa de uno a otro por pasadizos que no parecen públicos, pero lo son.",
+   "A cien metros, en la rue des Jardins-Saint-Paul, está el tramo más largo que se conserva de la muralla de Felipe Augusto, del año 1200, con dos torres. Está en un patio de colegio y se ve desde la calle."
+  ],
+  "mirar": [
+   "Los pasadizos entre patio y patio, que hay que atreverse a cruzar.",
+   "La muralla de Felipe Augusto en la rue des Jardins-Saint-Paul."
+  ]
+ },
+ "hotel-de-sully": {
+  "corto": "Un palacio de 1630 con un patio tallado que casi nadie cruza, y una puerta secreta a la Place des Vosges.",
+  "largo": [
+   "Lo levantó entre 1625 y 1630 Jean Androuet du Cerceau para un financiero que perdió la casa en el juego a los pocos años. En 1634 lo compró el duque de Sully, que había sido el ministro de finanzas de Enrique IV, ya retirado y muy mayor, y se quedó su nombre.",
+   "Es de los mejores ejemplos que quedan del barroco francés temprano: patio de honor con esculturas de las estaciones y los elementos en los frontones, y una orangerie al fondo del jardín.",
+   "Lo que casi nadie sabe es que por el fondo del jardín hay un paso que sale directamente a los soportales de la Place des Vosges. Es el atajo más elegante de París y está abierto en horario de día."
+  ],
+  "mirar": [
+   "Los relieves de las estaciones en el patio de entrada.",
+   "El paso del fondo del jardín que lleva a la Place des Vosges."
+  ]
+ },
+ "place-des-vosges": {
+  "corto": "La plaza planificada más antigua de París, hecha sobre el solar donde un rey murió en un torneo.",
+  "largo": [
+   "Aquí estuvo el Hôtel des Tournelles, residencia real. En 1559 Enrique II corrió un torneo en la calle de al lado, una astilla de lanza le entró por la visera y murió diez días después. Su viuda, Catalina de Médicis, mandó demoler el palacio entero y el solar quedó vacío cuarenta años.",
+   "Enrique IV lo aprovechó para levantar la primera plaza pensada de una vez: treinta y seis pabellones iguales de ladrillo rojo y piedra, con soportales corridos y tejados de pizarra, nueve por lado, con el pabellón del Rey y el de la Reina enfrentados. Se inauguró en 1612 con un torneo de tres días por las bodas de Luis XIII, y la idea de que una plaza pudiera diseñarse entera, con fachadas idénticas, salió de aquí y se copió por toda Europa.",
+   "Se llamaba Place Royale. Le pusieron Vosges en 1800 porque fue el primer departamento francés que pagó sus impuestos, que es una manera muy administrativa de dar un nombre.",
+   "Victor Hugo vivió en el número 6 entre 1832 y 1848, y allí escribió buena parte de Los miserables. Hoy es museo y es gratis, aunque no entra en el plan.",
+   "El césped central está abierto, hay cuatro fuentes en las esquinas y los soportales quedan en sombra por la tarde. Es el rato de tumbarse que pedíais."
+  ],
+  "mirar": [
+   "Las diferencias entre pabellones: el del Rey y el de la Reina son más altos.",
+   "El paso de los soportales del sur al patio del Hôtel de Sully.",
+   "La casa de Victor Hugo, en el número 6."
+  ]
+ },
+ "bastille": {
+  "corto": "La plaza donde no queda nada de la Bastilla, y una columna que conmemora otra revolución distinta.",
+  "largo": [
+   "La fortaleza se construyó en el siglo XIV para defender la puerta este de París y acabó de cárcel de estado, donde se encerraba por orden directa del rey sin juicio. El 14 de julio de 1789, cuando la multitud la tomó, dentro había siete presos: cuatro falsificadores, dos locos y un noble encerrado por su familia. Lo que se buscaba no eran presos, era la pólvora.",
+   "La derribaron en los meses siguientes y un contratista, Palloy, hizo negocio tallando maquetas de la fortaleza con sus propias piedras y mandándolas a cada departamento de Francia. Una de esas maquetas es la que veréis por la tarde en Carnavalet.",
+   "La columna del centro no tiene que ver con 1789. Es de 1840 y recuerda a los muertos de la revolución de julio de 1830, los tres días que echaron a Carlos X, y sus nombres están grabados en el fuste. El genio dorado de arriba se llama el Genio de la Libertad.",
+   "En el suelo de la plaza, con adoquines de otro color, está marcado el contorno de una de las torres. Es lo único que queda."
+  ],
+  "mirar": [
+   "El trazado de la torre marcado en el pavimento.",
+   "Los nombres de 1830 grabados en la columna.",
+   "La Ópera Bastille, de 1989, que sigue sin gustar a casi nadie."
+  ]
+ },
+ "carnavalet": {
+  "corto": "La historia de París contada con los objetos de la propia ciudad, en dos palacios unidos y gratis.",
+  "largo": [
+   "Son dos casas señoriales pegadas: el Carnavalet, renacentista, donde Madame de Sévigné vivió sus últimos veinte años escribiendo las cartas a su hija que se estudian todavía, y el Le Peletier de Saint-Fargeau, de 1690. La ciudad compró la primera en 1866, cuando Haussmann estaba derribando medio París, precisamente para guardar lo que se estaba perdiendo.",
+   "Y ahí está la gracia del museo: como se formó recogiendo escombros de las demoliciones, tiene cosas que ningún otro sitio tiene. Tiendas enteras del siglo XIX desmontadas y vueltas a montar, con sus rótulos y sus mostradores. La joyería que Mucha diseñó para Fouquet, completa. El salón de baile del hotel de Wendel. La habitación de Proust con su cama de latón, traída entera desde su piso, donde escribió acostado los últimos años.",
+   "La sección revolucionaria es la más fuerte. Está la maqueta de la Bastilla tallada con una piedra de la Bastilla, están los objetos de la familia real presa en el Temple, y están los carteles y las reliquias de una época en que todo el mundo guardaba recuerdos de lo que estaba pasando.",
+   "El recorrido empieza con unas piraguas neolíticas encontradas en Bercy, de hace más de cuatro mil años, y termina en el siglo XX. Las colecciones permanentes son gratis para todo el mundo, sin reserva, y la última entrada es a las 17:15."
+  ],
+  "mirar": [
+   "La maqueta de la Bastilla, tallada con una piedra de la propia fortaleza.",
+   "La habitación de Proust, con la cama donde escribió.",
+   "La joyería de Mucha, montada entera.",
+   "Los rótulos de tiendas del XIX en las salas de arriba."
+  ],
+  "audio": true
+ },
+ "la-madeleine": {
+  "corto": "Un templo romano en medio del bulevar, que Napoleón mandó hacer para su ejército y acabó siendo iglesia.",
+  "largo": [
+   "La obra empezó en 1764 como iglesia, se paró con la Revolución y se quedó a medias durante veinte años. Se discutió convertirla en bolsa, en biblioteca, en banco o en estación de tren. En 1806 Napoleón cortó por lo sano y ordenó levantar un templo a la gloria de su Gran Ejército, sin cruz, sin campanario y sin nada que recordara a una iglesia: cincuenta y dos columnas corintias de veinte metros alrededor de un bloque cerrado.",
+   "Cuando cayó el imperio, el edificio seguía sin terminar y ya no había ejército al que glorificar. Se acabó como iglesia en 1842, y por eso es el único templo de París que parece exactamente lo que no es.",
+   "Aquí se celebró el funeral de Chopin en 1849, con el Réquiem de Mozart, que obligó a meter un coro de mujeres en una iglesia que no lo permitía; se resolvió poniéndolas detrás de una cortina negra. El funeral se retrasó dos semanas por esa discusión.",
+   "Desde lo alto de la escalinata se ve en línea recta la Concorde, con el obelisco, y al fondo la Asamblea Nacional, cuya fachada de columnas se hizo a juego con esta a propósito. Es uno de los ejes urbanos más deliberados de la ciudad."
+  ],
+  "mirar": [
+   "El eje desde la escalinata hacia la Concorde y la Asamblea.",
+   "El frontón del pórtico, con el Juicio Final.",
+   "Dentro, la falta de ventanas: la luz entra por tres cúpulas del techo."
+  ]
+ },
+ "place-vendome": {
+  "corto": "Una plaza de fachadas iguales y una columna hecha con el bronce de los cañones de Austerlitz.",
+  "largo": [
+   "Jules Hardouin-Mansart, el mismo del Domo de los Inválidos y de buena parte de Versalles, la diseñó a finales del XVII con un truco: primero levantó solo las fachadas, iguales y regulares, y después se vendieron los solares de detrás con la obligación de respetarlas. Lo de fuera se decidió antes que lo de dentro.",
+   "La columna del centro es de 1810 y copia la de Trajano en Roma. Está forrada con una espiral de bronce fundido, según la versión oficial, con los cañones capturados a los austríacos y los rusos en Austerlitz, y cuenta la campaña en relieve de abajo arriba.",
+   "En 1871, la Comuna la derribó por considerarla un monumento a la guerra. El pintor Gustave Courbet había pedido públicamente que se desmontara y se trasladara, y cuando cayó la Comuna le hicieron responsable y le pasaron la factura de la reconstrucción: más de trescientos mil francos, a pagar en plazos anuales durante treinta y tres años. Se exilió en Suiza y murió allí, arruinado, la víspera del primer plazo.",
+   "En el número 15 está el Ritz, abierto en 1898. En el 12 murió Chopin en 1849."
+  ],
+  "mirar": [
+   "La espiral de relieves de la columna, que se lee de abajo arriba.",
+   "La regularidad de las fachadas, todas con la misma altura y el mismo ritmo.",
+   "La placa de Chopin en el número 12."
+  ]
+ },
+ "opera-garnier": {
+  "corto": "El teatro que ganó un desconocido de treinta y cinco años en un concurso con ciento setenta candidatos.",
+  "largo": [
+   "Napoleón III convocó el concurso en 1860 y lo ganó Charles Garnier, un arquitecto joven y sin obra. Cuando la emperatriz le preguntó, molesta, de qué estilo era aquello, que no era ni griego ni Luis XIV ni Luis XV, él contestó que era estilo Napoleón III. Se quedó con el encargo.",
+   "Tardó quince años, con una guerra y una comuna de por medio. Al excavar los cimientos apareció una capa freática que no había manera de achicar; Garnier acabó construyendo un depósito de agua en el subsuelo para estabilizar el terreno. Ese depósito, que existe y los bomberos usan para entrenar buceo, es el origen del lago subterráneo del Fantasma de la Ópera.",
+   "Por dentro, lo que importa no es la sala, que tiene menos de dos mil butacas, sino la escalera y los salones: el edificio está pensado para que el público se vea a sí mismo. Ir a la ópera era una función social y la arquitectura lo dice sin disimulo.",
+   "El techo de la sala lo pintó Chagall en 1964, encima del original del XIX, que sigue debajo intacto. Fue un escándalo en su momento.",
+   "No entramos, pero la fachada merece los diez minutos: las cuatro esculturas del pórtico, con La Danza de Carpeaux a la derecha, que escandalizó tanto al estrenarse en 1869 que alguien le tiró un frasco de tinta. La que está ahí hoy es una copia; la original está en Orsay, y la habréis visto el jueves."
+  ],
+  "mirar": [
+   "La Danza de Carpeaux, a la derecha del pórtico.",
+   "Los bustos de compositores en la cornisa.",
+   "La cúpula verde y el Apolo dorado de arriba, que se ven mejor desde la terraza de Lafayette."
+  ]
+ },
+ "galeries-lafayette": {
+  "corto": "Una cúpula de vidriera de 1912 a cuarenta y tres metros, y una azotea que es el mejor mirador gratuito del centro.",
+  "largo": [
+   "Empezó en 1894 como una mercería en la esquina, y en veinte años se comió la manzana. La cúpula es de 1912, neobizantina, con diez vidrieras de colores montadas por la casa Jacques Gruber, y está a cuarenta y tres metros del suelo.",
+   "El truco para verla es mirarla desde la barandilla de la primera planta y no desde abajo: desde la planta baja se ve un agujero lejano, desde arriba se ve el dibujo. La escalera monumental la diseñó Louis Majorelle, uno de los grandes del art nouveau de Nancy, inspirándose en la de la Ópera que tenéis enfrente.",
+   "En 1919 el aviador Jules Védrines aterrizó una avioneta en la azotea, por una apuesta con premio en metálico. Aterrizó bien; despegar fue otra historia. Hay una placa.",
+   "La terraza son ochocientos metros cuadrados de mirador, gratis y sin cola, con la Ópera a los pies, la torre al fondo y el Sacré-Cœur a la derecha. A las siete de la tarde la luz entra de lado y es su mejor momento."
+  ],
+  "mirar": [
+   "La cúpula desde la primera planta, mirando hacia arriba.",
+   "La escalera de Majorelle.",
+   "Desde la azotea, el tejado de la Ópera, que no se ve desde ningún otro sitio."
+  ]
+ },
+ "tour-saint-jacques": {
+  "corto": "Una torre gótica sola en medio de un jardín, todo lo que queda de la iglesia de los carniceros.",
+  "largo": [
+   "Se construyó entre 1509 y 1523 como campanario de Saint-Jacques-de-la-Boucherie, la iglesia del gremio de carniceros, que era de los más ricos de París. La iglesia se vendió y se demolió durante la Revolución, y la torre se salvó porque un fabricante la compró para usarla de taller de perdigones: se dejaban caer gotas de plomo fundido desde arriba y al llegar abajo eran esferas.",
+   "De aquí salía el camino de Santiago de los peregrinos de París, y de ahí el nombre. Nicolas Flamel, el escribano al que la leyenda convirtió en alquimista siglos después de muerto, era feligrés de esta iglesia y está enterrado bajo lo que fue su suelo. Su casa, de 1407, sigue en pie a diez minutos, en la rue de Montmorency, y es la casa más antigua de París.",
+   "Pascal repitió aquí en 1648 sus experimentos con el barómetro, midiendo la presión abajo y arriba de la torre. La estatua que hay a sus pies lo recuerda.",
+   "L'Alchimiste está en el número 9 de la rue Nicolas Flamel, al lado, con happy hour desde las 18:00. El nombre de la calle no es casual, pero la leyenda sí lo es."
+  ],
+  "mirar": [
+   "La estatua de Pascal en la base, dentro del jardincillo.",
+   "Las gárgolas y el San Jacobo de la coronación.",
+   "La casa de Flamel, en el 51 de la rue de Montmorency, si os sobran diez minutos."
+  ]
+ },
+ "comme-au-vietnam": {
+  "corto": "El barrio asiático más grande de Europa, levantado en unas torres de los años setenta que nadie quería.",
+  "largo": [
+   "Todo este triángulo entre Choisy, Ivry y Masséna se construyó entre 1969 y 1974 con torres de treinta plantas, en una operación urbanística que no acabó de funcionar: los pisos se vendían mal y las plantas bajas comerciales estaban vacías.",
+   "A partir de 1975, con la caída de Saigón y el horror en Camboya, llegaron a Francia decenas de miles de refugiados de Vietnam, Camboya y Laos, muchos de ellos de origen chino. Encontraron aquí pisos disponibles y locales baratos, y en pocos años el barrio se convirtió en lo que es: el mayor barrio asiático de Europa, con sus supermercados, sus templos en aparcamientos y sus restaurantes.",
+   "Comme au Vietnam está en el 195 de la avenue de Choisy y abre para cenas de 19:00 a 22:30. Tenéis mesa a las 21:45 y la cocina cierra a las 22:30, así que esa es hora de estar sentados. Desde el hotel son quince minutos andando por la rue de Tolbiac, o el autobús 62 por esa misma calle."
+  ],
+  "mirar": [
+   "Los supermercados Tang Frères, si pilláis alguno abierto.",
+   "Las torres de los setenta, que son parte de la historia y no un estorbo."
+  ]
+ },
+ "invalides-entrada-grenelle": {
+  "corto": "Un hospital para soldados heridos que Luis XIV levantó en 1670 y que sigue siéndolo. El patio y la iglesia son gratis.",
+  "largo": [
+   "Antes de esto, un soldado mutilado en campaña acababa mendigando. Luis XIV encargó a Libéral Bruant un edificio para alojarlos, curarlos y darles oficio, y llegó a tener cuatro mil residentes. Sigue funcionando como hospital militar y todavía viven veteranos dentro, cosa que casi nadie sabe al visitarlo.",
+   "La explanada de delante son quinientos metros de césped que se dejaron libres a propósito para que el edificio se viera entero desde el río. En los fosos hay una batería de cañones de bronce, muchos capturados al enemigo, que se disparaban en las grandes ocasiones.",
+   "El patio de honor son ciento cincuenta metros por cien, con dos pisos de arcadas y el Domo dorado asomando al fondo. En las buhardillas del último piso hay trofeos militares tallados, y uno de ellos, en el centro del ala norte, es un lobo mirando por una claraboya: un juego de palabras con Louvois, el ministro de la guerra que llevó la obra.",
+   "El 14 de julio de 1789, por la mañana, la multitud entró aquí y se llevó unos treinta mil fusiles. Con esas armas, y buscando la pólvora que no había, fue a la Bastilla por la tarde. La toma de la Bastilla empieza en este patio.",
+   "La iglesia de Saint-Louis, la de los soldados, tiene colgadas de la bóveda las banderas capturadas al enemigo. Todo esto se ve sin pagar y sin cola, entrando por el 129 de la rue de Grenelle."
+  ],
+  "mirar": [
+   "El lobo de la buhardilla del ala norte, el chiste sobre Louvois.",
+   "Las banderas colgadas de la bóveda en Saint-Louis.",
+   "Los cañones de bronce de los fosos, con sus inscripciones.",
+   "El patio a las diez de la mañana, vacío y con el sol de lado."
+  ],
+  "audio": true
+ },
+ "dome-invalides": {
+  "corto": "La cúpula de Hardouin-Mansart, y debajo Napoleón en un sarcófago de cuarcita roja dentro de otros seis ataúdes.",
+  "largo": [
+   "El Domo se construyó entre 1679 y 1706 como iglesia real, separada de la de los soldados por un cristal para que el rey y la tropa no se mezclaran. Es la obra maestra de Jules Hardouin-Mansart y el modelo de casi todas las cúpulas monumentales que vinieron después, incluida la del Capitolio de Washington. El oro de fuera es pan de oro de verdad y se ha vuelto a dorar varias veces; la última llevó doce kilos.",
+   "Napoleón murió en Santa Elena en 1821 y allí estuvo enterrado diecinueve años. En 1840 Luis Felipe negoció con los ingleses el traslado de los restos, una operación política para apropiarse del mito, y el ataúd llegó a París en diciembre con un cortejo multitudinario por los Campos Elíseos, con un frío atroz.",
+   "La tumba definitiva no estuvo lista hasta 1861. Es un sarcófago de cuarcita roja de Carelia, de cuatro metros, colocado en una cripta abierta bajo la cúpula. Dentro hay seis ataúdes encajados uno en otro, como una muñeca rusa: hojalata, caoba, dos de plomo, ébano y roble.",
+   "El truco del diseño está en la cripta abierta: la balaustrada obliga a asomarse y mirar hacia abajo. Está pensado para que nadie mire a Napoleón de frente sino inclinando la cabeza.",
+   "Esto es lo único que se paga del día, unos 17 € con el billete del Musée de l'Armée, y los dos chicos entran gratis por ser menores de 26 de la UE. Con cuarenta y cinco minutos se ve y el plan sigue igual."
+  ],
+  "mirar": [
+   "La cripta desde la balaustrada, para notar lo de tener que inclinarse.",
+   "Los doce relieves de la cripta, que cuentan sus reformas y no sus batallas.",
+   "La cúpula por dentro, con el fresco de San Luis entregando su espada a Cristo."
+  ],
+  "audio": true
+ },
+ "pont-alexandre-iii": {
+  "corto": "El puente más recargado de París, hecho en tres años para la Exposición de 1900 y bautizado con el nombre de un zar.",
+  "largo": [
+   "Nació de una alianza política. Francia y Rusia firmaron un pacto en 1892 y el puente se hizo para celebrarlo: la primera piedra la puso el zar Nicolás II en 1896 y lleva el nombre de su padre, Alejandro III, que había firmado el acuerdo.",
+   "El reto técnico era serio: había que cruzar el Sena sin pilares intermedios y sin tapar la vista entre los Inválidos y los Campos Elíseos. Se resolvió con un arco de acero de un solo tramo que solo se levanta seis metros sobre el agua, algo muy plano para la época y que exigió cimentaciones enormes en las orillas.",
+   "Encima se le puso todo lo que cabía: farolas art nouveau, ninfas, querubines, pegasos y cuatro columnas de diecisiete metros rematadas con famas doradas que hacen de contrapeso del arco. Es decoración, pero también es estructura.",
+   "Las ninfas del centro son dos: las del lado de la orilla derecha representan al Sena, y las de la izquierda al Neva, el río de San Petersburgo. Los escudos de Francia y de Rusia van enfrentados."
+  ],
+  "mirar": [
+   "Las famas doradas de las cuatro columnas, a contraluz por la mañana.",
+   "Las ninfas del Sena y del Neva, en el centro del arco.",
+   "La vista al norte hacia el Grand Palais y al sur hacia el Domo."
+  ]
+ },
+ "petit-palais": {
+  "corto": "Un palacio de la Exposición de 1900 que esconde dentro un jardín con palmeras y un café que casi nadie encuentra.",
+  "largo": [
+   "Charles Girault lo construyó para la Exposición Universal de 1900, a la vez que el Grand Palais de enfrente y el puente de al lado. A diferencia de casi todo lo que se levantó para aquella exposición, este se hizo para quedarse: desde 1902 es el museo de bellas artes de la ciudad de París.",
+   "La planta tiene forma de trapecio y se organiza alrededor de un jardín interior semicircular, rodeado por un peristilo de columnas pareadas, con estanques, palmeras y mosaicos en el suelo. Desde la calle no se ve nada de esto, y por eso está siempre tranquilo.",
+   "Ahí está el Café 1902, con mesas dentro y en la terraza del jardín, abierto los sábados de 10:00 a 19:15. Es de las paradas más agradables de París y no requiere entrada.",
+   "Las colecciones permanentes son gratis para todo el mundo: hay Rembrandt, Courbet, Monet, Cézanne y una sección de art nouveau con muebles de Guimard. Una vuelta rápida no obliga a nada, porque no se paga."
+  ],
+  "mirar": [
+   "El jardín interior con el peristilo y los mosaicos.",
+   "La escalinata de entrada y la reja dorada, que son de 1900 originales.",
+   "Las cúpulas pintadas del vestíbulo."
+  ]
+ },
+ "gare-montparnasse": {
+  "corto": "La estación de la que salís, sobre el solar de aquella otra en la que un tren atravesó la fachada.",
+  "largo": [
+   "La estación actual es de 1969 y no tiene nada de particular, más allá de que sobre ella se plantó la torre Montparnasse, que es el edificio más odiado de París y que provocó que se prohibiera construir en altura en el centro.",
+   "La estación anterior estaba unos metros más al norte y es la de la fotografía famosa: en octubre de 1895, un expreso que llegaba de Granville entró demasiado rápido, no frenó a tiempo, atravesó el andén y la fachada del primer piso y quedó colgado sobre la calle, con la locomotora asomando a la plaza. Murió una sola persona, una mujer que vendía periódicos en la acera de abajo.",
+   "Los casilleros automáticos funcionan de 7:00 a 23:00 y se pagan solo con tarjeta. Se eligen en una pantalla táctil a la entrada de la zona, con tres tamaños. Si están llenos, City-Locker tiene una sede en el 7 de la rue du Maine, a cinco minutos, abierta desde las 8:00.",
+   "Sacad de la maleta lo que necesitéis para el tren antes de guardarla, que volver a abrir el casillero es otra vez la cola."
+  ],
+  "mirar": [
+   "Desde la explanada, la torre Montparnasse, culpable de la ley que salvó el resto del cielo de París."
+  ]
+ },
+ "deux-magots": {
+  "corto": "Dos cafés pegados, el Flore y los Deux Magots, que se repartieron a los escritores de medio siglo XX.",
+  "largo": [
+   "Los magots del nombre son dos figuras chinas de madera que siguen dentro, en una columna, y que vienen de la tienda de sedas que ocupaba el local antes de 1885. Magot significa figurilla grotesca, no mago.",
+   "Entre los años veinte y los cincuenta esta esquina fue la oficina de mucha gente: Sartre y Beauvoir escribían en el Flore, treinta metros más allá, porque en invierno tenía mejor calefacción que sus casas. Por los Deux Magots pasaron Hemingway, Picasso, Breton y los surrealistas, que tenían aquí su mesa.",
+   "Hoy los dos viven del nombre y un café cuesta lo que una comida en otro sitio. Son fachadas y terrazas, y se ven perfectamente desde fuera."
+  ],
+  "mirar": [
+   "Las dos figuras chinas del interior, visibles desde la puerta.",
+   "El Flore, treinta metros más allá, con su toldo verde."
+  ]
+ },
+ "champ-de-mars": {
+  "corto": "El campo de maniobras de la escuela militar, convertido en el mejor sitio para tumbarse a ver el centelleo.",
+  "largo": [
+   "Era el terreno de instrucción de la École Militaire, de ahí el nombre, el campo de Marte. Aquí se celebró en 1790 la Fiesta de la Federación, con trescientas mil personas y misa en un altar levantado en medio, en el primer aniversario de la toma de la Bastilla. Un año después, en el mismo sitio, la Guardia Nacional disparó contra una manifestación.",
+   "También fue el recinto de varias exposiciones universales, incluida la de 1889 para la que se hizo la torre.",
+   "Para el centelleo de las 22:00 hay dos sitios: aquí, tumbados en la hierba y con la torre encima, o el Trocadéro cruzando el puente, que es la postal clásica y está lleno de gente. La torre destella cinco minutos al principio de cada hora desde que anochece."
+  ],
+  "mirar": [
+   "El centelleo desde la hierba, con la torre completa en vertical.",
+   "La École Militaire cerrando la perspectiva por el otro extremo."
+  ]
+ },
+ "rue-saint-dominique": {
+  "corto": "La calle de barrio del séptimo, con la torre asomando al fondo y cocinas abiertas tarde.",
+  "largo": [
+   "Es la calle donde vive la gente del barrio, a dos pasos de la torre y sin el precio de la torre. Junto con la rue Cler, que es peatonal y de mercado, forma la zona donde cenar cuando bajéis.",
+   "A esa hora, las once y cuarto, muchas cocinas de barrio ya han cerrado. Buscad un sitio que anuncie service continu en la pizarra, que quiere decir que sirven sin parar.",
+   "Desde algunos tramos de la calle la torre aparece encuadrada entre los edificios haussmanianos, y es un plano mucho más interesante que el del Trocadéro con doscientas personas delante."
+  ],
+  "mirar": [
+   "El encuadre de la torre entre edificios, subiendo la calle.",
+   "La rue Cler, peatonal, a dos minutos."
+  ]
+ },
+ "bouillon-pigalle": {
+  "corto": "Un bouillon de los de siempre: cocina francesa clásica, barata y sin parar de mediodía a medianoche.",
+  "largo": [
+   "Los bouillons nacieron en el siglo XIX como comedores populares para obreros: un carnicero tuvo la idea de servir caldo y carne barata a mucha gente y rápido. Llegó a haber cientos en París. Quedan unos pocos y en la última década han vuelto de moda.",
+   "Este es de los nuevos, abierto en 2017, pero con la fórmula intacta: huevos mayonesa, sopa de cebolla gratinada, bourguignon, cabeza de ternera, y postres de los de siempre, todo a precios que en esta ciudad ya no existen. No reservan.",
+   "Es la respuesta a un problema concreto de vuestro miércoles: a las cuatro menos cuarto de la tarde casi ninguna cocina de París está abierta, y esta sirve de 12:00 a 00:00 sin cortes. A media tarde no hay cola.",
+   "Si preferís algo de barrio y más tranquilo, La Fourmi está en el 74 de la rue des Martyrs, abierto de 8:00 a 2:00, con plato del día."
+  ],
+  "mirar": [
+   "La sala, con espejos y mesas juntas, que es como eran los bouillons.",
+   "Los precios de la carta, que son parte de la visita."
+  ]
+ },
+ "relais-gascon": {
+  "corto": "Ensaladas del tamaño de una bandeja con patatas salteadas al ajo, abierto sin cortes hasta medianoche.",
+  "largo": [
+   "Es una casa del suroeste francés que lleva décadas en Abbesses y que se ha hecho famosa por una cosa concreta: la salade géante, una fuente de ensalada coronada con patatas fritas a la sartén con ajo y perejil. Una entre dos es comida suficiente.",
+   "Abre de 11:00 a 00:00 sin parar, que a las nueve de la noche en Montmartre no es poca cosa. La otra ventaja es que está a dos minutos de la boca de metro de Abbesses, la de la marquesina art nouveau original de Guimard.",
+   "Alternativas de esa noche: Chez Marie, en el 22 de la rue Lepic, cierra a las 23:00, así que hay que sentarse antes de las 21:30; y Adélaïde, en el 24 de la rue des Abbesses, aguanta hasta las 2:00. Ojo con Au Virage Lepic y La Belle Maison, que son buenos pero libran los miércoles."
+  ],
+  "mirar": [
+   "La boca de metro de Abbesses, con la marquesina original de Guimard.",
+   "La rue des Abbesses de noche, que es la calle viva del barrio."
+  ]
+ },
+ "as-du-fallafel": {
+  "corto": "El falafel de la rue des Rosiers, solo hasta las 15:30 el viernes y cerrado el sábado.",
+  "largo": [
+   "Lleva desde los años setenta en el número 34 y es la referencia del barrio, con cola casi siempre. Se puede pedir en la ventanilla para llevar, que va más rápido, o sentarse dentro. Va a metálico.",
+   "El horario manda sobre vuestro viaje: los viernes cierra a las 15:30 y los sábados no abre por el Shabbat, así que este mediodía es el único que os cuadra en cinco días. Con el tour terminando a las 13:00 llegáis con margen.",
+   "Si la cola es imposible, la misma calle tiene tres o cuatro sitios equivalentes y ninguno es una trampa. Miznon, a la vuelta, hace pitas de otra escuela y también está bien."
+  ],
+  "mirar": [
+   "La ventanilla de la calle, que suele ir más rápida que la sala.",
+   "Las placas de las escuelas del barrio, a pocos metros."
+  ]
+ },
+ "rue-sainte-anne": {
+  "corto": "La calle japonesa de París: ramen, katsu y curry, rápido y sin ceremonia.",
+  "largo": [
+   "Desde los años ochenta esta calle y las de alrededor concentran restaurantes japoneses de verdad, de los que abrieron para la comunidad japonesa que trabajaba en la zona de la Ópera. Hay ramen, udon, katsudon y curry, en locales pequeños donde se come rápido.",
+   "Suele haber cola en los más conocidos, pero se mueve deprisa porque nadie se entretiene. Con cuarenta y cinco minutos coméis de sobra, que es justo lo que hay antes del barco de las 14:30.",
+   "La alternativa de al lado, la rue de Rivoli, es cara y mediocre. Cinco minutos andando marcan la diferencia."
+  ],
+  "mirar": [
+   "Los expositores de cera de los escaparates.",
+   "El Palais-Royal a dos minutos, si sobran diez."
+  ]
+ },
+ "alchimiste": {
+  "corto": "Un bar de barrio junto a la Torre Saint-Jacques, con happy hour desde las seis.",
+  "largo": [
+   "Está en el número 9 de la rue Nicolas Flamel, y el nombre de la calle no es casual: Flamel fue escribano en el siglo XIV y vivió por aquí, aunque la leyenda de que fabricaba oro se la colgaron doscientos años después de muerto, cuando alguien publicó un libro de alquimia firmado con su nombre.",
+   "Es una parada de cerveza y de sentarse, no de comer. Happy hour desde las 18:00.",
+   "Desde Opéra son diez minutos en la línea 14 hasta Châtelet, y desde Châtelet la línea 7 os deja en Tolbiac, a cinco minutos del restaurante de la cena. Si habéis alargado Carnavalet, salid de aquí a las 21:15 como muy tarde."
+  ],
+  "mirar": [
+   "La Torre Saint-Jacques al lado, iluminada al anochecer.",
+   "La casa de Flamel, en el 51 de la rue de Montmorency, la más antigua de París, a diez minutos."
+  ]
+ },
+ "invalides": {
+  "corto": "El conjunto entero: explanada, patio de honor, iglesia de los soldados y el Domo dorado al fondo.",
+  "largo": [
+   "Luis XIV lo mandó construir en 1670 para alojar y curar a los soldados heridos, que hasta entonces acababan mendigando. Sigue siendo hospital militar y todavía viven veteranos dentro.",
+   "Se entra por el 129 de la rue de Grenelle, se cruza la explanada con los cañones de bronce en los fosos y se llega al patio de honor, doscientos metros de fachadas clásicas con el Domo asomando por encima. Todo eso es gratis y no hay cola.",
+   "Lo único que se paga es la tumba de Napoleón, bajo el Domo, con el billete del Musée de l'Armée. La decisión se puede tomar allí mismo."
+  ],
+  "mirar": [
+   "La explanada desde el río, que se dejó libre para ver el edificio entero.",
+   "El patio de honor a primera hora, vacío."
+  ]
+ },
+ "place-blanche": {
+  "corto": "La plaza blanca de yeso, delante del Moulin Rouge, y el punto de salida del tour.",
+  "largo": [
+   "Se llama Blanche por el yeso. Por aquí bajaban los carros cargados con la piedra de las canteras de Montmartre y lo dejaban todo blanco a su paso. Ese yeso, el plâtre de Paris, se exportó por medio mundo y es la razón de que el subsuelo de la colina esté agujereado y de que costara tanto cimentar el Sacré-Cœur.",
+   "El Moulin Rouge está enfrente, de 1889, el mismo año que la Torre Eiffel y la misma exposición.",
+   "El tour sale a las 17:15 desde delante del molino. Llegad diez minutos antes y mirad el punto exacto en el bono, que Civitatis avisa de que puede cambiar."
+  ],
+  "mirar": [
+   "El letrero del Moulin Rouge, mejor a la vuelta, ya de noche.",
+   "La cuesta de la rue Lepic subiendo, que es por donde va el tour."
+  ]
  }
 }
