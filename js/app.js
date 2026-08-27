@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-12';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-13';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -73,7 +73,7 @@ function pintaDia(dia) {
     const pasado = hoy && sig >= 0 && i < sig;
     const esAhora = hoy && i === sig;
     const r = i > 0 ? ruta(items[i - 1].lugar, it.lugar) : null;
-    h += `<button class="item ${pasado ? 'pasado' : ''} ${esAhora ? 'ahora' : ''}" data-dia="${dia.id}" data-i="${i}">
+    h += `<div class="item ${pasado ? 'pasado' : ''} ${esAhora ? 'ahora' : ''}" role="button" tabindex="0" data-dia="${dia.id}" data-i="${i}">
       <div class="izq">
         <div class="n num-icono ${it.tipo}">${i + 1}</div>
         <div class="h">${it.h}</div>
@@ -87,9 +87,12 @@ function pintaDia(dia) {
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
           ${D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
           ${D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
-          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}${r ? ' · ' + fmtM(r.minutos) + ' andando' : ''}
+          ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}
         </div>
-      </div></button>`;
+        ${r ? `<button class="ir" data-camino="${r.id}" data-ctx="${dia.id}|${i}">
+                 ▸ Ir andando desde ${lug(items[i - 1].lugar).nombre} · ${fmtM(r.minutos)}</button>` : ''}
+      </div>
+    </div>`;
   });
   return h;
 }
@@ -431,9 +434,10 @@ function situa(pos) {
   return mejor;
 }
 
-function abreCamino(rutaId) {
+function abreCamino(rutaId, ctx) {
   const r = D.rutas[rutaId];
   if (!r) return;
+  C.ctx = ctx || null;
   C.ruta = r; C.pasos = fusiona(r.pasos); C.linea = decodifica(r.shape); C.paso = 0; C.manual = false;
   C.ultimoDicho = -1; C.llegado = false;
   C.acum = [0];
@@ -494,6 +498,7 @@ function pintaCamino() {
                     : `<div class="agiro">${p.m} m en este tramo</div>`) +
     (sig ? `<div class="sig">Después: ${sig.t}</div>` : `<div class="sig">Es el último paso.</div>`);
 
+  $('#camino-sigue').innerHTML = siguienteTramo();
   $('#camino-estado').innerHTML = fuera
     ? `<div class="fuera">Estás a ${fmtD(fuera)} del camino. Vuelve a la línea roja o abre Google Maps.</div>`
     : `<div class="progreso">Paso ${C.paso + 1} de ${pasos.length}` +
@@ -502,6 +507,20 @@ function pintaCamino() {
 
   if (C.voz && C.paso !== C.ultimoDicho) { C.ultimoDicho = C.paso; lee(p.voz); }
   if (C.mapa && sitio && !fuera) C.mapa.setView(C.linea[Math.min(sitio.idx, C.linea.length - 1)], 17, { animate: false });
+}
+
+// si el tramo venia de la lista del dia, se ofrece encadenar con la siguiente parada
+function siguienteTramo() {
+  if (!C.ctx) return '';
+  const [diaId, i] = C.ctx.split('|');
+  const items = itemsDe(D.dias.find(d => d.id === diaId));
+  const j = +i + 1;
+  if (!items[j]) return '';
+  const r = ruta(items[j - 1].lugar, items[j].lugar);
+  if (!r) return '';
+  const p = lug(items[j].lugar);
+  return `<button class="btn ${C.llegado ? '' : 'sec'}" data-camino="${r.id}" data-ctx="${diaId}|${j}">
+    Seguir hasta el ${j + 1}: ${p.nombre} · ${fmtM(r.minutos)}</button>`;
 }
 
 function avisoCamino(texto) {
@@ -623,7 +642,7 @@ function muestra(v) {
       if ($('#v-mapa').classList.contains('on')) pintaMapa(S.dia);
       return;
     }
-    const it = e.target.closest('.item'); if (it) return abreFicha(it.dataset.dia, +it.dataset.i);
+
     const ram = e.target.closest('[data-rama]');
     if (ram) {
       S.rama = ram.dataset.rama; localStorage.setItem('rama', S.rama);
@@ -647,7 +666,11 @@ function muestra(v) {
       return lee(l ? l.textContent : $('#texto-ficha').textContent);
     }
     const cam = e.target.closest('[data-camino]');
-    if (cam) { $('#ficha').classList.remove('on'); return abreCamino(cam.dataset.camino); }
+    if (cam) {
+      $('#ficha').classList.remove('on');
+      return abreCamino(cam.dataset.camino, cam.dataset.ctx);
+    }
+    const it = e.target.closest('.item'); if (it) return abreFicha(it.dataset.dia, +it.dataset.i);
     if (e.target.closest('#camino-cerrar')) return cierraCamino();
     if (e.target.closest('#camino-voz')) {
       C.voz = !C.voz; C.ultimoDicho = -1;
