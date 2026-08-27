@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-15';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-16';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -168,9 +168,11 @@ function abreFicha(diaId, i) {
   const t = it.tour ? D.tours.find(t => t.id === it.tour) : null;
 
   let h = `<div class="conten">
-    <div class="meta" style="color:var(--suave);font-size:13px">
-      <span class="n num-icono ${it.tipo}" style="display:inline-flex;vertical-align:-7px;margin-right:6px">${i + 1}</span>
-      ${it.h} · ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}</div>`;
+    <div class="meta-ficha">
+      <span class="n num-icono ${it.tipo}">${i + 1}</span>
+      <span class="h-lugar">${it.h} · ${p.nombre}</span>
+      ${it.min ? `<span class="dur">${it.min} min</span>` : ''}
+    </div>`;
   if (it.limite) h += `<div class="aviso"><b>${it.limite.tipo === 'duro' ? 'Hora fija' : 'Conviene'}</b><br>${it.limite.texto}</div>`;
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
   if (it.llegada) h += `<div class="nota"><b>Cómo se llega</b><br>${it.llegada.texto}</div>`;
