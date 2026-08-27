@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-18';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-19';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -58,8 +58,10 @@ function pintaDia(dia) {
     · unos ${dia.km_a_pie} km a pie</div>`;
 
   const duros = items.filter(it => it.limite && it.limite.tipo === 'duro');
-  if (duros.length) h += `<div class="aviso"><b>Horas que no se pueden estirar</b><br>` +
-    duros.map(it => `${it.h} · ${it.limite.texto}`).join('<br>') + `</div>`;
+  // la hora en su columna y el texto en la suya: al partirse una línea no debe volver bajo la hora
+  if (duros.length) h += `<div class="aviso"><b>Horas que no se pueden estirar</b>` +
+    duros.map(it => `<div class="linea"><span class="hh">${it.h}</span><span class="tt">${it.limite.texto}</span></div>`).join('') +
+    `</div>`;
 
   if (dia.decisiones) h += dia.decisiones.map(dec => `
     <div class="nota"><b>${dec.pregunta}</b>
