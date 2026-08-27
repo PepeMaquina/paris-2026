@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-28';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-27-30';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -46,6 +46,22 @@ const ruta = (a, b) => D.rutas[a + '--' + b];
 
 // El tramo a pie de una parada es el que viene de la anterior, salvo que se llegue en
 // metro o RER: entonces es el que sale de la boca de la estación.
+// El trozo de antes del metro: de donde estás hasta la boca de entrada.
+function tramoHasta(items, i) {
+  const it = items[i];
+  const est = it.llegada && it.llegada.hasta;
+  if (!est) return null;
+  let origen = D.viaje.base;              // el día empieza en el hotel
+  if (i > 0) {
+    const ant = items[i - 1];
+    origen = ant.lugar;
+    if (ant.tour) { const t = D.tours.find(x => x.id === ant.tour); if (t) origen = t.final; }
+  }
+  if (origen === est) return null;
+  const r = ruta(origen, est);
+  return r ? { r, est } : null;
+}
+
 function tramoDe(items, i) {
   const it = items[i];
   const est = it.llegada && it.llegada.desde;
@@ -53,18 +69,15 @@ function tramoDe(items, i) {
     const r = ruta(est, it.lugar);
     if (r) return { r, desde: lug(est).nombre, salida: true };
   }
-  if (i > 0) {
-    const ant = items[i - 1];
+  let origen = i > 0 ? items[i - 1].lugar : D.viaje.base;
+  if (i > 0 && items[i - 1].tour) {
     // tras un free tour no se sale de donde empezó, sino de donde acabó
-    let origen = ant.lugar;
-    if (ant.tour) {
-      const t = D.tours.find(x => x.id === ant.tour);
-      if (t) origen = t.final;
-    }
-    if (origen === it.lugar) return null;          // ya estás allí
-    const r = ruta(origen, it.lugar);
-    if (r) return { r, desde: lug(origen).nombre, salida: false };
+    const t = D.tours.find(x => x.id === items[i - 1].tour);
+    if (t) origen = t.final;
   }
+  if (origen === it.lugar) return null;            // ya estás allí
+  const r = ruta(origen, it.lugar);
+  if (r) return { r, desde: lug(origen).nombre, salida: false };
   return null;
 }
 
@@ -107,7 +120,11 @@ function pintaDia(dia) {
     const suena = principal[it.lugar] === i;
     const pasado = hoy && sig >= 0 && i < sig;
     const esAhora = hoy && i === sig;
+    const th = tramoHasta(items, i);
     const t = tramoDe(items, i), r = t && t.r;
+    const bot = th
+      ? { id: th.r.id, txt: `Ir andando hasta ${lug(th.est).nombre}`, min: th.r.minutos }
+      : (r ? { id: r.id, txt: `Ir andando desde ${t.salida ? 'la salida de ' + t.desde : t.desde}`, min: r.minutos } : null);
     h += `<div class="item ${pasado ? 'pasado' : ''} ${esAhora ? 'ahora' : ''}" role="button" tabindex="0" data-dia="${dia.id}" data-i="${i}">
       <div class="izq">
         <div class="n num-icono ${it.tipo}">${i + 1}</div>
@@ -124,8 +141,8 @@ function pintaDia(dia) {
           ${suena && D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
           ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}
         </div>
-        ${r ? `<button class="ir" data-camino="${r.id}" data-ctx="${dia.id}|${i}">
-                 ▸ Ir andando desde ${t.salida ? 'la salida de ' + t.desde : t.desde} · ${fmtM(r.minutos)}</button>` : ''}
+        ${bot ? `<button class="ir" data-camino="${bot.id}" data-ctx="${dia.id}|${i}">
+                 ▸ ${bot.txt} · ${fmtM(bot.min)}</button>` : ''}
       </div>
     </div>`;
   });
@@ -223,7 +240,18 @@ function abreFicha(diaId, i) {
       </figcaption></figure>`;
   if (it.limite) h += `<div class="aviso"><b>${it.limite.tipo === 'duro' ? 'Hora fija' : 'Conviene'}</b><br>${it.limite.texto}</div>`;
   if (it.nota) h += `<p id="texto-ficha">${it.nota}</p>`;
-  if (it.llegada) h += `<div class="nota"><b>Cómo se llega</b><br>${it.llegada.texto}</div>`;
+  const th = tramoHasta(items, i);
+  if (it.llegada) {
+    let n = 0;
+    const paso = (txt, extra) => `<div class="tramo-viaje"><span class="np">${++n}</span><div>${txt}${extra || ''}</div></div>`;
+    h += `<div class="nota viaje"><b>Cómo se llega, de puerta a puerta</b>` +
+      (th ? paso(`A pie hasta ${lug(th.est).nombre} · ${fmtM(th.r.minutos)}`,
+             `<div class="btns"><button class="btn sec" data-camino="${th.r.id}">Ir andando</button></div>`) : '') +
+      paso(it.llegada.texto) +
+      (tr && tr.salida ? paso(`A pie desde la salida de ${tr.desde} · ${fmtM(r.minutos)}`,
+             `<div class="btns"><button class="btn sec" data-camino="${r.id}" data-ctx="${diaId}|${i}">Ir andando</button></div>`) : '') +
+      `</div>`;
+  }
 
   const fi = D.fichas[it.lugar];
   if (fi) {
@@ -244,7 +272,7 @@ function abreFicha(diaId, i) {
     <button class="btn sec" data-ver="${p.id}" data-verdia="${diaId}">Ver en el mapa</button>
   </div>`;
 
-  if (r) {
+  if (r && !(tr && tr.salida)) {
     h += `<h3 style="margin-top:20px">A pie desde ${tr.salida ? 'la salida de ' + tr.desde : tr.desde}</h3>
       <div style="color:var(--suave);font-size:13.5px;margin:4px 0 6px">${fmtD(r.metros)} · ${fmtM(r.minutos)} andando</div>
       <div class="btns"><button class="btn" data-camino="${r.id}" data-ctx="${diaId}|${i}">Ir andando paso a paso</button></div>`;

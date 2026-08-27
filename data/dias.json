@@ -49,7 +49,8 @@
       "modo": "metro",
       "texto": "Línea 14 hasta Châtelet y línea 4 hasta Saint-Germain-des-Prés.",
       "min": 25,
-      "desde": "metro-saint-germain"
+      "desde": "metro-saint-germain",
+      "hasta": "rer-bfm"
      }
     },
     {
@@ -92,7 +93,8 @@
       "modo": "metro",
       "texto": "Línea 10 hasta La Motte-Picquet-Grenelle y quince minutos andando.",
       "min": 30,
-      "desde": "la-motte-picquet"
+      "desde": "la-motte-picquet",
+      "hasta": "metro-sevres-babylone"
      }
     },
     {
@@ -152,7 +154,8 @@
       "modo": "rer",
       "texto": "RER C desde Champ de Mars-Tour Eiffel, directo.",
       "min": 25,
-      "desde": "rer-bfm"
+      "desde": "rer-bfm",
+      "hasta": "rer-champ-de-mars"
      }
     }
    ]
@@ -173,7 +176,8 @@
      "llegada": {
       "modo": "rer",
       "texto": "RER C desde Bibliothèque François Mitterrand hasta Versailles Château Rive Gauche. Del andén al palacio, diez minutos andando.",
-      "min": 50
+      "min": 50,
+      "hasta": "rer-bfm"
      }
     },
     {
@@ -204,7 +208,8 @@
       "modo": "rer",
       "texto": "RER C hasta Invalides y línea 13 hasta Place de Clichy, cinco minutos del Moulin Rouge. Una hora larga con los transbordos.",
       "min": 70,
-      "desde": "place-de-clichy"
+      "desde": "place-de-clichy",
+      "hasta": "versailles-rer"
      },
      "limite": {
       "tipo": "duro",
@@ -268,7 +273,8 @@
       "modo": "metro",
       "texto": "Línea 12 desde Abbesses o Lamarck-Caulaincourt hasta Madeleine, y allí la 14.",
       "min": 35,
-      "desde": "rer-bfm"
+      "desde": "rer-bfm",
+      "hasta": "metro-abbesses"
      }
     }
    ]
@@ -290,7 +296,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 14 hasta Châtelet y línea 4 hasta Cité. Unos veinte minutos desde el hotel.",
-      "desde": "metro-cite"
+      "desde": "metro-cite",
+      "hasta": "rer-bfm"
      }
     },
     {
@@ -407,7 +414,8 @@
       "modo": "metro",
       "texto": "Desde Censier-Daubenton o Place Monge, veinticinco minutos con un transbordo. O RER B desde Luxembourg a Saint-Michel y RER C hasta Musée d'Orsay.",
       "min": 25,
-      "desde": "rer-orsay"
+      "desde": "rer-orsay",
+      "hasta": "metro-censier"
      }
     },
     {
@@ -467,7 +475,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 14 hasta Châtelet y línea 1 hasta Saint-Paul, o andando desde el hotel si os sobra la mañana.",
-      "desde": "metro-saint-paul"
+      "desde": "metro-saint-paul",
+      "hasta": "rer-bfm"
      }
     },
     {
@@ -545,7 +554,8 @@
       "modo": "metro",
       "texto": "Línea 8 desde Chemin Vert hasta Madeleine, veinte minutos sin transbordo.",
       "min": 20,
-      "desde": "metro-madeleine"
+      "desde": "metro-madeleine",
+      "hasta": "metro-chemin-vert"
      }
     },
     {
@@ -602,7 +612,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 14 desde Opéra hasta Châtelet, diez minutos, y tres andando.",
-      "desde": "metro-chatelet"
+      "desde": "metro-chatelet",
+      "hasta": "metro-opera"
      }
     },
     {
@@ -621,7 +632,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 7 desde Châtelet hasta Tolbiac, un cuarto de hora. Desde el hotel son quince minutos andando por la rue de Tolbiac, o el autobús 62.",
-      "desde": "metro-tolbiac"
+      "desde": "metro-tolbiac",
+      "hasta": "metro-chatelet"
      }
     }
    ]
@@ -641,7 +653,8 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 14 hasta Châtelet y línea 4 hasta Montparnasse, media hora.",
-      "min": 30
+      "min": 30,
+      "hasta": "rer-bfm"
      }
     },
     {
@@ -716,7 +729,9 @@
      "llegada": {
       "modo": "metro",
       "texto": "Línea 13 desde Champs-Élysées-Clemenceau, quince minutos directos.",
-      "min": 15
+      "min": 15,
+      "hasta": "metro-champs-elysees",
+      "desde": null
      }
     },
     {

@@ -1104,5 +1104,35 @@
   "lon": 2.35735,
   "osm": "Tolbiac, Avenue d'Italie, Maison-Blanche, Paris 13e Arrondissement, Paris, Île-d",
   "tipo_osm": "station"
+ },
+ {
+  "id": "metro-sevres-babylone",
+  "nombre": "Sèvres-Babylone",
+  "q": "Sèvres - Babylone station, Paris",
+  "cat": "transporte",
+  "lat": 48.851252,
+  "lon": 2.326992,
+  "osm": "Sèvres-Babylone, Boulevard Raspail, Quartier Notre-Dame-des-Champs, Paris 6e Arr",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-censier",
+  "nombre": "Censier-Daubenton",
+  "q": "Censier - Daubenton station, Paris",
+  "cat": "transporte",
+  "lat": 48.840647,
+  "lon": 2.351933,
+  "osm": "Censier - Daubenton, Rue Monge, Quartier du Jardin des Plantes, Paris 5e Arrondi",
+  "tipo_osm": "station"
+ },
+ {
+  "id": "metro-opera",
+  "nombre": "Opéra",
+  "q": "Opéra station, Paris",
+  "cat": "transporte",
+  "lat": 48.870645,
+  "lon": 2.33233,
+  "osm": "Opéra, Boulevard des Capucines, Gaillon, Paris 2e Arrondissement, Paris, Île-de-",
+  "tipo_osm": "station"
  }
 ]

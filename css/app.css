@@ -194,3 +194,10 @@ ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
 .aviso .linea{display:flex;gap:11px;margin-top:7px;align-items:baseline}
 .aviso .hh{flex:0 0 42px;font-variant-numeric:tabular-nums;font-weight:700;letter-spacing:-.01em}
 .aviso .tt{flex:1;text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty}
+
+/* el viaje, paso por paso */
+.nota.viaje .tramo-viaje{display:flex;gap:10px;margin-top:10px;align-items:flex-start}
+.nota.viaje .np{flex:0 0 20px;height:20px;border-radius:50%;background:var(--tinta);color:#fff;
+  font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.nota.viaje .tramo-viaje > div{flex:1;font-size:14.5px;line-height:1.45}
+.nota.viaje .btns{margin:7px 0 2px}

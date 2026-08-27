@@ -69,6 +69,12 @@ TRAMOS = [
  ("jue3","rue-sainte-anne","vert-galant"),
  ("vie4","metro-saint-paul","saint-paul"),
  ("vie4","metro-chatelet","alchimiste"),
+ # y el trozo de antes: de donde estas a la boca de entrada de la estacion
+ ("mar1","hotel-sanso","rer-bfm"),
+ ("mar1","grande-epicerie","metro-sevres-babylone"),
+ ("jue3","rue-mouffetard","metro-censier"),
+ ("vie4","galeries-lafayette","metro-opera"),
+ ("vie4","alchimiste","metro-chatelet"),
  ("vie4","metro-tolbiac","comme-au-vietnam"),
  ("sab5","invalides","invalides-entrada-grenelle"),
 ]
