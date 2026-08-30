@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-27-30';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-30-2';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -94,6 +94,8 @@ function pintaDia(dia) {
     ${new Date(dia.fecha + 'T12:00').toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })}
     · unos ${dia.km_a_pie} km a pie</div>`;
 
+  h += tarjetaTiempo(dia);
+
   const duros = items.filter(it => it.limite && it.limite.tipo === 'duro');
   // la hora en su columna y el texto en la suya: al partirse una línea no debe volver bajo la hora
   if (duros.length) h += `<div class="aviso"><b>Horas que no se pueden estirar</b>` +
@@ -137,8 +139,9 @@ function pintaDia(dia) {
           ${it.tipo === 'tour' ? '<span class="pill tour">free tour</span>' : ''}
           ${it.tipo === 'comida' ? '<span class="pill comida">comer</span>' : ''}
           ${it.desplazado ? '<span class="pill">+30 min</span>' : ''}
-          ${suena && D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
-          ${suena && D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
+          ${D.audio['f-' + it.lugar] ? `<span class="pill audio">audio ${mmss(D.audio['f-' + it.lugar].seg)}</span>` : ''}
+          ${D.interiores[it.lugar] ? '<span class="pill salas">audio por salas</span>' : ''}
+          ${chipTiempo(dia, it)}
           ${p.nombre}${it.min ? ' · ' + it.min + ' min' : ''}
         </div>
         ${bot ? `<button class="ir" data-camino="${bot.id}" data-ctx="${dia.id}|${i}">
@@ -151,7 +154,7 @@ function pintaDia(dia) {
 
 function pintaHoy() {
   const hoy = D.dias.find(d => d.fecha === hoyISO());
-  if (hoy) { S.dia = hoy.id; return pintaDia(hoy); }
+  if (hoy) { S.dia = hoy.id; return avisoLluvia() + pintaDia(hoy); }
   const d0 = D.dias[0];
   const faltan = Math.ceil((new Date(d0.fecha + 'T12:00') - new Date()) / 86400000);
   const pend = D.reservas.filter(r => r.estado === 'pendiente');
@@ -482,6 +485,162 @@ function verEnMapa(id, diaId) {
 
 
 
+
+
+/* ---------- el tiempo ---------- */
+const W = { datos: null, pedido: 0 };
+
+// Los códigos de Open-Meteo, agrupados en lo que hace falta saber
+function cielo(code, noche) {
+  if (code === 0) return noche ? 'luna' : 'sol';
+  if (code <= 2) return noche ? 'luna-nube' : 'sol-nube';
+  if (code === 3) return 'nube';
+  if (code <= 48) return 'niebla';
+  if (code <= 57) return 'llovizna';
+  if (code <= 67 || (code >= 80 && code <= 82)) return 'lluvia';
+  if (code <= 77 || code === 85 || code === 86) return 'nieve';
+  return 'tormenta';
+}
+
+const ICONOS = {
+  sol: '<circle cx="12" cy="12" r="4.6" fill="#e8a33d"/><g stroke="#e8a33d" stroke-width="1.7" stroke-linecap="round"><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></g>',
+  'sol-nube': '<circle cx="9" cy="9.6" r="3.7" fill="#e8a33d"/><path d="M6.6 17.6h10.8a3 3 0 000-6 4.4 4.4 0 00-8.4-1 3.5 3.5 0 00-2.4 7z" fill="#fff" stroke="#a9b4c4" stroke-width="1.2"/>',
+  nube: '<path d="M6 16.8h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 16.8z" fill="#fff" stroke="#a9b4c4" stroke-width="1.2"/>',
+  niebla: '<path d="M6 13.6h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 13.6z" fill="#fff" stroke="#a9b4c4" stroke-width="1.2"/><g stroke="#b6bfcb" stroke-width="1.5" stroke-linecap="round"><path d="M5 17h14M7 20h10"/></g>',
+  llovizna: '<path d="M6 13.4h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 13.4z" fill="#fff" stroke="#8fa4c0" stroke-width="1.2"/><g stroke="#5f8ac4" stroke-width="1.6" stroke-linecap="round"><path d="M9 16.4v1.6M13 16.4v1.6M17 16.4v1.6"/></g>',
+  lluvia: '<path d="M6 13.4h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 13.4z" fill="#fff" stroke="#7d97bb" stroke-width="1.2"/><g stroke="#4f7cc0" stroke-width="1.8" stroke-linecap="round"><path d="M9.4 16.2l-1 3M13.4 16.2l-1 3M17.4 16.2l-1 3"/></g>',
+  tormenta: '<path d="M6 12.8h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 12.8z" fill="#fff" stroke="#7d97bb" stroke-width="1.2"/><path d="M12.6 14.4l-3 4.2h2.4l-1.2 3.4 3.8-4.8h-2.4z" fill="#e8a33d"/>',
+  nieve: '<path d="M6 13.4h11.4a3.2 3.2 0 000-6.4 4.7 4.7 0 00-9-1.1A3.7 3.7 0 006 13.4z" fill="#fff" stroke="#a9b4c4" stroke-width="1.2"/><g stroke="#8aa6c8" stroke-width="1.5" stroke-linecap="round"><path d="M9 17v2M13 17v2M17 17v2"/></g>',
+  luna: '<path d="M17.8 14.8A6.6 6.6 0 019.2 6.2a6.6 6.6 0 108.6 8.6z" fill="#c8cede"/>',
+  'luna-nube': '<path d="M15.4 9.6A4.6 4.6 0 019.8 4a4.6 4.6 0 105.6 5.6z" fill="#c8cede"/><path d="M6.4 17.8h10.8a3 3 0 000-6 4.4 4.4 0 00-8.4-1 3.5 3.5 0 00-2.4 7z" fill="#fff" stroke="#a9b4c4" stroke-width="1.2"/>'
+};
+const icono = (k, t = 24) => `<svg width="${t}" height="${t}" viewBox="0 0 24 24">${ICONOS[k] || ICONOS.nube}</svg>`;
+
+async function pideTiempo() {
+  const guardado = localStorage.getItem('clima');
+  if (guardado) { try { W.datos = JSON.parse(guardado); } catch (e) { } }
+  const c = D.clima.coords, d0 = D.dias[0].fecha, d1 = D.dias[D.dias.length - 1].fecha;
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${c.lat}&longitude=${c.lon}` +
+    `&hourly=temperature_2m,apparent_temperature,precipitation_probability,precipitation,weather_code,wind_speed_10m,uv_index` +
+    `&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,sunrise,sunset,weather_code` +
+    `&timezone=Europe%2FParis&start_date=${d0}&end_date=${d1}`;
+  try {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error('sin respuesta');
+    const j = await r.json();
+    j.pedido = Date.now();
+    W.datos = j;
+    localStorage.setItem('clima', JSON.stringify(j));
+  } catch (e) { /* sin cobertura: se usa lo guardado */ }
+  if ($('#v-hoy').classList.contains('on')) $('#v-hoy').innerHTML = pintaHoy();
+  if ($('#v-dias').classList.contains('on')) $('#v-dias').innerHTML = pintaDia(D.dias.find(x => x.id === S.dia));
+}
+
+// busca la hora exacta dentro del listado horario
+function hora(fecha, hhmm) {
+  if (!W.datos) return null;
+  const h = W.datos.hourly, clave = `${fecha}T${hhmm.slice(0, 2)}:00`;
+  const i = h.time.indexOf(clave);
+  if (i < 0) return null;
+  return { t: Math.round(h.temperature_2m[i]), sens: Math.round(h.apparent_temperature[i]),
+           prob: h.precipitation_probability[i], mm: h.precipitation[i], code: h.weather_code[i],
+           viento: Math.round(h.wind_speed_10m[i]), uv: h.uv_index[i], i };
+}
+const grados = v => v === null || v === undefined ? '—' : v + '°';
+
+function diaClima(dia) {
+  if (!W.datos) return null;
+  const i = W.datos.daily.time.indexOf(dia.fecha);
+  if (i < 0) return null;
+  const d = W.datos.daily;
+  return { max: Math.round(d.temperature_2m_max[i]), min: Math.round(d.temperature_2m_min[i]),
+           mm: d.precipitation_sum[i], prob: d.precipitation_probability_max[i],
+           code: d.weather_code[i], sale: d.sunrise[i].slice(11, 16), pone: d.sunset[i].slice(11, 16) };
+}
+
+function texto(dia, dc) {
+  const g = D.clima.dias[dia.id];
+  if (!g) return '';
+  let t = g.nota;
+  t = t.replace(/\{t(\d{4})\}/g, (_, hh) => {
+    const h = hora(dia.fecha, hh.slice(0, 2) + ':' + hh.slice(2));
+    return h ? h.t + '°' : '—';
+  });
+  t = t.replace('{max}', dc.max + '°').replace('{min}', dc.min + '°');
+  t = t.replace('{uv}', (() => {
+    const p = g.momentos.find(m => m[2]);
+    const h = p && hora(dia.fecha, p[0]);
+    return h && h.uv >= 6 ? ' y un sol de índice ' + Math.round(h.uv) : '';
+  })());
+  if (dc.prob >= 40) t = 'Puede caer algo: ' + dc.prob + ' % de probabilidad y ' + dc.mm.toFixed(1).replace('.', ',') + ' mm previstos. ' + t;
+  return t;
+}
+
+function tarjetaTiempo(dia) {
+  const dc = diaClima(dia), g = D.clima.dias[dia.id];
+  if (!dc || !g) return '';
+  const noche = hh => +hh.slice(0, 2) >= 20 || +hh.slice(0, 2) < 7;
+  const pico = g.momentos.find(m => m[2]);
+  const hp = pico && hora(dia.fecha, pico[0]);
+  return `<div class="tiempo">
+    <div class="cab">
+      <div class="grados">${dc.max}°<small>/ ${dc.min}°</small></div>
+      <div class="resumen">${texto(dia, dc)}</div>
+    </div>
+    <div class="arco">
+      ${g.momentos.map(m => {
+        const h = hora(dia.fecha, m[0]);
+        return `<div class="mom ${m[2] ? 'pico' : ''}">
+          <div class="h">${m[0]}</div>
+          ${icono(cielo(h ? h.code : dc.code, noche(m[0])), 24)}
+          <div class="g">${grados(h && h.t)}</div>
+          <div class="q">${m[1]}</div></div>`;
+      }).join('')}
+    </div>
+    <div class="pie">
+      <span>Sensación <b>${hp && Math.abs(hp.sens - hp.t) >= 2 ? hp.sens + '°' : 'igual'}</b></span>
+      <span>Lluvia <b>${dc.prob}%</b></span>
+      <span>Viento <b>${hp ? (hp.viento < 12 ? 'flojo' : hp.viento < 25 ? 'moderado' : 'fuerte') : '—'}</b></span>
+      <span>Anochece a las <b>${dc.pone}</b></span>
+    </div></div>`;
+}
+
+// etiqueta en las paradas donde el tiempo cambia algo: al aire libre
+const AL_AIRE = new Set(['plaza','parque','jardin','puente','calle','mirador','fachada',
+                         'encuentro','embarque','rincon','mercado']);
+// sitios que no son de esas categorías pero se viven fuera
+const FUERA = new Set(['tour-eiffel','sacre-coeur','invalides-entrada-grenelle','petit-palais','vert-galant']);
+function chipTiempo(dia, it) {
+  const p = lug(it.lugar);
+  const fuera = AL_AIRE.has(p.cat) || FUERA.has(p.id) || it.tipo === 'tour' || it.tipo === 'foto' || it.tipo === 'libre';
+  if (!fuera || it.tipo === 'transporte') return '';
+  const h = hora(dia.fecha, it.h);
+  if (!h) return '';
+  const clase = h.prob >= 40 ? 'lluvia' : h.t >= 27 ? 'calor' : h.t <= 17 ? 'fresco' : '';
+  const cola = h.prob >= 40 ? ` · ${h.prob}% de lluvia` : h.t >= 27 ? ' y sol' : h.t <= 17 ? ', refresca' : '';
+  return `<span class="chip-t ${clase}">${h.t}°${cola}</span>`;
+}
+
+// chubascos en las próximas horas, con el refugio más cercano del propio plan
+function avisoLluvia() {
+  if (!W.datos) return '';
+  const hoy = D.dias.find(d => d.fecha === hoyISO());
+  if (!hoy) return '';
+  const h = W.datos.hourly, ahora = new Date();
+  const desde = h.time.findIndex(t => new Date(t) > ahora);
+  if (desde < 0) return '';
+  for (let i = desde; i < Math.min(desde + 3, h.time.length); i++) {
+    if (h.precipitation_probability[i] >= 55) {
+      const g = D.clima.dias[hoy.id];
+      const hh = h.time[i].slice(11, 16);
+      return `<div class="chubasco">${icono('lluvia', 26)}
+        <div><b>Chubasco hacia las ${hh}</b>
+        Un ${h.precipitation_probability[i]} % de probabilidad y ${h.precipitation[i].toFixed(1).replace('.', ',')} mm.
+        Suele durar poco. Cerca tenéis ${g.refugios.slice(0, 2).join(' y ')}.</div></div>`;
+    }
+  }
+  return '';
+}
 
 /* ---------- mapas para llevar ---------- */
 function teselaDe(lat, lon, z) {
@@ -843,12 +1002,12 @@ function muestra(v) {
 
 /* ---------- arranque ---------- */
 (async function () {
-  const [dias, lugares, rutas, tours, reservas, fichas, audio, interiores, fotos] = await Promise.all(
-    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas', 'audio', 'interiores', 'fotos'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
+  const [dias, lugares, rutas, tours, reservas, fichas, audio, interiores, fotos, clima] = await Promise.all(
+    ['dias', 'lugares.geo', 'rutas', 'tours', 'reservas', 'fichas', 'audio', 'interiores', 'fotos', 'clima'].map(f => fetch(`data/${f}.json?v=${VER}`).then(r => r.json())));
   D.dias = dias.dias; D.viaje = dias.viaje;
   D.lugares = Object.fromEntries(lugares.map(p => [p.id, p]));
   D.rutas = Object.fromEntries(rutas.map(r => [r.id, r]));
-  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas; D.audio = audio; D.interiores = interiores; D.fotos = fotos;
+  D.tours = tours.tours; D.reservas = reservas.reservas; D.fichas = fichas; D.audio = audio; D.interiores = interiores; D.fotos = fotos; D.clima = clima;
 
   $('#tiras').innerHTML = D.dias.map(d => {
     const f = new Date(d.fecha + 'T12:00');
@@ -931,6 +1090,8 @@ function muestra(v) {
     if (e.target.closest('#gps')) return activaGPS();
     if (e.target.closest('#paseo')) return modoPaseo();
   });
+
+  pideTiempo();
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 

@@ -201,3 +201,32 @@ ul.mirar li{margin-bottom:8px;font-size:15px;line-height:1.5}
   font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px}
 .nota.viaje .tramo-viaje > div{flex:1;font-size:14.5px;line-height:1.45}
 .nota.viaje .btns{margin:7px 0 2px}
+
+/* el tiempo */
+.tiempo{border-radius:16px;overflow:hidden;border:1px solid #dfe3ea;margin:12px 0 16px;
+  background:linear-gradient(165deg,#eef4fb 0%,#f7f4ee 62%,#fbf8f3 100%)}
+.tiempo .cab{display:flex;align-items:flex-start;gap:13px;padding:14px 15px 4px}
+.tiempo .grados{font-size:34px;font-weight:700;letter-spacing:-.035em;line-height:1;white-space:nowrap}
+.tiempo .grados small{font-size:15px;font-weight:600;color:var(--suave);margin-left:5px;letter-spacing:0}
+.tiempo .resumen{flex:1;font-size:13.5px;line-height:1.42;color:#3f3b35;padding-top:3px}
+.tiempo .arco{display:flex;gap:2px;padding:8px 9px 10px}
+.tiempo .mom{flex:1;text-align:center;padding:7px 3px 7px;border-radius:11px;min-width:0}
+.tiempo .mom.pico{background:rgba(255,255,255,.72);box-shadow:0 1px 3px rgba(60,60,80,.07)}
+.tiempo .mom .h{font-size:10.5px;color:var(--suave);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.tiempo .mom .g{font-size:15px;font-weight:650;margin-top:2px;letter-spacing:-.02em}
+.tiempo .mom .q{font-size:9.5px;color:var(--suave);margin-top:2px;line-height:1.25}
+.tiempo .mom svg{display:block;margin:3px auto 1px}
+.tiempo .pie{display:flex;gap:13px;padding:0 15px 13px;font-size:11.5px;color:var(--suave);flex-wrap:wrap}
+.tiempo .pie b{color:#3f3b35;font-weight:600}
+
+.chip-t{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+  background:#eef2f8;color:#3d4a5c;margin-right:6px;vertical-align:1px;font-weight:600}
+.chip-t.calor{background:#fdf0e4;color:#8a5312}
+.chip-t.fresco{background:#eaf0f6;color:#39506b}
+.chip-t.lluvia{background:#e6eefb;color:#2f5596}
+
+.chubasco{display:flex;gap:11px;align-items:flex-start;background:#eef3fb;border:1px solid #cfdcf0;
+  border-radius:13px;padding:12px 13px;margin:0 0 14px}
+.chubasco svg{flex:0 0 26px}
+.chubasco b{display:block;font-size:14.5px;margin-bottom:2px}
+.chubasco div{font-size:13px;line-height:1.42;color:#41505f}

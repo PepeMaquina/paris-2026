@@ -1,0 +1,31 @@
+{
+ "fuente": "Open-Meteo, sin clave de API. Se pide de nuevo cada vez que se abre la app.",
+ "coords": {"lat": 48.8566, "lon": 2.3522},
+ "dias": {
+  "mar1": {
+   "momentos": [["16:00","salís del hotel"],["18:00","el Bon Marché"],["20:30","arriba, la puesta de sol",true],["22:00","el centelleo"]],
+   "nota": "La subida a la torre os pilla en el mejor momento, {t2030} arriba a las ocho y media. A las diez, con el centelleo y ya de noche, {t2200}: chaqueta fina en la mochila desde por la mañana.",
+   "refugios": ["los soportales de la rue de Rivoli", "el interior del Bon Marché"]
+  },
+  "mie2": {
+   "momentos": [["09:00","el palacio"],["12:00","los jardines",true],["17:15","el tour de Montmartre"],["21:00","la cena en Abbesses"]],
+   "nota": "El eje central de los jardines no tiene sombra y a mediodía marca {t1200}{uv}. Por la tarde subís Montmartre en cuesta con {t1715}, y de noche, en el Sacré-Cœur, {t2100}.",
+   "refugios": ["el palacio", "la galería de la Sala de Baile", "el Bouillon Pigalle"]
+  },
+  "jue3": {
+   "momentos": [["08:00","Notre-Dame"],["14:30","el crucero",true],["17:30","la Mouffetard"],["21:45","la salida de Orsay"]],
+   "nota": "Hora y media en cubierta abierta a las dos y media con {t1430}{uv}, y el reflejo del agua encima: gorra y crema. Al salir de Orsay pasadas las diez, {t2145}.",
+   "refugios": ["los pasajes de la rue Vivienne", "el Museo de Cluny", "la zona acristalada del barco"]
+  },
+  "vie4": {
+   "momentos": [["11:00","el tour del Marais"],["14:30","la Place des Vosges",true],["18:35","la terraza de Lafayette"],["21:45","la cena"]],
+   "nota": "El día más caluroso de la semana, {max} de máxima. El tour va de once a una por calles estrechas, que ahí se agradece, y a las dos y media estáis en la Place des Vosges con {t1430}: los soportales del lado sur quedan en sombra.",
+   "refugios": ["los soportales de la Place des Vosges", "el patio del Hôtel de Sully", "el Museo Carnavalet"]
+  },
+  "sab5": {
+   "momentos": [["09:00","la consigna"],["10:00","el patio de los Inválidos",true],["11:00","el jardín del Petit Palais"],["13:20","el andén"]],
+   "nota": "El patio de honor a las diez con {t1000} y el sol de lado, que es su mejor hora. El jardín del Petit Palais tiene luz filtrada por el peristilo y sombra a cualquier hora. Al tren con {t1320}.",
+   "refugios": ["el Petit Palais", "la catedral de Saint-Louis", "la estación"]
+  }
+ }
+}
