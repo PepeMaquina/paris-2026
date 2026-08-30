@@ -1,6 +1,6 @@
 'use strict';
 
-const VER = '2026-08-30-2';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
+const VER = '2026-08-30-4';   // subir al cambiar los datos, para que ningun movil se quede con los viejos
 
 const D = {};           // datos cargados
 const S = {             // estado
@@ -998,6 +998,7 @@ function muestra(v) {
   if (v === 'cerca') $('#v-cerca').innerHTML = pintaCerca();
   if (v === 'reservas') $('#v-reservas').innerHTML = pintaReservas();
   if (v === 'hoy') $('#v-hoy').innerHTML = pintaHoy();
+  if (v === 'dias') $('#v-dias').innerHTML = pintaDia(D.dias.find(d => d.id === S.dia) || D.dias[0]);
 }
 
 /* ---------- arranque ---------- */
